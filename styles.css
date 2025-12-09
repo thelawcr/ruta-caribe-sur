@@ -1,82 +1,91 @@
-/* Estilos generales */
+/* ================================
+   ESTILOS GENERALES DEL SITIO
+================================= */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
     margin: 0;
     padding: 0;
 
     /* Fondo tropical */
     background-image: url("imgs/bg2.jpg");
     background-size: cover;
-    /* que llene la pantalla */
     background-repeat: no-repeat;
-    /* que no se repita */
     background-attachment: fixed;
-    /* efecto parallax suave */
     background-position: center;
-    /* centrado */
     background-color: #e8fff8;
-    /* color de respaldo */
 
     color: #2d3436;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
+
+    /* GLASSMORPHISM SUAVE PARA TODO EL SITIO */
+    backdrop-filter: blur(2px);
 }
 
-
-/* Estilo para el encabezado */
+/* ===================================
+   HEADER
+=================================== */
 header {
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.90);
     color: #2d3436;
     padding: 40px 20px;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
     margin-top: 20px;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.6em;
     margin: 0;
     color: #00997d;
-    /* Verde caribeño */
     transition: color 0.3s ease;
 }
 
 h1:hover {
     color: #00b894;
-    /* Verde agua */
 }
 
 p {
     font-size: 1.2em;
-    color: #636e72;
-    /* Gris suave */
+    color: #555;
     max-width: 700px;
     margin: 20px auto;
     line-height: 1.6;
 }
 
-/* Estilos para las Cards */
+/* ===================================
+   CARDS
+=================================== */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 35px;
+    width: 100%;
 }
 
 .card {
-    background-color: #ffffff;
-    color: #00997d;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    padding: 25px;
     margin: 20px;
-    width: 250px;
+    width: 270px;
+    position: relative;
+
+    color: #00997d;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 184, 148, 0.35);
 }
 
 .card a {
@@ -85,77 +94,103 @@ p {
 }
 
 .card h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .card p {
-    color: #636e72;
+    color: #555;
     font-size: 1em;
     margin-top: 10px;
+
+    /* Limita textos largos */
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-/* Números de ruta (en el círculo) */
-.route-number {
-    font-size: 2em;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #00b894;
-    /* Verde agua brillante */
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+/* ===================================
+   ÍCONO PROFESIONAL DE LA CARD
+=================================== */
+.card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+
+    background: #e8f5ff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon i {
+    font-size: 32px;
+    color: #0077cc;
+}
+
+/* ===================================
+   NÚMEROS DE RUTA
+=================================== */
+.route-number {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    background-color: #00b894;
+
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
-    top: -20px;
-    left: -20px;
+    top: -15px;
+    left: -15px;
+
+    box-shadow: 0 4px 12px rgba(0, 184, 148, 0.4);
 }
 
-/* Hover de las cards */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 25px rgba(0, 184, 148, 0.3);
-    /* Sombra verde agua */
-}
-
-/* Estilo para los enlaces */
-main ul {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
-}
-
-main ul li {
-    margin: 10px 0;
-}
-
-main ul li a {
-    text-decoration: none;
-    color: #00b894;
-    /* Verde agua */
-    font-size: 1.5em;
-}
-
-main ul li a:hover {
-    color: #00997d;
-    /* Verde más oscuro */
-}
-
-/* Footer */
+/* ===================================
+   FOOTER
+=================================== */
 footer {
-    background-color: #00997d;
+    background: #00b894;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 25px;
     width: 100%;
-    margin-top: 30px;
-    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 1.1em;
 }
 
-/* Responsive */
+footer img.footer-img {
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+/* ===================================
+   RESPONSIVE – OCULTAR IMAGEN EN CELULAR
+=================================== */
+@media (max-width: 600px) {
+    .footer-img {
+        display: none;
+    }
+
+    footer {
+        padding: 25px 10px;
+    }
+}
+
+/* ===================================
+   RESPONSIVE GENERAL
+=================================== */
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
@@ -163,79 +198,13 @@ footer {
     }
 
     .card {
-        width: 80%;
+        width: 85%;
     }
 }
 
-/* Mapa */
-.map {
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 184, 148, 0.2);
-    /* Sombra verde agua */
-}
-
-/* Botón */
-.btn {
-    padding: 12px 24px;
-    background-color: #00b894;
-    /* Verde Caribe */
-    color: white;
-    font-size: 1em;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #00997d;
-    /* Verde oscuro */
-}
-
-/* Contenedor */
-.container {
-    background-color: white;
-    padding: 40px;
-    max-width: 1000px;
-    width: 90%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 184, 148, 0.25);
-    /* Sombra tropical */
-    margin: 20px;
-}
-
-footer {
-    background: #00b894;
-    /* Verde agua caribe */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: 40px;
-    border-radius: 0;
-    font-size: 1.1em;
-}
-
-footer a {
-    color: #ffeaa7;
-    /* Arena */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: white;
-}
-
-footer p {
-    color: white;
-}
-
-/* --- GALERÍA --- */
+/* ===================================
+   GALERÍA
+=================================== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -247,75 +216,40 @@ footer p {
     width: 100%;
     height: 150px;
     object-fit: cover;
+
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
     transition: transform 0.2s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
-/* --- Mapa Responsive --- */
-.map-responsive {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    /* proporción 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
+/* ===================================
+   BOTONES
+=================================== */
+.btn {
+    padding: 14px 28px;
+    background-color: #00b894;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
 }
 
-.map-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 12px;
+.btn:hover {
+    background-color: #00997d;
 }
 
-.card-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f1f8ff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-}
+.container p {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
-.card-icon i {
-    font-size: 32px;
-    color: #0077cc;
-}
-
-
-
-/* Tamaño para tablets (intermedio) */
-@media (max-width: 992px) {
-    .footer-img {
-        width: 260px;
-    }
-}
-
-/* Tamaño para teléfonos (pero NO tan pequeño) */
-@media (max-width: 600px) {
-    .footer-img {
-        width: 200px;
-        /* Antes lo dejaste en 110–150px, por eso se veía pequeñita */
-    }
-}
-
-/* Tamaño para celulares pequeños (solo si es necesario) */
-@media (max-width: 420px) {
-    .footer-img {
-        width: 160px;
-    }
 }
