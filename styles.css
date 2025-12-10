@@ -2,40 +2,121 @@
    ESTILOS GENERALES DEL SITIO
 ================================= */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
-
-    /* Fondo tropical */
-    background-image: url("imgs/bg2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     background-color: #e8fff8;
-
     color: #2d3436;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    /* GLASSMORPHISM SUAVE PARA TODO EL SITIO */
-    backdrop-filter: blur(2px);
 }
 
-/* ===================================
+
+/* ================================
+   NAVBAR
+================================= */
+.navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #00997d;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #2d3436;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #00b894;
+}
+
+/* Hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 28px;
+    background: #00997d;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-toggle:checked+.hamburger+.nav-menu {
+        display: flex;
+    }
+}
+
+
+/* ================================
    HEADER
-=================================== */
+================================= */
 header {
     background: rgba(255, 255, 255, 0.90);
-    color: #2d3436;
     padding: 40px 20px;
     width: 90%;
     max-width: 1000px;
+    text-align: center;
+    margin: 20px auto;
+
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
-    margin-top: 20px;
 }
 
 h1 {
@@ -54,30 +135,43 @@ p {
     color: #555;
     max-width: 700px;
     margin: 20px auto;
-    line-height: 1.6;
 }
 
-/* ===================================
-   CARDS
-=================================== */
+
+/* ================================
+   CONTAINER GENERAL (DESTINOS)
+================================= */
+.container {
+    background-color: white;
+    padding: 40px;
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 12px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 184, 148, 0.25);
+}
+
+
+/* ================================
+   CARDS (INDEX)
+================================= */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 35px;
-    width: 100%;
+    gap: 20px;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 18px;
-    padding: 25px;
-    margin: 20px;
+    background: rgba(255, 255, 255, 0.90);
     width: 270px;
-    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px;
 
-    color: #00997d;
     text-align: left;
+    color: #00997d;
 
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     transition: 0.3s ease;
@@ -88,123 +182,54 @@ p {
     box-shadow: 0 12px 30px rgba(0, 184, 148, 0.35);
 }
 
-.card a {
-    text-decoration: none;
-    color: inherit;
+.card-thumb {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
+/* Título dentro de la card */
 .card h3 {
-    font-size: 1.4em;
+    padding: 15px 20px 0 20px;
     margin: 0;
-    margin-bottom: 10px;
+    font-size: 1.3em;
 }
 
+/* Descripción */
 .card p {
+    padding: 0 20px 20px 20px;
     color: #555;
-    font-size: 1em;
-    margin-top: 10px;
 
-    /* Limita textos largos */
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* ===================================
-   ÍCONO PROFESIONAL DE LA CARD
-=================================== */
-.card-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    background: #e8f5ff;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
-
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.1);
-}
-
-.card-icon i {
-    font-size: 32px;
-    color: #0077cc;
-}
-
-/* ===================================
-   NÚMEROS DE RUTA
-=================================== */
-.route-number {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: white;
-    background-color: #00b894;
-
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: -15px;
-    left: -15px;
-
-    box-shadow: 0 4px 12px rgba(0, 184, 148, 0.4);
-}
-
-/* ===================================
-   FOOTER
-=================================== */
-footer {
-    background: #00b894;
-    color: white;
-    text-align: center;
-    padding: 25px;
+/* ================================
+   MAPA
+================================= */
+.map-responsive {
+    position: relative;
     width: 100%;
-    margin-top: 50px;
-    font-size: 1.1em;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
-footer img.footer-img {
-    width: 320px;
-    margin-bottom: 10px;
+.map-responsive iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-/* ===================================
-   RESPONSIVE – OCULTAR IMAGEN EN CELULAR
-=================================== */
-@media (max-width: 600px) {
-    .footer-img {
-        display: none;
-    }
 
-    footer {
-        padding: 25px 10px;
-    }
-}
-
-/* ===================================
-   RESPONSIVE GENERAL
-=================================== */
-@media (max-width: 768px) {
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 85%;
-    }
-}
-
-/* ===================================
-   GALERÍA
-=================================== */
+/* ================================
+   GALERÍA (DESTINOS)
+================================= */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -216,20 +241,18 @@ footer img.footer-img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
-/* ===================================
-   BOTONES
-=================================== */
+
+/* ================================
+   BOTÓN
+================================= */
 .btn {
     padding: 14px 28px;
     background-color: #00b894;
@@ -238,7 +261,7 @@ footer img.footer-img {
     border: none;
     border-radius: 14px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 25px;
     transition: 0.3s ease;
 }
 
@@ -246,10 +269,83 @@ footer img.footer-img {
     background-color: #00997d;
 }
 
-.container p {
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
+/* ================================
+   FOOTER
+================================= */
+footer {
+    background: #00b894;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer img.footer-img {
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .footer-img {
+        display: none;
+    }
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.route-number {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #00b894;
+    padding: 4px 10px;
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.card-icon {
+    position: absolute;
+    top: 40px;
+    left: 16px;
+
+    background: #ffffff;
+    border-radius: 999px;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.card-icon i {
+    font-size: 0.95rem;
+    color: #00b894;
+}
+
+.lang-select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #00b894;
+    background: white;
+    color: #00997d;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.lang-select:hover {
+    border-color: #00997d;
 }
