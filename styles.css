@@ -278,7 +278,6 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
-    width: 100%;
     margin-top: 50px;
 }
 
@@ -348,4 +347,31 @@ footer img.footer-img {
 
 .lang-select:hover {
     border-color: #00997d;
+}
+
+.menu-toggle:checked+.hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.card {
+    position: relative;
+}
+
+.gallery img {
+    cursor: zoom-in;
+}
+
+.btn:focus {
+    outline: 3px solid rgba(0, 184, 148, 0.5);
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 18px;
+    }
+}
+
+.lang-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 184, 148, 0.4);
 }
