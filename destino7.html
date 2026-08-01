@@ -5,43 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barco Hundido de Manzanillo</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Barco Hundido de Manzanillo</h1>
-        <p>Un emblemático naufragio que hoy forma parte del paisaje costero de Manzanillo.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 07
+            </span>
+
+            <h1>Barco Hundido de Manzanillo</h1>
+
+            <p>
+                Un emblemático naufragio que hoy forma parte del paisaje costero de Manzanillo.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                El Barco Hundido de Manzanillo corresponde al naufragio del carguero **Yicel**, construido en 1961 y
-                encallado en Playa Grande en el año 2017 tras sufrir desperfectos mecánicos. Con el paso del tiempo,
-                su casco oxidado se ha cubierto de sal, arena y vida marina, transformándose en un atractivo icónico del
-                Caribe Sur.
+                El Barco Hundido de Manzanillo es uno de los naufragios más conocidos de la zona. El navío,
+                llamado Yicel y construido en 1961, se convirtió con el paso del tiempo en parte del paisaje
+                costero. Se hundió en el año 2017 en Playa Grande debido a desperfectos mecánicos y, en ese
+                momento, representó un riesgo ecológico por el petróleo que llevaba. Gracias a la rápida acción
+                de las autoridades, el incidente no pasó a más.
+            </p>
+            <p>
+                Hoy en día el barco funciona como refugio para diversas especies marinas, y su casco oxidado
+                cubierto de sal, arena y vida marina se ha convertido en un atractivo icónico del Caribe Sur.
+                El sitio se integra armoniosamente con el paisaje de arena dorada, mar azul intenso y el
+                característico ambiente tranquilo de Manzanillo.
             </p>
 
-            <p>
-                Hoy, el barco hundido se integra armoniosamente con el paisaje: arena dorada, mar azul intenso y
-                el característico ambiente tranquilo de Manzanillo. Es un sitio frecuentado por curiosos, fotógrafos y
-                turistas interesados en explorar uno de los escenarios más peculiares de la costa.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D7/1.JPEG" class="glightbox">
@@ -55,118 +83,199 @@
             </div>
 
 
-            <!-- Ubicación -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43055.261206718!2d-82.72265111378323!3d9.626980680969522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa645b67e5872b5%3A0x211a3b50658d29dd!2sNaufragio%20del%20Yicel!5e1!3m2!1sen!2scr!4v1765339719035!5m2!1sen!2scr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section>
 
-                <h2 style="color:#00997d;">Descripción General</h2>
 
-                <p>
-                    El Barco Hundido de Manzanillo es uno de los naufragios más conocidos de la zona. El navío, llamado
-                    <strong>Yicel</strong> y construido en 1961, se convirtió con el paso del tiempo en parte del
-                    paisaje costero.
-                    Se hundió en el año 2017 debido a desperfectos mecánicos y, en ese momento, representó un riesgo
-                    ecológico
-                    por el petróleo que llevaba. Gracias a la rápida acción de las autoridades, el incidente no pasó a
-                    más.
-                    Hoy en día el barco funciona como refugio para diversas especies marinas.
-                </p>
 
-                <h2 style="color:#00997d; margin-top:30px;">Valor Turístico</h2>
+            <section class="attraction-info">
 
-                <p>
-                    • Naufragio costero muy famoso en la zona. <br>
-                    • Vestigio visible que forma parte del paisaje local. <br>
-                    • Punto clave para disfrutar de la naturaleza y el entorno marino.
-                </p>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <h2 style="color:#00997d; margin-top:30px;">Valor Cultural</h2>
+                <div class="info-grid">
 
-                <p>
-                    • Símbolo paisajístico de la comunidad de Manzanillo. <br>
-                    • Representación de la vida marítima tradicional de la zona.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Barco Hundido de Manzanillo (Naufragio del Yicel).</p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top:30px;">Accesibilidad y Rutas de Acceso</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita.
+                            Playa Grande, comunidad de Manzanillo.
+                        </p>
+                    </div>
 
-                <p><strong>San José – Siquirres</strong><br>
-                    Ruta 27 / Ruta 32 — Vía asfaltada — Vehículo / Bus — 95 km, aprox. 1 h 30 min
-                </p>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <p><strong>Siquirres – Limón</strong><br>
-                    Ruta 32 — Vía asfaltada — Vehículo / Bus — 35 km, aprox. 30–45 min
-                </p>
+                        <p>
+                            El Barco Hundido de Manzanillo corresponde al naufragio del carguero Yicel,
+                            construido en 1961 y encallado en Playa Grande en el año 2017 tras sufrir
+                            desperfectos mecánicos. Con el paso del tiempo, su casco oxidado se ha cubierto de
+                            sal, arena y vida marina, transformándose en un atractivo icónico del Caribe Sur.
+                        </p>
+                        <p>
+                            Hoy, el barco hundido se integra armoniosamente con el paisaje: arena dorada, mar
+                            azul intenso y el característico ambiente tranquilo de Manzanillo. Es un sitio
+                            frecuentado por curiosos, fotógrafos y turistas interesados en explorar uno de los
+                            escenarios más peculiares de la costa.
+                        </p>
+                    </div>
 
-                <p><strong>Limón – Puerto Viejo</strong><br>
-                    Ruta 36 — Vía asfaltada — Vehículo / Bus — aprox. 1 h 30 min
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <p><strong>Puerto Viejo – Manzanillo (Iglesia Bautista de Manzanillo)</strong><br>
-                    Ruta 36 + carretera secundaria — Vía asfaltada — Vehículo / Bus — 13 km, aprox. 20–30 min
-                </p>
+                        <ul>
+                            <li>Naufragio costero muy famoso en la zona.</li>
+                            <li>Vestigio visible que forma parte del paisaje local.</li>
+                            <li>Punto clave para disfrutar de la naturaleza y el entorno marino.</li>
+                        </ul>
 
-                <h2 style="color:#00997d; margin-top:30px;">Época Propicia de Visita</h2>
+                    </div>
 
-                <p>
-                    Puede visitarse todos los días de la semana. No tiene un horario específico.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <h2 style="color:#00997d; margin-top:30px;">Información Adicional</h2>
+                        <ul>
+                            <li>Símbolo paisajístico de la comunidad de Manzanillo.</li>
+                            <li>Representación de la vida marítima tradicional de la zona.</li>
+                        </ul>
 
-                <p>
-                    Acceso completamente libre. No se debe pagar ninguna cuota.
-                </p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Turísticos y Complementarios</h2>
+                    <div class="info-card full">
 
-                <p><strong>En el sitio:</strong><br>
-                    No cuenta con condiciones para personas con discapacidad debido a la naturaleza del atractivo.
-                </p>
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
 
-                <p><strong>En los alrededores:</strong><br>
-                    Hoteles, cabinas, hospedajes Airbnb, restaurantes, sodas, cafeterías, quioscos de comida y bebidas,
-                    bares y comida rápida.
-                </p>
+                        <ul>
 
-                <h2 style="color:#00997d; margin-top:30px;">Comercio y Otros Servicios</h2>
+                            <li>San José → Siquirres.</li>
 
-                <p>
-                    Supermercados, minisúpers, ventas de artesanías.
-                </p>
+                            <li>Siquirres → Limón.</li>
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Básicos</h2>
+                            <li>Limón → Puerto Viejo.</li>
 
-                <p>
-                    Agua potable, electricidad, telefonía, centro de salud, comisaría, taxis, internet, cajero
-                    automático
-                    y parada de buses.
-                </p>
+                            <li>Puerto Viejo → Manzanillo.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Puede visitarse todos los días de la semana. No tiene un horario específico.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            Acceso completamente libre, sin cuota de ingreso. No cuenta con condiciones para
+                            personas con discapacidad debido a la naturaleza del atractivo.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles, cabinas y hospedajes tipo Airbnb.</li>
+
+                            <li>Restaurantes, sodas y cafeterías.</li>
+
+                            <li>Quioscos de comida y bebidas, bares y comida rápida.</li>
+
+                            <li>Supermercados, minisúpers y artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Paradas de autobús.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
-    <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
