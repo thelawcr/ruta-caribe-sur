@@ -5,42 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parque Nacional Cahuita</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Parque Nacional Cahuita</h1>
-        <p>Un espacio donde la naturaleza y la cultura afrocaribeña conviven en armonía.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 05
+            </span>
+
+            <h1>Parque Nacional Cahuita</h1>
+
+            <p>
+                Un espacio donde la naturaleza y la cultura afrocaribeña conviven en armonía.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                El Parque Nacional Cahuita es uno de los tesoros naturales más importantes del Caribe Sur.
-                Sus senderos, playas de arena blanca y bosques costeros reflejan la relación histórica entre
-                la comunidad afrocaribeña y el entorno natural que los rodea.
+                El Parque Nacional Cahuita es un área protegida de gran belleza escénica, reconocida por su
+                exuberante vegetación y su variada fauna caribeña. Combina bosque pantanoso, manglar y vegetación
+                litoral con un arrecife coralino de aproximadamente 600 hectáreas, uno de los más emblemáticos
+                del Caribe costarricense.
+            </p>
+            <p>
+                Además de su riqueza natural, el parque conserva restos de barcos esclavistas hundidos desde
+                1710, asociados a actos de resistencia de personas esclavizadas. Este legado histórico, unido al
+                fuerte arraigo comunitario y a su condición de playa con Bandera Azul, convierten a Cahuita en un
+                espacio donde se unen naturaleza, memoria y cultura afrocaribeña.
             </p>
 
-            <p>
-                La pesca tradicional, la música calipso y las costumbres locales forman parte del paisaje cultural
-                que envuelve el parque. Además, su rica biodiversidad lo convierte en un lugar ideal para el
-                avistamiento
-                de fauna, caminatas escénicas y actividades como el snorkel en sus arrecifes coralinos.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top:30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D5/1.jpg" class="glightbox">
@@ -66,133 +94,203 @@
             </div>
 
 
-            <!-- Ubicación -->
-            <h2 style="color:#00997d; margin-top:30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10760.976375861894!2d-82.82821584601065!3d9.715666062671666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa656caa8cf30a1%3A0x29b9afd9fecc0757!2sParque%20Nacional%20Cahuita%20-%20Entrada%20Puerto%20Vargas!5e1!3m2!1sen!2scr!4v1765338749834!5m2!1sen!2scr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section id="informacion">
 
-                <h2 style="color:#00997d;">Descripción General</h2>
 
-                <p>
-                    El Parque Nacional Cahuita es un área protegida de gran belleza escénica, reconocida por su
-                    exuberante
-                    vegetación y su variada fauna caribeña. Combina bosque pantanoso, manglar y vegetación litoral con
-                    un
-                    arrecife coralino de aproximadamente <strong>600 hectáreas</strong>, uno de los más emblemáticos del
-                    Caribe
-                    costarricense.
-                </p>
 
-                <p>
-                    Además de su riqueza natural, el parque conserva restos de <strong>barcos esclavistas hundidos desde
-                        1710</strong>,
-                    asociados a actos de resistencia de personas esclavizadas. Este legado histórico, unido al fuerte
-                    arraigo
-                    comunitario y a su condición de playa con Bandera Azul, convierten a Cahuita en un espacio donde se
-                    unen
-                    naturaleza, memoria y cultura afrocaribeña.
-                </p>
+            <section class="attraction-info">
 
-                <h2 style="color:#00997d; margin-top: 25px;">Valor Turístico</h2>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <ul>
-                    <li>Arrecife coralino, manglares, playas y senderos escénicos.</li>
-                    <li>Alta biodiversidad marina y terrestre.</li>
-                    <li>Ideal para caminatas, observación de fauna, snorkel y disfrute de playa.</li>
-                    <li>Playa con <strong>Bandera Azul</strong>, símbolo de destino limpio y seguro.</li>
-                </ul>
+                <div class="info-grid">
 
-                <h2 style="color:#00997d; margin-top: 25px;">Valor Cultural</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Parque Nacional Cahuita.</p>
+                    </div>
 
-                <ul>
-                    <li>Presencia de barcos esclavistas hundidos como símbolo de resistencia.</li>
-                    <li>Fuerte vínculo con la comunidad afrocaribeña de Cahuita.</li>
-                    <li>Modelo de <strong>gobernanza compartida</strong> entre el Estado y la comunidad local.</li>
-                </ul>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita.
+                            Entrada por Puerto Vargas.
+                        </p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Accesibilidad y Rutas de Acceso</h2>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <p><strong>San José → Siquirres</strong><br>
-                    Ruta 27 / Ruta 32 • Vía asfaltada • Vehículo / bus • 95 km – aprox. 1h 30 min
-                </p>
+                        <p>
+                            El Parque Nacional Cahuita es uno de los tesoros naturales más importantes del
+                            Caribe Sur. Sus senderos, playas de arena blanca y bosques costeros reflejan la
+                            relación histórica entre la comunidad afrocaribeña y el entorno natural que los
+                            rodea.
+                        </p>
+                        <p>
+                            La pesca tradicional, la música calipso y las costumbres locales forman parte del
+                            paisaje cultural que envuelve el parque. Además, su rica biodiversidad lo convierte
+                            en un lugar ideal para el avistamiento de fauna, caminatas escénicas y actividades
+                            como el snorkel en sus arrecifes coralinos.
+                        </p>
+                    </div>
 
-                <p><strong>Siquirres → Limón</strong><br>
-                    Ruta 32 • Vía asfaltada • 35 km – aprox. 30–45 min
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <p><strong>Limón → Cahuita</strong><br>
-                    Ruta 36 • Vía asfaltada • 18 km – aprox. 20–25 min
-                </p>
+                        <ul>
+                            <li>Arrecife coralino, manglares, playas y senderos escénicos.</li>
+                            <li>Alta biodiversidad marina y terrestre.</li>
+                            <li>Ideal para caminatas, observación de fauna, snorkel y disfrute de playa.</li>
+                            <li>Playa con Bandera Azul, símbolo de destino limpio y seguro.</li>
+                        </ul>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Época Propicia de Visita</h2>
+                    </div>
 
-                <p>
-                    Puede visitarse durante todo el año (7 días a la semana). Requiere registro previo.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Horario</h2>
+                        <ul>
+                            <li>Presencia de barcos esclavistas hundidos como símbolo de resistencia.</li>
+                            <li>Fuerte vínculo con la comunidad afrocaribeña de Cahuita.</li>
+                            <li>Modelo de gobernanza compartida entre el Estado y la comunidad local.</li>
+                        </ul>
 
-                <p>De 8:00 a.m. a 4:00 p.m.</p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Información Adicional</h2>
+                    <div class="info-card full">
 
-                <p>
-                    La entrada es libre, pero se solicita una <strong>contribución voluntaria</strong>.
-                </p>
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Servicios en el Parque</h2>
+                        <ul>
 
-                <ul>
-                    <li>Accesos para personas con discapacidad</li>
-                    <li>Duchas y sanitarios</li>
-                </ul>
+                            <li>San José → Siquirres.</li>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Servicios en Cahuita y Alrededores</h2>
+                            <li>Siquirres → Limón.</li>
 
-                <ul>
-                    <li>Hoteles, cabinas, Airbnb</li>
-                    <li>Restaurantes, sodas, cafeterías</li>
-                    <li>Comida rápida, bares, quioscos</li>
-                    <li>Supermercados, minisúper, artesanías</li>
-                </ul>
+                            <li>Limón → Cahuita.</li>
 
-                <h2 style="color:#00997d; margin-top: 25px;">Servicios Básicos</h2>
+                        </ul>
 
-                <ul>
-                    <li>Agua potable</li>
-                    <li>Electricidad</li>
-                    <li>Telefonía e internet</li>
-                    <li>Centro de salud</li>
-                    <li>Comisaría</li>
-                    <li>Servicio de taxis</li>
-                    <li>Estación de buses</li>
-                    <li>Cajero automático</li>
-                </ul>
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Abierto durante todo el año, los 7 días de la semana. Requiere registro previo.
+
+                            Horario: <strong>8:00 a.m. – 4:00 p.m.</strong>
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            La entrada es libre, pero se solicita una contribución voluntaria. Cuenta con
+                            accesos para personas con discapacidad, duchas y sanitarios.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles, cabinas y Airbnb.</li>
+
+                            <li>Restaurantes, sodas y cafeterías.</li>
+
+                            <li>Comida rápida, bares y quioscos.</li>
+
+                            <li>Supermercados, minisúper y artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Estación de buses.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
     <script>
         const lightbox = GLightbox({
             touchNavigation: true,
