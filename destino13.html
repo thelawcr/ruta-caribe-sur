@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanchón de Puerto Viejo</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- GLightbox CSS -->
@@ -14,186 +13,277 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Lanchón de Puerto Viejo</h1>
-        <p>Una reliquia flotante del pasado petrolero y un espacio de encuentro comunitario.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 13
+            </span>
+
+            <h1>Lanchón de Puerto Viejo</h1>
+
+            <p>
+                Una reliquia flotante del pasado petrolero y un espacio de encuentro comunitario.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                El origen de este antiguo navío, conocido por los pobladores como el <strong>“Yankee Clipper”</strong>,
-                se remonta a la época de las compañías petroleras que operaron en la zona de Puerto Viejo. El muelle
-                flotante recibía equipo destinado a proyectos de extracción de petróleo que finalmente nunca se llevaron
-                a cabo.
+                El Lanchón de Puerto Viejo es una estructura flotante histórica ubicada frente a la playa
+                principal del pueblo. Su origen está vinculado a la llegada de compañías petroleras al Caribe
+                Sur, cuando era conocido como el "Yankee Clipper", un muelle flotante utilizado para recibir
+                maquinaria destinada a intentos fallidos de extracción de petróleo.
+            </p>
+            <p>
+                Con el paso del tiempo, el lanchón se hundió cerca de Kaya's Place debido a fuertes vientos y
+                condiciones adversas del mar. Actualmente permanece parcialmente sumergido, convirtiéndose en
+                un icono visual de Puerto Viejo y parte del paisaje marino característico de la comunidad.
             </p>
 
-            <p>
-                El barco terminó hundiéndose frente al sector de <strong>Kaya’s Place</strong> debido al mal tiempo y a
-                los
-                fuertes vientos. Sin embargo, lejos de desaparecer, se convirtió en un símbolo urbano y en un punto de
-                reunión
-                para generaciones de jóvenes y vecinos, quienes lo adoptaron como parte de su paisaje cotidiano e
-                histórico.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D13/1.png" class="glightbox">
-                    <img src="imgs/D13/1.png" alt="Lanchón de Puerto Viejo - Imagen 1">
+                    <img src="imgs/D13/1.png" alt="Lanchón de Puerto Viejo 1">
                 </a>
 
                 <a href="imgs/D13/2.jpg" class="glightbox">
-                    <img src="imgs/D13/2.jpg" alt="Lanchón de Puerto Viejo - Imagen 2">
+                    <img src="imgs/D13/2.jpg" alt="Lanchón de Puerto Viejo 2">
                 </a>
 
                 <a href="imgs/D13/3.jpg" class="glightbox">
-                    <img src="imgs/D13/3.jpg" alt="Lanchón de Puerto Viejo - Imagen 3">
+                    <img src="imgs/D13/3.jpg" alt="Lanchón de Puerto Viejo 3">
                 </a>
 
                 <a href="imgs/D13/4.jpg" class="glightbox">
-                    <img src="imgs/D13/4.jpg" alt="Lanchón de Puerto Viejo - Imagen 4">
+                    <img src="imgs/D13/4.jpg" alt="Lanchón de Puerto Viejo 4">
                 </a>
 
             </div>
 
 
-            <!-- Ubicación -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36199.75792921614!2d-82.80845489509814!3d9.675903168525588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa651b47e974849%3A0xb8d5d8516b2dad4d!2sOld%20shipwreck!5e1!3m2!1sen!2scr!4v1765342491715!5m2!1sen!2scr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section>
-                <h2>Descripción General</h2>
-                <p>
-                    El Lanchón de Puerto Viejo es una estructura flotante histórica ubicada frente a la playa principal
-                    del pueblo.
-                    Su origen está vinculado a la llegada de compañías petroleras al Caribe Sur, cuando era conocido
-                    como el
-                    “Yankee Clipper”, un muelle flotante utilizado para recibir maquinaria destinada a intentos fallidos
-                    de
-                    extracción de petróleo.
-                </p>
-                <p>
-                    Con el paso del tiempo, el lanchón se hundió cerca de Kaya’s Place debido a fuertes vientos y
-                    condiciones
-                    adversas del mar. Actualmente permanece parcialmente sumergido, convirtiéndose en un icono visual de
-                    Puerto
-                    Viejo y parte del paisaje marino característico de la comunidad.
-                </p>
+
+
+
+            <section class="attraction-info">
+
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Lanchón de Puerto Viejo ("Yankee Clipper").</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Puerto Viejo.
+                            Frente a la playa principal, cerca del sector de Kaya's Place.
+                        </p>
+                    </div>
+
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
+
+                        <p>
+                            El origen de este antiguo navío, conocido por los pobladores como el "Yankee
+                            Clipper", se remonta a la época de las compañías petroleras que operaron en la
+                            zona de Puerto Viejo. El muelle flotante recibía equipo destinado a proyectos de
+                            extracción de petróleo que finalmente nunca se llevaron a cabo.
+                        </p>
+                        <p>
+                            El barco terminó hundiéndose frente al sector de Kaya's Place debido al mal tiempo
+                            y a los fuertes vientos. Sin embargo, lejos de desaparecer, se convirtió en un
+                            símbolo urbano y en un punto de reunión para generaciones de jóvenes y vecinos,
+                            quienes lo adoptaron como parte de su paisaje cotidiano e histórico.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
+
+                        <ul>
+                            <li>Elemento distintivo del paisaje costero de Puerto Viejo.</li>
+                            <li>Punto fotográfico muy reconocido por visitantes y locales.</li>
+                            <li>Funciona como un "portal visual" al llegar a la playa principal.</li>
+                            <li>Introduce al visitante en la historia económica y marítima de la comunidad.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
+
+                        <ul>
+                            <li>Representa la historia marina y portuaria de Puerto Viejo, ligada a intentos de
+                                explotación petrolera.</li>
+                            <li>Ha sido un punto tradicional de reunión para las juventudes locales.</li>
+                            <li>Lugar donde generaciones aprendieron a nadar, tirarse al mar y compartir historias.</li>
+                            <li>Parte de la identidad visual y emocional de los habitantes del Caribe Sur.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
+
+                        <ul>
+
+                            <li>San José → Siquirres.</li>
+
+                            <li>Siquirres → Limón.</li>
+
+                            <li>Limón → Puerto Viejo.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Se puede visitar durante todo el año, los 7 días de la semana, a cualquier hora
+                            del día.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            El acceso es libre y no se requiere pago ni registro previo.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles, cabinas y hospedajes tipo Airbnb.</li>
+
+                            <li>Restaurantes, sodas y cafeterías.</li>
+
+                            <li>Quioscos de comida y bebidas, bares y comida rápida.</li>
+
+                            <li>Supermercados, minisúpers y artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Estación de buses.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
             </section>
-
-            <section>
-                <h2>Valor Turístico</h2>
-                <p>• Elemento distintivo del paisaje costero de Puerto Viejo.</p>
-                <p>• Punto fotográfico muy reconocido por visitantes y locales.</p>
-                <p>• Funciona como un “portal visual” al llegar a la playa principal.</p>
-                <p>• Introduce al visitante en la historia económica y marítima de la comunidad.</p>
-            </section>
-
-            <section>
-                <h2>Valor Cultural</h2>
-                <p>• Representa la historia marina y portuaria de Puerto Viejo, ligada a intentos de explotación
-                    petrolera.</p>
-                <p>• Ha sido un punto tradicional de reunión para las juventudes locales.</p>
-                <p>• Lugar donde generaciones aprendieron a nadar, tirarse al mar y compartir historias.</p>
-                <p>• Parte de la identidad visual y emocional de los habitantes del Caribe Sur.</p>
-            </section>
-
-            <section>
-                <h2>Accesibilidad y Rutas de Acceso</h2>
-                <p><strong>San José – Siquirres</strong><br>
-                    Ruta 27 / Ruta 32 • Vía asfaltada • Vehículo o bus • 95 km – aprox. 1 h 30 min
-                </p>
-
-                <p><strong>Siquirres – Limón</strong><br>
-                    Ruta 32 • Vía asfaltada • Vehículo o bus • 35 km – 30–45 min
-                </p>
-
-                <p><strong>Limón – Puerto Viejo</strong><br>
-                    Ruta 36 • Vía asfaltada • Vehículo o bus • aprox. 1 h 30 min
-                </p>
-            </section>
-
-            <section>
-                <h2>Época Propicia de Visita</h2>
-                <p>
-                    Se puede visitar durante todo el año, los 7 días de la semana.
-                </p>
-            </section>
-
-            <section>
-                <h2>Horario de Visita</h2>
-                <p>
-                    El sitio puede visitarse a cualquier hora del día.
-                </p>
-            </section>
-
-            <section>
-                <h2>Información Adicional</h2>
-                <p>
-                    El acceso es libre y no se requiere pago ni registro previo.
-                </p>
-            </section>
-
-            <section>
-                <h2>Servicios Turísticos Cercanos</h2>
-                <p>• Hoteles</p>
-                <p>• Cabinas</p>
-                <p>• Hospedajes tipo Airbnb</p>
-                <p>• Restaurantes y sodas</p>
-                <p>• Cafeterías</p>
-                <p>• Quioscos de comida y bebidas</p>
-                <p>• Bares y comida rápida</p>
-
-                <h2>Comercio y Otros Servicios</h2>
-                <p>• Supermercados</p>
-                <p>• Minisúpers</p>
-                <p>• Ventas de artesanías</p>
-            </section>
-
-            <section>
-                <h2>Servicios Básicos en Puerto Viejo</h2>
-                <p>• Agua potable</p>
-                <p>• Electricidad</p>
-                <p>• Telefonía</p>
-                <p>• Centro de salud</p>
-                <p>• Comisaría</p>
-                <p>• Servicio de taxis</p>
-                <p>• Internet</p>
-                <p>• Estación de buses</p>
-                <p>• Cajero automático</p>
-            </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
-    <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
