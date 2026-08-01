@@ -25,22 +25,36 @@
             </label>
 
             <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Mirador del Refugio de Vida Gandoca-Manzanillo</h1>
-        <p>Un mirador con vistas exuberantes al mar celeste, el bosque tropical y un importante legado cultural
-            ancestral.</p>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 01
+            </span>
+
+            <h1>Mirador del Refugio Gandoca-Manzanillo</h1>
+
+            <p>
+                Naturaleza, historia y cultura en uno de los paisajes más impresionantes del Caribe Sur de Costa Rica.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
+            <h2 class="section-heading">Descripción General</h2>
             <p>
                 El Mirador del Refugio Gandoca-Manzanillo ofrece impresionantes vistas de la costa caribeña,
                 caracterizada por su mar celeste, sus tonos verdes intensos y la brisa tropical que envuelve todo
@@ -53,8 +67,7 @@
                 y espiritual.
             </p>
 
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D1/1.JPEG" class="glightbox">
@@ -80,8 +93,8 @@
             </div>
 
 
-            <!-- Mapa -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+         
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.04989873302!2d-82.651906525997!3d9.639762579131798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6451052fde367%3A0x5a78b2faf8ac7a36!2sMirador%20Manzanillo!5e1!3m2!1sen!2scr!4v1764044321631!5m2!1sen!2scr"
@@ -89,196 +102,197 @@
                 </iframe>
             </div>
 
-            <!-- Botón regresar -->
+           
 
             <section class="attraction-info">
 
-                <h2 style="color:#00997d;">Información del atractivo / Attraction information</h2>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <!-- Nombre -->
-                <h3>Nombre del atractivo / Name of the attraction</h3>
-                <p><strong>ES:</strong> Mirador del Refugio Gandoca–Manzanillo (Refugio Nacional de Vida Silvestre Mixto
-                    Jairo Mora Sandoval).</p>
-                <p><strong>EN:</strong> Gandoca–Manzanillo Viewpoint (Jairo Mora Sandoval Mixed Wildlife Refuge).</p>
+                <div class="info-grid">
 
-                <!-- Ubicación -->
-                <h3>Ubicación / Location</h3>
-                <p>
-                    <strong>ES:</strong> Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita.
-                    Se ubica en la comunidad de Manzanillo, dentro del Refugio Nacional de Vida Silvestre Mixto Jairo
-                    Mora Sandoval
-                    Gandoca–Manzanillo, en la costa Caribe sur de Costa Rica.
-                </p>
-                <p>
-                    <strong>EN:</strong> Huetar Caribbean Region, Limón Province, Talamanca Canton, Cahuita District,
-                    in the community of Manzanillo, within the Jairo Mora Sandoval Gandoca–Manzanillo Mixed Wildlife
-                    Refuge,
-                    on Costa Rica’s southern Caribbean coast.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Mirador del Refugio Gandoca–Manzanillo (Refugio Nacional de Vida Silvestre Mixto Jairo Mora
+                            Sandoval).</p>
+                    </div>
 
-                <!-- Descripción general -->
-                <h3>Descripción general / General description</h3>
-                <p>
-                    <strong>ES:</strong> El mirador se ubica en una zona de gran riqueza natural, con vegetación
-                    tropical
-                    exuberante, acantilados costeros y abundante fauna caribeña. Desde este punto se observan el mar, la
-                    línea
-                    de playa y el bosque, ofreciendo una vista panorámica del Caribe Sur. El sitio está estrechamente
-                    ligado a un
-                    antiguo cementerio de los primeros pobladores de la zona, donde se encuentra la tumba de Peter
-                    Ancel,
-                    reconocido por la comunidad como uno de los primeros colonos de Manzanillo. Esta relación entre
-                    paisaje,
-                    memoria y comunidad le otorga un fuerte carácter simbólico.
-                </p>
-                <p>
-                    <strong>EN:</strong> The viewpoint is located in an area of remarkable natural richness, with lush
-                    tropical
-                    vegetation, coastal cliffs, and abundant Caribbean wildlife. From here visitors can admire the sea,
-                    the
-                    shoreline, and the surrounding forest, enjoying panoramic views of the southern Caribbean. The site
-                    is linked
-                    to an old cemetery where some of the area’s first settlers were buried, including Peter Ancel,
-                    remembered as
-                    one of Manzanillo’s early colonists. This connection between landscape, memory, and community gives
-                    the place
-                    a strong symbolic character.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita.
+                            Comunidad de Manzanillo, dentro del Refugio Nacional de Vida Silvestre Mixto
+                            Jairo Mora Sandoval Gandoca–Manzanillo.
+                        </p>
+                    </div>
 
-                <!-- Valor turístico -->
-                <h3>Valor turístico / Touristic value</h3>
-                <ul>
-                    <li><strong>ES:</strong> Mirador natural con vistas al mar Caribe, la costa y la vegetación
-                        tropical.</li>
-                    <li><strong>ES:</strong> Complementa las experiencias de senderismo y observación de la naturaleza
-                        dentro del refugio.</li>
-                    <li><strong>ES:</strong> Espacio ideal para fotografía de paisaje, avistamiento de fauna y disfrute
-                        tranquilo del entorno.</li>
-                    <li><strong>ES:</strong> Forma parte de un área protegida, lo que garantiza un ambiente sereno y
-                        cercano a la naturaleza.</li>
-                </ul>
-                <ul>
-                    <li><strong>EN:</strong> Natural viewpoint overlooking the Caribbean Sea, coastline and tropical
-                        vegetation.</li>
-                    <li><strong>EN:</strong> Enhances hiking and nature-watching experiences within the refuge.</li>
-                    <li><strong>EN:</strong> Suitable spot for landscape photography, wildlife observation and quiet
-                        contemplation.</li>
-                    <li><strong>EN:</strong> Located within a protected area, offering a peaceful environment close to
-                        nature.</li>
-                </ul>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <!-- Valor cultural -->
-                <h3>Valor cultural / Cultural value</h3>
-                <ul>
-                    <li><strong>ES:</strong> Asociado a un antiguo cementerio de los primeros pobladores de la zona.
-                    </li>
-                    <li><strong>ES:</strong> Tumba de Peter Ancel, figura recordada como uno de los primeros colonos de
-                        Manzanillo.</li>
-                    <li><strong>ES:</strong> Refleja el esfuerzo comunitario por preservar la vida silvestre y el
-                        patrimonio cultural.</li>
-                    <li><strong>ES:</strong> Funciona como alegoría del pasado de la comunidad y su relación con el mar
-                        y el bosque.</li>
-                </ul>
-                <ul>
-                    <li><strong>EN:</strong> Linked to a former cemetery of the area’s first settlers, tied to local
-                        historical memory.</li>
-                    <li><strong>EN:</strong> Resting place of Peter Ancel, remembered as one of Manzanillo’s first
-                        colonists.</li>
-                    <li><strong>EN:</strong> Represents community efforts to preserve both wildlife and cultural
-                        heritage.</li>
-                    <li><strong>EN:</strong> The viewpoint symbolizes the community’s past and its relationship with the
-                        sea and the forest.</li>
-                </ul>
+                        <p>
+                            El mirador ofrece una vista panorámica del mar Caribe, la playa y el bosque tropical.
+                            Además de su riqueza natural, posee un importante valor histórico por encontrarse junto
+                            al antiguo cementerio donde descansa Peter Ancel, reconocido como uno de los primeros
+                            colonos de Manzanillo.
+                        </p>
+                    </div>
 
-                <!-- Cómo llegar (resumen de accesos) -->
-                <h3>Cómo llegar / How to get there</h3>
-                <p><strong>ES:</strong> El mirador se visita normalmente como parte del recorrido dentro del Refugio
-                    Gandoca–Manzanillo.
-                    A nivel general, la ruta de acceso desde San José es:</p>
-                <ul>
-                    <li><strong>San José → Siquirres:</strong> Rutas 27 y 32, carretera asfaltada. Distancia aprox. 95
-                        km (1 h 30 min).</li>
-                    <li><strong>Siquirres → Limón:</strong> Ruta 32, carretera asfaltada. Distancia aprox. 35 km (30–45
-                        min).</li>
-                    <li><strong>Limón → Puerto Viejo:</strong> Ruta 36, carretera asfaltada. Tiempo aproximado: 1 h 30
-                        min.</li>
-                    <li><strong>Puerto Viejo → Manzanillo (Refugio Gandoca–Manzanillo):</strong> Ruta 36 y carretera
-                        secundaria asfaltada hacia Manzanillo, aprox. 13 km (20–30 min).</li>
-                </ul>
-                <p><strong>EN:</strong> The viewpoint is usually visited as part of a tour inside the Gandoca–Manzanillo
-                    Wildlife Refuge.
-                    In general, the access route from San José is:</p>
-                <ul>
-                    <li><strong>San José → Siquirres:</strong> Routes 27 and 32, paved road. About 95 km (approx. 1 h 30
-                        min).</li>
-                    <li><strong>Siquirres → Limón:</strong> Route 32, paved road. About 35 km (approx. 30–45 min).</li>
-                    <li><strong>Limón → Puerto Viejo:</strong> Route 36, paved road. Approx. 1 h 30 min.</li>
-                    <li><strong>Puerto Viejo → Manzanillo (Refuge):</strong> Route 36 plus a secondary paved road to
-                        Manzanillo, about 13 km (20–30 min).</li>
-                </ul>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <!-- Horario y época de visita -->
-                <h3>Horario y época de visita / Best time to visit</h3>
-                <p>
-                    <strong>ES:</strong> El sitio puede visitarse durante todo el año, preferiblemente en horario diurno
-                    (aprox. de 8:00 a. m. a 4:00 p. m.),
-                    cuando las condiciones de luz y clima facilitan la observación del paisaje y la fauna.
-                </p>
-                <p>
-                    <strong>EN:</strong> The site can be visited year-round, preferably during daylight hours (around
-                    8:00 a.m. to 4:00 p.m.),
-                    when weather and light conditions favor landscape and wildlife observation.
-                </p>
+                        <ul>
+                            <li>Vista panorámica del Caribe Sur.</li>
+                            <li>Fotografía de paisaje.</li>
+                            <li>Observación de fauna.</li>
+                            <li>Senderismo y naturaleza.</li>
+                            <li>Área protegida.</li>
+                        </ul>
 
-                <!-- Información adicional -->
-                <h3>Información adicional / Additional information</h3>
-                <p><strong>ES:</strong> El ingreso es libre, pero se solicita el pago de una <em>cuota voluntaria</em>
-                    para apoyar el mantenimiento y la gestión del lugar.</p>
-                <p><strong>EN:</strong> Admission is free, but a <em>voluntary fee</em> is requested to support site
-                    maintenance and management.</p>
+                    </div>
 
-                <!-- Servicios cercanos -->
-                <h3>Servicios turísticos cercanos / Nearby tourism services</h3>
-                <p><strong>ES:</strong> En la zona del Caribe Sur (Manzanillo, Puerto Viejo, Cahuita) es posible
-                    encontrar:</p>
-                <ul>
-                    <li>Hoteles, cabinas y hospedajes tipo Airbnb.</li>
-                    <li>Restaurantes, sodas, cafeterías y quioscos de comida y bebidas.</li>
-                    <li>Bares y opciones de comida rápida.</li>
-                    <li>Supermercados, minisúpers y ventas de artesanías.</li>
-                    <li>Servicios básicos como agua potable, electricidad, telefonía, centro de salud, comisaría, taxis,
-                        internet, cajeros automáticos y paradas de bus.</li>
-                </ul>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <p><strong>EN:</strong> In the surrounding South Caribbean area (Manzanillo, Puerto Viejo, Cahuita)
-                    visitors can find:</p>
-                <ul>
-                    <li>Hotels, cabins, and Airbnb-style accommodations.</li>
-                    <li>Restaurants, local eateries (sodas), coffee shops, and food/drink kiosks.</li>
-                    <li>Bars and fast-food options.</li>
-                    <li>Supermarkets, minimarkets, and souvenir shops.</li>
-                    <li>Basic services such as drinking water, electricity, telephone services, health centers, police,
-                        taxis, internet access, ATMs, and bus stops.</li>
-                </ul>
+                        <ul>
+                            <li>Antiguo cementerio de la comunidad.</li>
+                            <li>Tumba de Peter Ancel.</li>
+                            <li>Patrimonio histórico local.</li>
+                            <li>Relación entre comunidad y naturaleza.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
+
+                        <ul>
+
+                            <li>San José → Siquirres.</li>
+
+                            <li>Siquirres → Limón.</li>
+
+                            <li>Limón → Puerto Viejo.</li>
+
+                            <li>Puerto Viejo → Manzanillo.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Abierto durante todo el año.
+
+                            Horario recomendado:
+
+                            <strong>8:00 a.m. – 4:00 p.m.</strong>
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            Ingreso gratuito.
+
+                            Se solicita una contribución voluntaria para el mantenimiento del sitio.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles y cabinas.</li>
+
+                            <li>Restaurantes y sodas.</li>
+
+                            <li>Cafeterías.</li>
+
+                            <li>Supermercados.</li>
+
+                            <li>Artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Paradas de autobús.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
         </div>
     </main>
 
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
-    <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
