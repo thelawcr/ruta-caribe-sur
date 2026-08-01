@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laguna de Gandoca</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- GLightbox CSS -->
@@ -14,185 +13,285 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Laguna de Gandoca</h1>
-        <p>Un espacio natural rodeado de historia ancestral, biodiversidad y cultura viva del Caribe Sur.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 08
+            </span>
+
+            <h1>Laguna de Gandoca</h1>
+
+            <p>
+                Un espacio natural rodeado de historia ancestral, biodiversidad y cultura viva del Caribe Sur.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                La Laguna de Gandoca se encuentra rodeada por una comunidad multicultural con raíces jamaicanas,
-                nicaragüenses e indígenas, cuyos linajes se remontan al último rey de Talamanca. Este territorio es un
-                símbolo de resistencia indígena y afrodescendiente frente a intentos de exploración petrolera que
-                amenazaron su equilibrio ambiental.
+                La Laguna de Gandoca, también llamada Estero de Gandoca, es la única laguna costera del Caribe
+                Sur de Costa Rica. Se encuentra dentro del Refugio Nacional de Vida Silvestre Mixto Jairo Mora
+                Sandoval Gandoca–Manzanillo, en el distrito de Sixaola, cerca de la frontera con Panamá.
+            </p>
+            <p>
+                El entorno conserva vestigios del antiguo desarrollo maderero, infraestructura histórica como
+                una pista de aterrizaje abandonada y una profunda riqueza cultural. Gandoca es un territorio
+                multicultural poblado originalmente por comunidades afrocaribeñas, migrantes nicaragüenses y
+                pueblos indígenas. Muchas familias actuales descienden de antiguos líderes indígenas de
+                Talamanca, otorgando un fuerte valor ancestral y simbólico al lugar.
             </p>
 
-            <p>
-                Actualmente, el paisaje de la laguna está formado por bosques jóvenes, áreas de manglar, selva tropical
-                caribeña y una extraordinaria diversidad de fauna. La tranquilidad del entorno, combinada con su valor
-                histórico y cultural, hacen de Gandoca un destino ideal para el ecoturismo responsable y la conexión con
-                la naturaleza.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D8/1.jpg" class="glightbox">
-                    <img src="imgs/D8/1.jpg" alt="Laguna de Gandoca">
+                    <img src="imgs/D8/1.jpg" alt="Laguna de Gandoca 1">
                 </a>
 
                 <a href="imgs/D8/2.jpg" class="glightbox">
-                    <img src="imgs/D8/2.jpg" alt="Naturaleza en Gandoca 2">
+                    <img src="imgs/D8/2.jpg" alt="Laguna de Gandoca 2">
                 </a>
 
                 <a href="imgs/D8/3.jpg" class="glightbox">
-                    <img src="imgs/D8/3.jpg" alt="Naturaleza en Gandoca 3">
+                    <img src="imgs/D8/3.jpg" alt="Laguna de Gandoca 3">
                 </a>
 
                 <a href="imgs/D8/4.JPG" class="glightbox">
-                    <img src="imgs/D8/4.JPG" alt="Naturaleza en Gandoca 4">
+                    <img src="imgs/D8/4.JPG" alt="Laguna de Gandoca 4">
                 </a>
 
             </div>
 
 
-            <!-- Ubicación -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18105.11595779773!2d-82.6151738205084!3d9.578183583123538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64704a8965953%3A0xad29d08ceff50502!2sLaguna%20Gandoca!5e1!3m2!1sen!2scr!4v1765340058298!5m2!1sen!2scr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section>
 
-                <h2 style="color:#00997d;">Descripción General</h2>
 
-                <p>
-                    La Laguna de Gandoca, también llamada <strong>Estero de Gandoca</strong>, es la única laguna costera
-                    del
-                    Caribe Sur de Costa Rica. Se encuentra dentro del Refugio Nacional de Vida Silvestre Mixto
-                    Jairo Mora Sandoval Gandoca–Manzanillo, en el distrito de Sixaola, cerca de la frontera con Panamá.
-                </p>
 
-                <p>
-                    El entorno conserva vestigios del antiguo desarrollo maderero, infraestructura histórica como una
-                    pista de
-                    aterrizaje abandonada y una profunda riqueza cultural. Gandoca es un territorio multicultural
-                    poblado
-                    originalmente por comunidades afrocaribeñas, migrantes nicaragüenses y pueblos indígenas. Muchas
-                    familias
-                    actuales descienden de antiguos líderes indígenas de Talamanca, otorgando un fuerte valor ancestral
-                    y
-                    simbólico al lugar.
-                </p>
+            <section class="attraction-info">
 
-                <h2 style="color:#00997d; margin-top:30px;">Valor Turístico</h2>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <p>
-                    • Única laguna costera del Caribe Sur con alto atractivo escénico.<br>
-                    • Parte del humedal marino–costero declarado <strong>Sitio Ramsar</strong> desde 1995.<br>
-                    • Ubicada dentro del Refugio Gandoca–Manzanillo, con gran potencial para turismo de naturaleza y
-                    turismo comunitario.
-                </p>
+                <div class="info-grid">
 
-                <h2 style="color:#00997d; margin-top:30px;">Valor Cultural</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Laguna de Gandoca (Estero de Gandoca).</p>
+                    </div>
 
-                <p>
-                    • Ligada a uno de los primeros espacios colonizados del Caribe Sur. <br>
-                    • Fuerte memoria histórica de origen afrocaribeño, indígena y migraciones de Jamaica y Nicaragua.
-                    <br>
-                    • Presencia de linajes ancestrales vinculados a la historia indígena de Talamanca.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Sixaola,
+                            cerca de la frontera con Panamá. Dentro del Refugio Nacional de Vida Silvestre
+                            Mixto Jairo Mora Sandoval Gandoca–Manzanillo.
+                        </p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top:30px;">Accesibilidad y Rutas de Acceso</h2>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <p><strong>San José → Siquirres</strong><br>
-                    Ruta 27 / 32 — Vía asfaltada — Vehículo o bus — 95 km / aprox. 1 h 30 min
-                </p>
+                        <p>
+                            La Laguna de Gandoca se encuentra rodeada por una comunidad multicultural con
+                            raíces jamaicanas, nicaragüenses e indígenas, cuyos linajes se remontan al último
+                            rey de Talamanca. Este territorio es un símbolo de resistencia indígena y
+                            afrodescendiente frente a intentos de exploración petrolera que amenazaron su
+                            equilibrio ambiental.
+                        </p>
+                        <p>
+                            Actualmente, el paisaje de la laguna está formado por bosques jóvenes, áreas de
+                            manglar, selva tropical caribeña y una extraordinaria diversidad de fauna. La
+                            tranquilidad del entorno, combinada con su valor histórico y cultural, hacen de
+                            Gandoca un destino ideal para el ecoturismo responsable y la conexión con la
+                            naturaleza.
+                        </p>
+                    </div>
 
-                <p><strong>Siquirres → Limón</strong><br>
-                    Ruta 32 — Vía asfaltada — Vehículo o bus — 35 km / 30–45 min
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <p><strong>Limón → Puerto Viejo</strong><br>
-                    Ruta 36 — Vía asfaltada — aprox. 1 h 30 min
-                </p>
+                        <ul>
+                            <li>Única laguna costera del Caribe Sur con alto atractivo escénico.</li>
+                            <li>Parte del humedal marino-costero declarado Sitio Ramsar desde 1995.</li>
+                            <li>Gran potencial para turismo de naturaleza y turismo comunitario.</li>
+                        </ul>
 
-                <p><strong>Puerto Viejo → Laguna de Gandoca</strong><br>
-                    Ruta 36 + camino costero interno — Vía mayormente asfaltada con tramos en lastre — Vehículo, taxi o
-                    bicicleta<br>
-                    Distancia estimada: 16–20 km — 35 a 45 minutos
-                </p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top:30px;">Época Propicia de Visita</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <p>
-                    Puede visitarse todos los días. Se recomienda ir entre las <strong>8:00 a.m. y 4:00 p.m.</strong>,
-                    especialmente
-                    si se desea un recorrido en bote. No es aconsejable visitar la laguna de noche.
-                </p>
+                        <ul>
+                            <li>Ligada a uno de los primeros espacios colonizados del Caribe Sur.</li>
+                            <li>Fuerte memoria histórica de origen afrocaribeño, indígena y migraciones de Jamaica y
+                                Nicaragua.</li>
+                            <li>Presencia de linajes ancestrales vinculados a la historia indígena de Talamanca.</li>
+                        </ul>
 
-                <h2 style="color:#00997d; margin-top:30px;">Información Adicional</h2>
+                    </div>
 
-                <p>
-                    Para realizar un recorrido dentro de la laguna, es necesario contactar a guías locales autorizados
-                    para evitar
-                    riesgos y garantizar una experiencia segura.
-                </p>
+                    <div class="info-card full">
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Turísticos y Complementarios</h2>
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
 
-                <p><strong>En el atractivo:</strong><br>
-                    Debido a la naturaleza del entorno, no existen condiciones de accesibilidad para personas con
-                    discapacidad.
-                    Estas facilidades se encuentran en comunidades cercanas.
-                </p>
+                        <ul>
 
-                <p><strong>En Gandoca, Puerto Viejo y alrededores:</strong><br>
-                    Hoteles, cabinas, hospedajes Airbnb, restaurantes, sodas, cafeterías, quioscos, bares y comida
-                    rápida.
-                </p>
+                            <li>San José → Siquirres.</li>
 
-                <h2 style="color:#00997d; margin-top:30px;">Comercio y Otros Servicios</h2>
+                            <li>Siquirres → Limón.</li>
 
-                <p>
-                    Supermercados, minisúpers y ventas de artesanías.
-                </p>
+                            <li>Limón → Puerto Viejo.</li>
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Básicos</h2>
+                            <li>Puerto Viejo → Laguna de Gandoca (camino costero interno, mayormente asfaltado con
+                                tramos en lastre; 16–20 km, 35 a 45 min).</li>
 
-                <p>
-                    Agua potable, electricidad, telefonía, centro de salud, comisaría, servicio de taxis e internet.
-                </p>
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Puede visitarse todos los días. Se recomienda ir entre las
+
+                            <strong>8:00 a.m. y 4:00 p.m.</strong>, especialmente para recorridos en bote. No es
+                            aconsejable visitar la laguna de noche.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            Para realizar un recorrido dentro de la laguna es necesario contactar a guías
+                            locales autorizados para evitar riesgos y garantizar una experiencia segura. No
+                            cuenta con condiciones de accesibilidad para personas con discapacidad; estas
+                            facilidades se encuentran en comunidades cercanas.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles, cabinas y hospedajes tipo Airbnb.</li>
+
+                            <li>Restaurantes, sodas y cafeterías.</li>
+
+                            <li>Quioscos, bares y comida rápida.</li>
+
+                            <li>Supermercados, minisúpers y artesanías.</li>
+
+                            <li>Centro de salud.</li>
+
+                            <li>Comisaría.</li>
+
+                            <li>Taxis.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
-    <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
