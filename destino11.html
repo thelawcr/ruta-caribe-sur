@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cueva de Punta Uva - Tumba de José Hansel</title>
-
+    <title>Cueva de Punta Uva</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- GLightbox CSS -->
@@ -14,35 +13,63 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Cueva de Punta Uva (Tumba de José Hansel)</h1>
-        <p>Un sitio histórico y natural que forma parte de la identidad del Caribe Sur.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 11
+            </span>
+
+            <h1>Cueva de Punta Uva</h1>
+
+            <p>
+                Un sitio histórico y natural que forma parte de la identidad del Caribe Sur.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                La Cueva de Punta Uva, ubicada dentro del Refugio Nacional de Vida Silvestre Gandoca–Manzanillo, es una
-                formación geológica muy visitada por lugareños y turistas. Su entorno natural, compuesto por
-                arboledas, acantilados costeros y un mirador natural, la convierten en un punto escénico de gran
-                belleza.
+                La Cueva de Punta Uva, ubicada dentro del Refugio Nacional de Vida Silvestre
+                Gandoca–Manzanillo, es una formación geológica en forma de cueva que conecta con el mar, muy
+                visitada por lugareños y turistas. Su entorno natural, compuesto por arboledas, acantilados
+                costeros y un mirador natural, la convierten en un punto escénico de gran belleza.
+            </p>
+            <p>
+                Esta zona fue uno de los primeros lugares en ser nombrados y colonizados en el Caribe Sur. Fue
+                nombrada Punta Uva por José Hansel, originario de Bocas del Toro, Panamá, quien eligió este
+                nombre por la abundancia de árboles de uva costera en el sector. Su tumba aún permanece en la
+                zona, y gran parte de la comunidad de Puerto Viejo desciende de él, lo que convierte este sitio
+                en un punto histórico de referencia.
             </p>
 
-            <p>
-                Este lugar es también uno de los primeros puntos nombrados y poblados del Caribe Sur. Su nombre proviene
-                de **don José Hansel**, originario de Bocas del Toro, cuya tumba aún permanece en la zona. Una parte
-                importante de la comunidad local de Puerto Viejo desciende de él, lo que convierte este sitio en un
-                punto de referencia histórica y cultural.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D11/2.JPEG" class="glightbox">
@@ -72,152 +99,205 @@
             </div>
 
 
-            <!-- Ubicación -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10763.367514336103!2d-82.70622086682039!3d9.641022812430194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64580a4b85f5b%3A0x3748a90aebfcc72c!2sCueva%20Punta%20Uva!5e1!3m2!1sen!2scr!4v1765341946563!5m2!1sen!2scr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section>
 
-                <h2>Nombre del Atractivo</h2>
-                <p>Cueva de Punta Uva (tumba de José Hansel)</p>
 
-                <h2>Ubicación</h2>
-                <p>Región Huetar Caribe, provincia de Limón, cantón de Talamanca, distrito de Cahuita.</p>
 
-                <h2>Información General</h2>
-                <p>
-                    El nombre de Cueva de Punta Uva hace referencia a la formación geológica en forma de cueva que
-                    conecta con el mar.
-                    Es un punto escénico muy visitado por lugareños y turistas.
-                </p>
-                <p>
-                    Esta zona fue uno de los primeros lugares en ser nombrados y colonizados en el Caribe Sur.
-                    Fue nombrada Punta Uva por José Hansel, originario de Bocas del Toro, Panamá,
-                    quien eligió este nombre por la abundancia de árboles de uva costera en el sector.
-                </p>
-                <p>
-                    Su tumba se encuentra aún en la zona. Gran parte de la comunidad de Puerto Viejo desciende de él,
-                    lo que convierte este sitio en un punto histórico de referencia.
-                </p>
+            <section class="attraction-info">
 
-                <h2>Valor Turístico</h2>
-                <ul>
-                    <li>Hogar de un importante arrecife coralino.</li>
-                    <li>Ofrece vistas panorámicas al mar y a la costa caribeña.</li>
-                    <li>Punta Uva es considerada una de las 50 playas más bellas del mundo.</li>
-                </ul>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <h2>Valor Cultural</h2>
-                <ul>
-                    <li>Una de las primeras zonas colonizadas del área de Puerto Viejo.</li>
-                    <li>
-                        Representa un legado cultural para las comunidades indígenas y afrodescendientes debido al
-                        linaje
-                        que habitó la zona.
-                    </li>
-                    <li>Sus árboles ancestrales simbolizan conservación y resistencia comunitaria.</li>
-                </ul>
+                <div class="info-grid">
 
-                <h2>Accesibilidad y Rutas de Acceso</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Cueva de Punta Uva (Tumba de José Hansel).</p>
+                    </div>
 
-                <h3>San José – Siquirres</h3>
-                <ul>
-                    <li>Ruta 27 / Ruta 32</li>
-                    <li>Vía terrestre asfaltada</li>
-                    <li>Medio de transporte: vehículo / bus</li>
-                    <li>Distancia/tiempo: 95 km – aprox. 1 h 30 min</li>
-                </ul>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón de Talamanca, distrito de Cahuita.
+                            Dentro del Refugio Nacional de Vida Silvestre Gandoca–Manzanillo.
+                        </p>
+                    </div>
 
-                <h3>Siquirres – Limón</h3>
-                <ul>
-                    <li>Ruta 32</li>
-                    <li>Vía terrestre asfaltada</li>
-                    <li>Medio: vehículo / bus</li>
-                    <li>Distancia/tiempo: 35 km – aprox. 30–45 min</li>
-                </ul>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <h3>Limón – Puerto Viejo</h3>
-                <ul>
-                    <li>Ruta 36</li>
-                    <li>Vía terrestre asfaltada</li>
-                    <li>Medio: vehículo / bus</li>
-                    <li>Tiempo aprox.: 1 h 30 min</li>
-                </ul>
+                        <p>
+                            El nombre de Cueva de Punta Uva hace referencia a la formación geológica en forma
+                            de cueva que conecta con el mar. Es un punto escénico muy visitado por lugareños y
+                            turistas.
+                        </p>
+                        <p>
+                            Este lugar es también uno de los primeros puntos nombrados y poblados del Caribe
+                            Sur. Su nombre proviene de don José Hansel, originario de Bocas del Toro, cuya
+                            tumba aún permanece en la zona. Una parte importante de la comunidad local de
+                            Puerto Viejo desciende de él, lo que convierte este sitio en un punto de referencia
+                            histórica y cultural.
+                        </p>
+                    </div>
 
-                <h3>Puerto Viejo – Gandoca–Manzanillo</h3>
-                <ul>
-                    <li>Ruta 36, carretera secundaria hacia Manzanillo</li>
-                    <li>Vía terrestre asfaltada</li>
-                    <li>Medio: vehículo / bus</li>
-                    <li>Distancia/tiempo: 13 km – aprox. 20–30 min</li>
-                </ul>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <h3>Manzanillo – Punta Uva</h3>
-                <ul>
-                    <li>Tipo de vía: terrestre</li>
-                    <li>Medio: vehículo / bus</li>
-                    <li>Distancia/tiempo: 8 km – 10–15 min</li>
-                </ul>
+                        <ul>
+                            <li>Hogar de un importante arrecife coralino.</li>
+                            <li>Ofrece vistas panorámicas al mar y a la costa caribeña.</li>
+                            <li>Punta Uva es considerada una de las 50 playas más bellas del mundo.</li>
+                        </ul>
 
-                <h2>Época Propicia de Visita</h2>
-                <p>Puede visitarse todos los días de la semana.</p>
+                    </div>
 
-                <h2>Horario de Visita</h2>
-                <p>Se puede visitar a cualquier hora. Por seguridad, no se recomienda visitarlo de noche.</p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <h2>Información Adicional</h2>
-                <p>El ingreso es totalmente libre. No se requiere pago de cuota voluntaria.</p>
+                        <ul>
+                            <li>Una de las primeras zonas colonizadas del área de Puerto Viejo.</li>
+                            <li>Representa un legado cultural para las comunidades indígenas y afrodescendientes debido
+                                al linaje que habitó la zona.</li>
+                            <li>Sus árboles ancestrales simbolizan conservación y resistencia comunitaria.</li>
+                        </ul>
 
-                <h2>Servicios Turísticos y Complementarios en el Atractivo</h2>
-                <p>
-                    Por su naturaleza, no cuenta con infraestructura para personas con discapacidad.
-                    Sí posee señalización e información básica.
-                </p>
+                    </div>
 
-                <h2>Servicios Turísticos en Alrededores</h2>
-                <ul>
-                    <li>Hoteles, cabinas, hospedajes Airbnb</li>
-                    <li>Restaurantes, sodas, cafeterías, quioscos</li>
-                    <li>Bares, comida rápida</li>
-                    <li>Supermercados, minisúpers, ventas de artesanías</li>
-                </ul>
+                    <div class="info-card full">
 
-                <h2>Servicios Básicos</h2>
-                <ul>
-                    <li>Agua potable</li>
-                    <li>Electricidad</li>
-                    <li>Telefonía</li>
-                    <li>Centro de salud</li>
-                    <li>Comisaría</li>
-                    <li>Servicio de taxis</li>
-                    <li>Internet</li>
-                    <li>Cajero automático</li>
-                    <li>Parada de buses</li>
-                </ul>
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
+
+                        <ul>
+
+                            <li>San José → Siquirres.</li>
+
+                            <li>Siquirres → Limón.</li>
+
+                            <li>Limón → Puerto Viejo.</li>
+
+                            <li>Puerto Viejo → Gandoca–Manzanillo (13 km, 20–30 min).</li>
+
+                            <li>Manzanillo → Punta Uva (8 km, 10–15 min).</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Puede visitarse todos los días de la semana, a cualquier hora. Por seguridad, no se
+                            recomienda visitarlo de noche.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            El ingreso es totalmente libre. No se requiere pago ni cuota voluntaria. No cuenta
+                            con infraestructura para personas con discapacidad, aunque sí posee señalización e
+                            información básica.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles, cabinas y hospedajes tipo Airbnb.</li>
+
+                            <li>Restaurantes, sodas, cafeterías y quioscos.</li>
+
+                            <li>Bares y comida rápida.</li>
+
+                            <li>Supermercados, minisúpers y artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Paradas de autobús.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
-    <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
