@@ -7,11 +7,15 @@
     <title>Destinos Turísticos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
@@ -24,33 +28,50 @@
             </label>
 
             <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Descubre Nuestros Destinos Turísticos</h1>
-        <p>Explora los lugares más emblemáticos del Caribe Sur. Haz clic en cada destino para ver detalles, ubicación y
-            galería.</p>
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                CARIBE SUR · COSTA RICA
+            </span>
+
+            <h1>
+                Ruta Caribe Sur
+            </h1>
+
+            <p>
+                Descubre destinos donde la naturaleza, la historia y la cultura se unen en una experiencia única.
+            </p>
+
+            <a href="#destinos" class="hero-btn">
+                Descubrir la ruta
+            </a>
+
+        </div>
+
     </header>
 
     <!-- CARDS -->
     <main>
         <section id="destinos" class="cards-container">
 
-            <!-- PLANTILLA PROFESIONAL DE CARD -->
-            <!-- ESTRUCTURA: IMAGEN → NÚMERO → ICONO → TEXTO -->
-
-            <!-- CARD 1 -->
             <div class="card">
                 <img src="imgs/D1/4.JPEG" class="card-thumb" alt="Miniatura del destino">
 
                 <div class="route-number">1</div>
 
                 <div class="card-icon">
-                    <i class="bi bi-geo-alt-fill"></i>
+                    <i class="bi bi-arrow-up-right"></i>
                 </div>
 
                 <a href="destino1.html">
@@ -65,7 +86,9 @@
             <div class="card">
                 <img src="imgs/D2/1.JPEG" class="card-thumb">
                 <div class="route-number">2</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino2.html">
                     <h3>Isla Pirriplí</h3>
                     <p>Icono costero rodeado de aguas claras y paisaje tropical.</p>
@@ -76,7 +99,9 @@
             <div class="card">
                 <img src="imgs/D3/1.jpg" class="card-thumb">
                 <div class="route-number">3</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino3.html">
                     <h3>Casa de la Cultura Marcus Garvey</h3>
                     <p>Centro histórico y cultural afrocaribeño de Puerto Viejo.</p>
@@ -87,7 +112,9 @@
             <div class="card">
                 <img src="imgs/D4/1.jpg" class="card-thumb">
                 <div class="route-number">4</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino4.html">
                     <h3>Muelle de Cahuita</h3>
                     <p>Punto principal para tours, snorkel y conexión comunitaria.</p>
@@ -98,7 +125,9 @@
             <div class="card">
                 <img src="imgs/D5/1.jpg" class="card-thumb">
                 <div class="route-number">5</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino5.html">
                     <h3>Parque Nacional Cahuita</h3>
                     <p>Biodiversidad, senderos y cultura en un mismo lugar.</p>
@@ -109,7 +138,9 @@
             <div class="card">
                 <img src="imgs/D6/1.jpg" class="card-thumb">
                 <div class="route-number">6</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino6.html">
                     <h3>Puerto Vargas</h3>
                     <p>Senderos elevados, bosque costero y naturaleza intacta.</p>
@@ -120,7 +151,9 @@
             <div class="card">
                 <img src="imgs/D7/2.JPEG" class="card-thumb">
                 <div class="route-number">7</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino7.html">
                     <h3>Barco Hundido de Manzanillo</h3>
                     <p>Naufragio icónico envuelto por arena dorada y mar azul.</p>
@@ -131,7 +164,9 @@
             <div class="card">
                 <img src="imgs/D8/1.jpg" class="card-thumb">
                 <div class="route-number">8</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino8.html">
                     <h3>Laguna de Gandoca</h3>
                     <p>Ecosistema cultural y natural protegido del Caribe Sur.</p>
@@ -142,7 +177,9 @@
             <div class="card">
                 <img src="imgs/D9/1.JPEG" class="card-thumb">
                 <div class="route-number">9</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino9.html">
                     <h3>Iglesia Bautista de Manzanillo</h3>
                     <p>Patrimonio vivo para la identidad y cultura de la comunidad.</p>
@@ -153,7 +190,9 @@
             <div class="card">
                 <img src="imgs/D10/1.jpg" class="card-thumb">
                 <div class="route-number">10</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino10.html">
                     <h3>Sendero de Cocles</h3>
                     <p>Histórico camino utilizado por los primeros pobladores.</p>
@@ -164,7 +203,9 @@
             <div class="card">
                 <img src="imgs/D11/1.jpg" class="card-thumb">
                 <div class="route-number">11</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino11.html">
                     <h3>Cueva de Punta Uva</h3>
                     <p>Formación natural ligada a historia ancestral de la zona.</p>
@@ -175,7 +216,9 @@
             <div class="card">
                 <img src="imgs/D12/1.jpeg" class="card-thumb">
                 <div class="route-number">12</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino12.html">
                     <h3>Casa de la Cultura Walter Ferguson</h3>
                     <p>Museo y espacio dedicado al calipso y patrimonio cultural.</p>
@@ -186,7 +229,9 @@
             <div class="card">
                 <img src="imgs/D13/1.png" class="card-thumb">
                 <div class="route-number">13</div>
-                <div class="card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="card-icon">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
                 <a href="destino13.html">
                     <h3>Lanchón de Puerto Viejo</h3>
                     <p>Antiguo muelle flotante convertido en símbolo comunitario.</p>
@@ -196,13 +241,69 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
-    </footer>
 
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
+    </footer>
+    <script>
+
+        const navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 80) {
+
+                navbar.classList.add("scrolled");
+
+            } else {
+
+                navbar.classList.remove("scrolled");
+
+            }
+
+        });
+
+    </script>
 </body>
 
 </html>
