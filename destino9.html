@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iglesia Bautista de Manzanillo</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- GLightbox CSS -->
@@ -14,36 +13,62 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Iglesia Bautista de Manzanillo</h1>
-        <p>Un espacio de identidad, espiritualidad y preservación cultural del Caribe Sur.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 09
+            </span>
+
+            <h1>Iglesia Bautista de Manzanillo</h1>
+
+            <p>
+                Un espacio de identidad, espiritualidad y preservación cultural del Caribe Sur.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                La Iglesia Bautista de Manzanillo es un importante lugar de culto y encuentro comunitario, considerado
-                un
-                patrimonio vivo para la recuperación de la identidad cultural del Caribe Sur. Su historia está ligada a
-                la
-                comunidad afrocaribeña y a los procesos de fortalecimiento espiritual, lingüístico y social de la zona.
+                La Iglesia Bautista de Manzanillo es un templo protestante que funciona como un lugar de culto
+                activo y un espacio de reunión para la comunidad local. Fue fundada alrededor del año 2002 por
+                el pastor Spencer y es considerada una de las primeras iglesias de la comunidad, construida
+                gracias a las donaciones y el esfuerzo colectivo de los habitantes de Manzanillo.
+            </p>
+            <p>
+                Su arquitectura mantiene elementos característicos del diseño caribeño, lo que refuerza su
+                vínculo con la identidad afrodescendiente del lugar. Muchos de sus sermones se imparten en
+                creole limonense, contribuyendo a la preservación del idioma y a la transmisión de la memoria
+                lingüística y cultural del Caribe costarricense.
             </p>
 
-            <p>
-                Fundada en 2002 por el pastor Spencer, la iglesia destaca por ofrecer sermones en <strong>creole
-                    limonense</strong>, contribuyendo a la preservación y revitalización de este idioma tradicional.
-                Arquitectónicamente, conserva un estilo caribeño que refuerza los vínculos culturales y la memoria
-                histórica de Manzanillo.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D9/1.JPEG" class="glightbox">
@@ -57,137 +82,205 @@
             </div>
 
 
-            <!-- Ubicación -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102423.19346473512!2d-82.72798878652927!3d9.560957815746345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64533b2183f6b%3A0x9245aaf874c0034b!2sFirst%20Baptist%20Church!5e1!3m2!1sen!2scr!4v1765340412261!5m2!1sen!2scr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section>
 
-                <h2 style="color:#00997d;">Descripción General</h2>
 
-                <p>
-                    La Iglesia Bautista de Manzanillo es un templo protestante que funciona como un lugar de culto
-                    activo y un
-                    espacio de reunión para la comunidad local. Fue fundada alrededor del año 2002 por el pastor Spencer
-                    y es
-                    considerada una de las primeras iglesias de la comunidad, construida gracias a las donaciones y el
-                    esfuerzo
-                    colectivo de los habitantes de Manzanillo.
-                </p>
 
-                <p>
-                    Su arquitectura mantiene elementos característicos del diseño caribeño, lo que refuerza su vínculo
-                    con la
-                    identidad afrodescendiente del lugar. Además de cumplir funciones religiosas, la iglesia es un
-                    espacio
-                    comunitario dinámico donde se realizan actividades educativas, reuniones y encuentros que fortalecen
-                    la
-                    cohesión social.
-                </p>
+            <section class="attraction-info">
 
-                <p>
-                    Muchos de sus sermones se imparten en <strong>creole limonense</strong>, contribuyendo a la
-                    preservación del
-                    idioma y a la transmisión de la memoria lingüística y cultural del Caribe costarricense.
-                    Actualmente, la iglesia
-                    permanece en muy buen estado y continúa siendo un pilar espiritual y cultural para los vecinos de
-                    Manzanillo.
-                </p>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <h2 style="color:#00997d; margin-top:30px;">Valor Turístico</h2>
+                <div class="info-grid">
 
-                <p>
-                    • Permite conocer de cerca un templo caribeño en funcionamiento.<br>
-                    • Está inserto en una comunidad costera con fuerte identidad afrodescendiente.<br>
-                    • Facilita la apreciación de la arquitectura religiosa local.<br>
-                    • Constituye un atractivo cultural sencillo, auténtico y representativo del Caribe Sur.
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Iglesia Bautista de Manzanillo.</p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top:30px;">Valor Cultural</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita,
+                            comunidad de Manzanillo.
+                        </p>
+                    </div>
 
-                <p>
-                    • Es un pilar cultural para la comunidad de Manzanillo.<br>
-                    • Funciona como punto de reunión para vecinos y visitantes.<br>
-                    • Es un espacio educativo y de transmisión de valores comunitarios.<br>
-                    • Es clave para la conservación del <strong>creole limonense</strong>.<br>
-                    • Se considera un patrimonio cultural vivo del territorio.
-                </p>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <h2 style="color:#00997d; margin-top:30px;">Accesibilidad y Rutas de Acceso</h2>
+                        <p>
+                            La Iglesia Bautista de Manzanillo es un importante lugar de culto y encuentro
+                            comunitario, considerado un patrimonio vivo para la recuperación de la identidad
+                            cultural del Caribe Sur. Su historia está ligada a la comunidad afrocaribeña y a
+                            los procesos de fortalecimiento espiritual, lingüístico y social de la zona.
+                        </p>
+                        <p>
+                            Además de cumplir funciones religiosas, la iglesia es un espacio comunitario
+                            dinámico donde se realizan actividades educativas, reuniones y encuentros que
+                            fortalecen la cohesión social. Actualmente permanece en muy buen estado y continúa
+                            siendo un pilar espiritual y cultural para los vecinos de Manzanillo.
+                        </p>
+                    </div>
 
-                <p><strong>San José – Siquirres</strong><br>
-                    Ruta 27 / Ruta 32 — Vía asfaltada — Vehículo o bus — 95 km — aprox. 1 h 30 min
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <p><strong>Siquirres – Limón</strong><br>
-                    Ruta 32 — Vía asfaltada — Vehículo o bus — 35 km — aprox. 30–45 min
-                </p>
+                        <ul>
+                            <li>Permite conocer de cerca un templo caribeño en funcionamiento.</li>
+                            <li>Está inserto en una comunidad costera con fuerte identidad afrodescendiente.</li>
+                            <li>Facilita la apreciación de la arquitectura religiosa local.</li>
+                            <li>Constituye un atractivo cultural sencillo, auténtico y representativo del Caribe Sur.
+                            </li>
+                        </ul>
 
-                <p><strong>Limón – Puerto Viejo</strong><br>
-                    Ruta 36 — Vía asfaltada — Vehículo o bus — aprox. 1 h 30 min
-                </p>
+                    </div>
 
-                <p><strong>Puerto Viejo – Iglesia Bautista de Manzanillo</strong><br>
-                    Ruta 36 + carretera secundaria hacia Manzanillo — Vía asfaltada — Vehículo o bus — 13 km — 20–30 min
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Turísticos y Complementarios en el Atractivo</h2>
+                        <ul>
+                            <li>Es un pilar cultural para la comunidad de Manzanillo.</li>
+                            <li>Funciona como punto de reunión para vecinos y visitantes.</li>
+                            <li>Es clave para la conservación del creole limonense.</li>
+                            <li>Se considera un patrimonio cultural vivo del territorio.</li>
+                        </ul>
 
-                <p>
-                    Debido a la naturaleza del lugar, la iglesia no cuenta con condiciones especiales de accesibilidad
-                    para
-                    personas con discapacidad.
-                </p>
+                    </div>
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Turísticos en los Alrededores</h2>
+                    <div class="info-card full">
 
-                <p>
-                    • Hoteles y cabinas<br>
-                    • Hospedajes tipo Airbnb<br>
-                    • Restaurantes y sodas<br>
-                    • Cafeterías<br>
-                    • Quioscos de comida y bebidas<br>
-                    • Bares<br>
-                    • Comida rápida
-                </p>
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
 
-                <h2 style="color:#00997d; margin-top:30px;">Comercio y Otros Servicios</h2>
+                        <ul>
 
-                <p>
-                    Supermercados, minisúpers y ventas de artesanías.
-                </p>
+                            <li>San José → Siquirres.</li>
 
-                <h2 style="color:#00997d; margin-top:30px;">Servicios Básicos</h2>
+                            <li>Siquirres → Limón.</li>
 
-                <p>
-                    Agua potable, electricidad, telefonía, centro de salud, comisaría, servicio de taxis, internet,
-                    cajero
-                    automático y parada de buses.
-                </p>
+                            <li>Limón → Puerto Viejo.</li>
+
+                            <li>Puerto Viejo → Manzanillo (carretera secundaria, 13 km, 20–30 min).</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Consultar horarios de servicios y actividades directamente con la comunidad.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            Debido a la naturaleza del lugar, la iglesia no cuenta con condiciones especiales
+                            de accesibilidad para personas con discapacidad.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles y cabinas.</li>
+
+                            <li>Hospedajes tipo Airbnb.</li>
+
+                            <li>Restaurantes, sodas y cafeterías.</li>
+
+                            <li>Quioscos de comida y bebidas, bares y comida rápida.</li>
+
+                            <li>Supermercados, minisúpers y artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Paradas de autobús.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
-    <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
