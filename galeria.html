@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <style>
+        /* ===== Estilos específicos de la galería con filtros ===== */
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 30px 0 45px;
+        }
+
+        .filter-btn {
+            padding: 10px 22px;
+            border-radius: 50px;
+            background: #fff;
+            color: var(--text);
+            font-size: .85rem;
+            font-weight: 600;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+
+        .gallery-item {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            border-radius: 18px;
+        }
+
+        .gallery-item .tag {
+            position: absolute;
+            left: 12px;
+            bottom: 12px;
+            background: rgba(11, 110, 110, .85);
+            color: #fff;
+            font-size: .72rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 50px;
+            backdrop-filter: blur(6px);
+        }
+
+        .gallery-item img {
+            margin: 0;
+        }
+
+        /* ===== Responsive: galería con filtros ===== */
+        @media (max-width: 768px) {
+
+            .filter-bar {
+                gap: 8px;
+                margin: 20px 0 30px;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 8px;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .filter-btn {
+                flex-shrink: 0;
+                padding: 9px 18px;
+                font-size: .8rem;
+            }
+
+            .gallery-item .tag {
+                font-size: .65rem;
+                padding: 5px 12px;
+                left: 8px;
+                bottom: 8px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .filter-btn {
+                padding: 8px 15px;
+                font-size: .75rem;
+            }
+
+            .gallery-item .tag {
+                font-size: .6rem;
+                padding: 4px 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                RUTA CARIBE SUR
+            </span>
+
+            <h1>Galería</h1>
+
+            <p>
+                Explora en imágenes los 13 destinos de la Ruta Caribe Sur. Filtra por destino o mira todas las fotos
+                juntas.
+            </p>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container" id="contenido">
+
+            <h2 class="section-heading" style="margin-top:40px;">Filtrar por destino</h2>
+
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="d1">Mirador Gandoca-Manzanillo</button>
+                <button class="filter-btn" data-filter="d2">Isla Pirriplí</button>
+                <button class="filter-btn" data-filter="d3">Casa Marcus Garvey</button>
+                <button class="filter-btn" data-filter="d4">Muelle de Cahuita</button>
+                <button class="filter-btn" data-filter="d5">Parque Nacional Cahuita</button>
+                <button class="filter-btn" data-filter="d6">Puerto Vargas</button>
+                <button class="filter-btn" data-filter="d7">Barco Hundido</button>
+                <button class="filter-btn" data-filter="d8">Laguna de Gandoca</button>
+                <button class="filter-btn" data-filter="d9">Iglesia Bautista</button>
+                <button class="filter-btn" data-filter="d10">Sendero de Cocles</button>
+                <button class="filter-btn" data-filter="d11">Cueva de Punta Uva</button>
+                <button class="filter-btn" data-filter="d12">Casa Walter Ferguson</button>
+                <button class="filter-btn" data-filter="d13">Lanchón Puerto Viejo</button>
+            </div>
+
+            <div class="gallery" id="gallery-grid">
+
+                <!-- Destino 1 -->
+                <a href="imgs/D1/1.JPEG" class="glightbox gallery-item" data-destino="d1"
+                    data-glightbox="title: Mirador Gandoca-Manzanillo"><img src="imgs/D1/1.JPEG"
+                        alt="Mirador Gandoca-Manzanillo 1"><span class="tag">Mirador Gandoca-Manzanillo</span></a>
+                <a href="imgs/D1/2.JPEG" class="glightbox gallery-item" data-destino="d1"
+                    data-glightbox="title: Mirador Gandoca-Manzanillo"><img src="imgs/D1/2.JPEG"
+                        alt="Mirador Gandoca-Manzanillo 2"><span class="tag">Mirador Gandoca-Manzanillo</span></a>
+                <a href="imgs/D1/3.JPEG" class="glightbox gallery-item" data-destino="d1"
+                    data-glightbox="title: Mirador Gandoca-Manzanillo"><img src="imgs/D1/3.JPEG"
+                        alt="Mirador Gandoca-Manzanillo 3"><span class="tag">Mirador Gandoca-Manzanillo</span></a>
+                <a href="imgs/D1/4.JPEG" class="glightbox gallery-item" data-destino="d1"
+                    data-glightbox="title: Mirador Gandoca-Manzanillo"><img src="imgs/D1/4.JPEG"
+                        alt="Mirador Gandoca-Manzanillo 4"><span class="tag">Mirador Gandoca-Manzanillo</span></a>
+                <a href="imgs/D1/5.JPEG" class="glightbox gallery-item" data-destino="d1"
+                    data-glightbox="title: Mirador Gandoca-Manzanillo"><img src="imgs/D1/5.JPEG"
+                        alt="Mirador Gandoca-Manzanillo 5"><span class="tag">Mirador Gandoca-Manzanillo</span></a>
+
+                <!-- Destino 2 -->
+                <a href="imgs/D2/1.JPEG" class="glightbox gallery-item" data-destino="d2"
+                    data-glightbox="title: Isla Pirriplí"><img src="imgs/D2/1.JPEG" alt="Isla Pirriplí 1"><span
+                        class="tag">Isla Pirriplí</span></a>
+                <a href="imgs/D2/2.JPEG" class="glightbox gallery-item" data-destino="d2"
+                    data-glightbox="title: Isla Pirriplí"><img src="imgs/D2/2.JPEG" alt="Isla Pirriplí 2"><span
+                        class="tag">Isla Pirriplí</span></a>
+                <a href="imgs/D2/3.jpg" class="glightbox gallery-item" data-destino="d2"
+                    data-glightbox="title: Isla Pirriplí"><img src="imgs/D2/3.jpg" alt="Isla Pirriplí 3"><span
+                        class="tag">Isla Pirriplí</span></a>
+                <a href="imgs/D2/4.jpg" class="glightbox gallery-item" data-destino="d2"
+                    data-glightbox="title: Isla Pirriplí"><img src="imgs/D2/4.jpg" alt="Isla Pirriplí 4"><span
+                        class="tag">Isla Pirriplí</span></a>
+
+                <!-- Destino 3 -->
+                <a href="imgs/D3/1.jpg" class="glightbox gallery-item" data-destino="d3"
+                    data-glightbox="title: Casa de la Cultura Marcus Garvey"><img src="imgs/D3/1.jpg"
+                        alt="Casa Marcus Garvey 1"><span class="tag">Casa Marcus Garvey</span></a>
+                <a href="imgs/D3/2.png" class="glightbox gallery-item" data-destino="d3"
+                    data-glightbox="title: Casa de la Cultura Marcus Garvey"><img src="imgs/D3/2.png"
+                        alt="Casa Marcus Garvey 2"><span class="tag">Casa Marcus Garvey</span></a>
+
+                <!-- Destino 4 -->
+                <a href="imgs/D4/1.jpg" class="glightbox gallery-item" data-destino="d4"
+                    data-glightbox="title: Muelle de Cahuita"><img src="imgs/D4/1.jpg" alt="Muelle de Cahuita 1"><span
+                        class="tag">Muelle de Cahuita</span></a>
+                <a href="imgs/D4/2.jpg" class="glightbox gallery-item" data-destino="d4"
+                    data-glightbox="title: Muelle de Cahuita"><img src="imgs/D4/2.jpg" alt="Muelle de Cahuita 2"><span
+                        class="tag">Muelle de Cahuita</span></a>
+                <a href="imgs/D4/3.jpg" class="glightbox gallery-item" data-destino="d4"
+                    data-glightbox="title: Muelle de Cahuita"><img src="imgs/D4/3.jpg" alt="Muelle de Cahuita 3"><span
+                        class="tag">Muelle de Cahuita</span></a>
+                <a href="imgs/D4/4.jpg" class="glightbox gallery-item" data-destino="d4"
+                    data-glightbox="title: Muelle de Cahuita"><img src="imgs/D4/4.jpg" alt="Muelle de Cahuita 4"><span
+                        class="tag">Muelle de Cahuita</span></a>
+
+                <!-- Destino 5 -->
+                <a href="imgs/D5/1.jpg" class="glightbox gallery-item" data-destino="d5"
+                    data-glightbox="title: Parque Nacional Cahuita"><img src="imgs/D5/1.jpg"
+                        alt="Parque Nacional Cahuita 1"><span class="tag">Parque Nacional Cahuita</span></a>
+                <a href="imgs/D5/2.jpg" class="glightbox gallery-item" data-destino="d5"
+                    data-glightbox="title: Parque Nacional Cahuita"><img src="imgs/D5/2.jpg"
+                        alt="Parque Nacional Cahuita 2"><span class="tag">Parque Nacional Cahuita</span></a>
+                <a href="imgs/D5/3.png" class="glightbox gallery-item" data-destino="d5"
+                    data-glightbox="title: Parque Nacional Cahuita"><img src="imgs/D5/3.png"
+                        alt="Parque Nacional Cahuita 3"><span class="tag">Parque Nacional Cahuita</span></a>
+                <a href="imgs/D5/4.jpg" class="glightbox gallery-item" data-destino="d5"
+                    data-glightbox="title: Parque Nacional Cahuita"><img src="imgs/D5/4.jpg"
+                        alt="Parque Nacional Cahuita 4"><span class="tag">Parque Nacional Cahuita</span></a>
+                <a href="imgs/D5/5.jpg" class="glightbox gallery-item" data-destino="d5"
+                    data-glightbox="title: Parque Nacional Cahuita"><img src="imgs/D5/5.jpg"
+                        alt="Parque Nacional Cahuita 5"><span class="tag">Parque Nacional Cahuita</span></a>
+
+                <!-- Destino 6 -->
+                <a href="imgs/D6/1.jpg" class="glightbox gallery-item" data-destino="d6"
+                    data-glightbox="title: Puerto Vargas"><img src="imgs/D6/1.jpg" alt="Puerto Vargas 1"><span
+                        class="tag">Puerto Vargas</span></a>
+                <a href="imgs/D6/2.jpg" class="glightbox gallery-item" data-destino="d6"
+                    data-glightbox="title: Puerto Vargas"><img src="imgs/D6/2.jpg" alt="Puerto Vargas 2"><span
+                        class="tag">Puerto Vargas</span></a>
+                <a href="imgs/D6/3.jpg" class="glightbox gallery-item" data-destino="d6"
+                    data-glightbox="title: Puerto Vargas"><img src="imgs/D6/3.jpg" alt="Puerto Vargas 3"><span
+                        class="tag">Puerto Vargas</span></a>
+                <a href="imgs/D6/4.jpg" class="glightbox gallery-item" data-destino="d6"
+                    data-glightbox="title: Puerto Vargas"><img src="imgs/D6/4.jpg" alt="Puerto Vargas 4"><span
+                        class="tag">Puerto Vargas</span></a>
+
+                <!-- Destino 7 -->
+                <a href="imgs/D7/1.JPEG" class="glightbox gallery-item" data-destino="d7"
+                    data-glightbox="title: Barco Hundido de Manzanillo"><img src="imgs/D7/1.JPEG"
+                        alt="Barco Hundido 1"><span class="tag">Barco Hundido</span></a>
+                <a href="imgs/D7/2.JPEG" class="glightbox gallery-item" data-destino="d7"
+                    data-glightbox="title: Barco Hundido de Manzanillo"><img src="imgs/D7/2.JPEG"
+                        alt="Barco Hundido 2"><span class="tag">Barco Hundido</span></a>
+
+                <!-- Destino 8 -->
+                <a href="imgs/D8/1.jpg" class="glightbox gallery-item" data-destino="d8"
+                    data-glightbox="title: Laguna de Gandoca"><img src="imgs/D8/1.jpg" alt="Laguna de Gandoca 1"><span
+                        class="tag">Laguna de Gandoca</span></a>
+                <a href="imgs/D8/2.jpg" class="glightbox gallery-item" data-destino="d8"
+                    data-glightbox="title: Laguna de Gandoca"><img src="imgs/D8/2.jpg" alt="Laguna de Gandoca 2"><span
+                        class="tag">Laguna de Gandoca</span></a>
+                <a href="imgs/D8/3.jpg" class="glightbox gallery-item" data-destino="d8"
+                    data-glightbox="title: Laguna de Gandoca"><img src="imgs/D8/3.jpg" alt="Laguna de Gandoca 3"><span
+                        class="tag">Laguna de Gandoca</span></a>
+                <a href="imgs/D8/4.JPG" class="glightbox gallery-item" data-destino="d8"
+                    data-glightbox="title: Laguna de Gandoca"><img src="imgs/D8/4.JPG" alt="Laguna de Gandoca 4"><span
+                        class="tag">Laguna de Gandoca</span></a>
+
+                <!-- Destino 9 -->
+                <a href="imgs/D9/1.JPEG" class="glightbox gallery-item" data-destino="d9"
+                    data-glightbox="title: Iglesia Bautista de Manzanillo"><img src="imgs/D9/1.JPEG"
+                        alt="Iglesia Bautista 1"><span class="tag">Iglesia Bautista</span></a>
+                <a href="imgs/D9/2.JPEG" class="glightbox gallery-item" data-destino="d9"
+                    data-glightbox="title: Iglesia Bautista de Manzanillo"><img src="imgs/D9/2.JPEG"
+                        alt="Iglesia Bautista 2"><span class="tag">Iglesia Bautista</span></a>
+
+                <!-- Destino 10 -->
+                <a href="imgs/D10/1.jpg" class="glightbox gallery-item" data-destino="d10"
+                    data-glightbox="title: Sendero de Cocles"><img src="imgs/D10/1.jpg" alt="Sendero de Cocles 1"><span
+                        class="tag">Sendero de Cocles</span></a>
+                <a href="imgs/D10/2.png" class="glightbox gallery-item" data-destino="d10"
+                    data-glightbox="title: Sendero de Cocles"><img src="imgs/D10/2.png" alt="Sendero de Cocles 2"><span
+                        class="tag">Sendero de Cocles</span></a>
+                <a href="imgs/D10/3.jpg" class="glightbox gallery-item" data-destino="d10"
+                    data-glightbox="title: Sendero de Cocles"><img src="imgs/D10/3.jpg" alt="Sendero de Cocles 3"><span
+                        class="tag">Sendero de Cocles</span></a>
+                <a href="imgs/D10/4.JPEG" class="glightbox gallery-item" data-destino="d10"
+                    data-glightbox="title: Sendero de Cocles"><img src="imgs/D10/4.JPEG" alt="Sendero de Cocles 4"><span
+                        class="tag">Sendero de Cocles</span></a>
+
+                <!-- Destino 11 -->
+                <a href="imgs/D11/1.jpg" class="glightbox gallery-item" data-destino="d11"
+                    data-glightbox="title: Cueva de Punta Uva"><img src="imgs/D11/1.jpg"
+                        alt="Cueva de Punta Uva 1"><span class="tag">Cueva de Punta Uva</span></a>
+                <a href="imgs/D11/2.JPEG" class="glightbox gallery-item" data-destino="d11"
+                    data-glightbox="title: Cueva de Punta Uva"><img src="imgs/D11/2.JPEG"
+                        alt="Cueva de Punta Uva 2"><span class="tag">Cueva de Punta Uva</span></a>
+                <a href="imgs/D11/3.JPEG" class="glightbox gallery-item" data-destino="d11"
+                    data-glightbox="title: Cueva de Punta Uva"><img src="imgs/D11/3.JPEG"
+                        alt="Cueva de Punta Uva 3"><span class="tag">Cueva de Punta Uva</span></a>
+                <a href="imgs/D11/4.JPEG" class="glightbox gallery-item" data-destino="d11"
+                    data-glightbox="title: Cueva de Punta Uva"><img src="imgs/D11/4.JPEG"
+                        alt="Cueva de Punta Uva 4"><span class="tag">Cueva de Punta Uva</span></a>
+                <a href="imgs/D11/5.JPEG" class="glightbox gallery-item" data-destino="d11"
+                    data-glightbox="title: Cueva de Punta Uva"><img src="imgs/D11/5.JPEG"
+                        alt="Cueva de Punta Uva 5"><span class="tag">Cueva de Punta Uva</span></a>
+                <a href="imgs/D11/7.JPEG" class="glightbox gallery-item" data-destino="d11"
+                    data-glightbox="title: Cueva de Punta Uva"><img src="imgs/D11/7.JPEG"
+                        alt="Cueva de Punta Uva 6"><span class="tag">Cueva de Punta Uva</span></a>
+
+                <!-- Destino 12 -->
+                <a href="imgs/D12/1.jpeg" class="glightbox gallery-item" data-destino="d12"
+                    data-glightbox="title: Casa de la Cultura Walter Ferguson"><img src="imgs/D12/1.jpeg"
+                        alt="Casa Walter Ferguson 1"><span class="tag">Casa Walter Ferguson</span></a>
+                <a href="imgs/D12/2.jpg" class="glightbox gallery-item" data-destino="d12"
+                    data-glightbox="title: Casa de la Cultura Walter Ferguson"><img src="imgs/D12/2.jpg"
+                        alt="Casa Walter Ferguson 2"><span class="tag">Casa Walter Ferguson</span></a>
+                <a href="imgs/D12/3.JPG" class="glightbox gallery-item" data-destino="d12"
+                    data-glightbox="title: Casa de la Cultura Walter Ferguson"><img src="imgs/D12/3.JPG"
+                        alt="Casa Walter Ferguson 3"><span class="tag">Casa Walter Ferguson</span></a>
+
+                <!-- Destino 13 -->
+                <a href="imgs/D13/1.png" class="glightbox gallery-item" data-destino="d13"
+                    data-glightbox="title: Lanchón de Puerto Viejo"><img src="imgs/D13/1.png"
+                        alt="Lanchón Puerto Viejo 1"><span class="tag">Lanchón Puerto Viejo</span></a>
+                <a href="imgs/D13/2.jpg" class="glightbox gallery-item" data-destino="d13"
+                    data-glightbox="title: Lanchón de Puerto Viejo"><img src="imgs/D13/2.jpg"
+                        alt="Lanchón Puerto Viejo 2"><span class="tag">Lanchón Puerto Viejo</span></a>
+                <a href="imgs/D13/3.jpg" class="glightbox gallery-item" data-destino="d13"
+                    data-glightbox="title: Lanchón de Puerto Viejo"><img src="imgs/D13/3.jpg"
+                        alt="Lanchón Puerto Viejo 3"><span class="tag">Lanchón Puerto Viejo</span></a>
+                <a href="imgs/D13/4.jpg" class="glightbox gallery-item" data-destino="d13"
+                    data-glightbox="title: Lanchón de Puerto Viejo"><img src="imgs/D13/4.jpg"
+                        alt="Lanchón Puerto Viejo 4"><span class="tag">Lanchón Puerto Viejo</span></a>
+
+            </div>
+
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar al inicio
+            </a>
+
+        </div>
+    </main>
+
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="index.html">Inicio</a>
+                <a href="index.html#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+        let lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            width: "90%",
+            height: "auto",
+        });
+
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                items.forEach(item => {
+                    const show = filter === 'todos' || item.dataset.destino === filter;
+                    item.style.display = show ? '' : 'none';
+                    item.classList.toggle('active-lightbox', show);
+                });
+
+                if (lightbox) lightbox.destroy();
+                lightbox = GLightbox({
+                    selector: '.active-lightbox',
+                    touchNavigation: true,
+                    loop: true,
+                    width: "90%",
+                    height: "auto",
+                });
+            });
+        });
+
+        // Marcar todos los items como activos al inicio
+        items.forEach(item => item.classList.add('active-lightbox'));
+    </script>
+
+</body>
+
+</html>

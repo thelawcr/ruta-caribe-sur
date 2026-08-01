@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de la Ruta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        /* ===== Estilos específicos del mapa interactivo ===== */
+        .map-hero-text {
+            margin-top: 40px;
+        }
+
+        .leaflet-container {
+            width: 100%;
+            height: 75vh;
+            min-height: 650px;
+            border-radius: 30px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, .20);
+            font-family: "Manrope", sans-serif;
+        }
+
+        .map-marker {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+        }
+
+        .map-popup {
+            width: 220px;
+            font-family: "Manrope", sans-serif;
+        }
+
+        .map-popup img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .map-popup h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .map-popup p {
+            font-size: .85rem;
+            margin-bottom: 12px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        .map-popup a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: .8rem;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .map-popup a:hover {
+            background: var(--primary-dark);
+        }
+
+        .leaflet-popup-content-wrapper {
+            border-radius: 18px;
+            padding: 4px;
+        }
+
+        .route-index {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .route-index a {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: #fff;
+            padding: 18px 22px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
+            transition: .3s;
+        }
+
+        .route-index a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+        }
+
+        .route-index .num {
+            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.05rem;
+        }
+
+        .route-index span.name {
+            font-weight: 600;
+            color: var(--text);
+            font-size: .95rem;
+        }
+
+        /* ===== Responsive: mapa interactivo ===== */
+        @media (max-width: 768px) {
+
+            .leaflet-container {
+                height: 55vh;
+                min-height: 380px;
+                border-radius: 18px;
+            }
+
+            .map-popup {
+                width: 180px;
+            }
+
+            .map-popup img {
+                height: 100px;
+            }
+
+            .map-popup h3 {
+                font-size: 1.1rem;
+            }
+
+            .route-index {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-top: 35px;
+            }
+
+            .route-index a {
+                padding: 14px 18px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .leaflet-container {
+                height: 42vh;
+                min-height: 300px;
+            }
+
+            .map-popup {
+                width: 155px;
+            }
+
+            .map-popup img {
+                height: 85px;
+            }
+
+            .map-popup p {
+                font-size: .78rem;
+            }
+
+            .map-marker {
+                width: 32px;
+                height: 32px;
+                font-size: .95rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                RUTA CARIBE SUR
+            </span>
+
+            <h1>Mapa de la Ruta</h1>
+
+            <p>
+                Explora los 13 destinos de la Ruta Caribe Sur en un solo mapa interactivo y planifica tu recorrido.
+            </p>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container" id="contenido">
+
+            <h2 class="section-heading map-hero-text">Ubicación de los destinos</h2>
+            <p style="margin-bottom: 30px;">
+                Haz clic en cada marcador numerado para ver una vista previa del destino y acceder a su página completa.
+            </p>
+
+            <div id="map"></div>
+
+            <h2 class="section-heading">Índice de destinos</h2>
+            <div class="route-index" id="route-index"></div>
+
+        </div>
+    </main>
+
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="index.html">Inicio</a>
+                <a href="index.html#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        const destinos = [
+            { id: 1, name: "Mirador de Gandoca-Manzanillo", desc: "Vista panorámica del Caribe y tumba de Peter Ancel.", lat: 9.639762579131798, lng: -82.651906525997, img: "imgs/D1/4.JPEG", link: "destino1.html" },
+            { id: 2, name: "Isla Pirriplí", desc: "Islote rocoso frente a Playa Cocles rodeado de arrecifes.", lat: 9.638325094207449, lng: -82.75286487037208, img: "imgs/D2/1.JPEG", link: "destino2.html" },
+            { id: 3, name: "Casa de la Cultura Marcus Garvey", desc: "Antiguo Liberty Hall, núcleo identitario de Puerto Viejo.", lat: 9.656912165159323, lng: -82.76392042636873, img: "imgs/D3/1.jpg", link: "destino3.html" },
+            { id: 4, name: "Muelle de Cahuita", desc: "Punto de salida de lanchas hacia el arrecife coralino.", lat: 9.740833930155548, lng: -82.8548507628328, img: "imgs/D4/1.jpg", link: "destino4.html" },
+            { id: 5, name: "Parque Nacional Cahuita", desc: "Bosque, arrecife y memoria histórica afrocaribeña.", lat: 9.715666062671666, lng: -82.82821584601065, img: "imgs/D5/1.jpg", link: "destino5.html" },
+            { id: 6, name: "Puerto Vargas", desc: "Sector tranquilo del parque con ruinas históricas.", lat: 9.713377902169654, lng: -82.83006693564805, img: "imgs/D6/1.jpg", link: "destino6.html" },
+            { id: 7, name: "Barco Hundido de Manzanillo", desc: "Naufragio del carguero Yicel en Playa Grande.", lat: 9.626980680969522, lng: -82.72265111378323, img: "imgs/D7/2.JPEG", link: "destino7.html" },
+            { id: 8, name: "Laguna de Gandoca", desc: "Única laguna costera del Caribe Sur, Sitio Ramsar.", lat: 9.578183583123538, lng: -82.6151738205084, img: "imgs/D8/1.jpg", link: "destino8.html" },
+            { id: 9, name: "Iglesia Bautista de Manzanillo", desc: "Templo comunitario y cuna del creole limonense.", lat: 9.560957815746345, lng: -82.72798878652927, img: "imgs/D9/1.JPEG", link: "destino9.html" },
+            { id: 10, name: "Sendero de Cocles", desc: "Antiguo camino entre Manzanillo y Puerto Viejo.", lat: 9.647673197218952, lng: -82.77769157058286, img: "imgs/D10/1.jpg", link: "destino10.html" },
+            { id: 11, name: "Cueva de Punta Uva", desc: "Formación geológica y tumba de José Hansel.", lat: 9.641022812430194, lng: -82.70622086682039, img: "imgs/D11/1.jpg", link: "destino11.html" },
+            { id: 12, name: "Casa de la Cultura Walter Ferguson", desc: "Museo subacuático y academia de calipso en Cahuita.", lat: 9.736212990288308, lng: -82.95071024694907, img: "imgs/D12/1.jpeg", link: "destino12.html" },
+            { id: 13, name: "Lanchón de Puerto Viejo", desc: "Antiguo muelle petrolero hundido, hoy símbolo local.", lat: 9.675903168525588, lng: -82.80845489509814, img: "imgs/D13/1.png", link: "destino13.html" }
+        ];
+
+        // Inicializar mapa
+        const map = L.map('map').setView([9.66, -82.76], 11);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 18
+        }).addTo(map);
+
+        const bounds = [];
+
+        destinos.forEach(d => {
+
+            const icon = L.divIcon({
+                className: 'map-marker-wrapper',
+                html: `<div class="map-marker">${d.id}</div>`,
+                iconSize: [38, 38],
+                iconAnchor: [19, 19],
+                popupAnchor: [0, -15]
+            });
+
+            const marker = L.marker([d.lat, d.lng], { icon }).addTo(map);
+
+            const popupHtml = `
+                <div class="map-popup">
+                    <img src="${d.img}" alt="${d.name}">
+                    <h3>${d.name}</h3>
+                    <p>${d.desc}</p>
+                    <a href="${d.link}">Ver destino <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+            `;
+
+            marker.bindPopup(popupHtml);
+            bounds.push([d.lat, d.lng]);
+        });
+
+        map.fitBounds(bounds, { padding: [40, 40] });
+
+        
+        const indexContainer = document.getElementById('route-index');
+        destinos.forEach(d => {
+            const a = document.createElement('a');
+            a.href = d.link;
+            a.innerHTML = `<span class="num">${d.id}</span><span class="name">${d.name}</span>`;
+            indexContainer.appendChild(a);
+        });
+    </script>
+
+</body>
+
+</html>
