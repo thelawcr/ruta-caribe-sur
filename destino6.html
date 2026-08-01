@@ -5,43 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puerto Vargas</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
 
-    <!-- Encabezado uniforme -->
-    <header class="site-header">
-        <h1>Puerto Vargas</h1>
-        <p>Un espacio natural del Parque Nacional Cahuita donde se respira tranquilidad, cultura y conservación.</p>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                DESTINO 06
+            </span>
+
+            <h1>Puerto Vargas</h1>
+
+            <p>
+                Un espacio natural del Parque Nacional Cahuita donde se respira tranquilidad, cultura y conservación.
+            </p>
+
+        </div>
+
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="contenido">
 
             <!-- Descripción -->
-            <h2 style="color:#00997d;">Descripción General</h2>
-
+            <h2 class="section-heading">Descripción General</h2>
             <p>
-                Puerto Vargas es uno de los sectores más apacibles del Parque Nacional Cahuita, reconocido por su bosque
-                costero, sus senderos elevados y su ambiente rodeado de naturaleza tropical. El área invita al descanso,
-                la observación de fauna y caminatas suaves entre árboles que bordean el litoral.
+                Puerto Vargas es uno de los sectores más apacibles del Parque Nacional Cahuita, reconocido por
+                su bosque costero, sus senderos elevados y su ambiente rodeado de naturaleza tropical. El área
+                invita al descanso, la observación de fauna y caminatas suaves entre árboles que bordean el
+                litoral.
+            </p>
+            <p>
+                Su importancia cultural radica en la visión afrocaribeña de respeto hacia el entorno, transmitida
+                por las generaciones que han habitado y cuidado este territorio. Entre sus atractivos se
+                encuentran las ruinas de lo que alguna vez fue Puerto Vargas, vestigios históricos que forman
+                parte de la memoria local.
             </p>
 
-            <p>
-                Su importancia cultural radica en la visión afrocaribeña de respeto hacia el entorno, transmitida por
-                las
-                generaciones que han habitado y cuidado este territorio. Entre sus atractivos se encuentran las ruinas
-                de
-                lo que alguna vez fue Puerto Vargas, vestigios históricos que forman parte de la memoria local.
-            </p>
-
-            <!-- Galería -->
-            <h2 style="color:#00997d; margin-top: 30px;">Galería</h2>
+            <h2 class="section-heading">Galería</h2>
             <div class="gallery">
 
                 <a href="imgs/D6/1.jpg" class="glightbox">
@@ -63,121 +90,206 @@
             </div>
 
 
-            <!-- Mapa -->
-            <h2 style="color:#00997d; margin-top: 30px;">Ubicación</h2>
+
+            <h2 class="section-heading">Ubicación</h2>
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21522.099893352526!2d-82.83006693564805!3d9.713377902169654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6515137e09213%3A0xb9ad3900c06a072!2sPuerto%20Vargas!5e1!3m2!1sen!2scr!4v1765339066211!5m2!1sen!2scr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <section class="destination-section">
 
-                <h2 style="color:#00997d;">Descripción General</h2>
 
-                <p>
-                    Puerto Vargas alberga las antiguas ruinas de lo que antes fue el Puerto Vargas original. Sus
-                    alrededores
-                    fueron un punto de encuentro para culturas ancestrales y, además, sirvieron como un espacio
-                    comunitario
-                    relacionado con el trabajo y las actividades madereras del pasado.
-                </p>
 
-                <p>
-                    En este sitio se han encontrado distintos artefactos históricos, como anclas y cañones de galeones
-                    antiguos, lo que hace que este atractivo posea un valor único dentro del Parque Nacional Cahuita.
-                </p>
+            <section class="attraction-info">
 
-                <h2 style="color:#00997d; margin-top: 30px;">Valor Turístico</h2>
-                <p>
-                    • Sitio histórico con ruinas portuarias y hallazgos arqueológicos como anclas y cañones.
-                    • Forma parte de un área protegida con Bandera Azul y declarada de interés público para la
-                    protección
-                    de corales.
-                    • Alto valor escénico, ambiental y educativo.
-                </p>
+                <h2 class="section-heading">
+                    Información del atractivo
+                </h2>
 
-                <h2 style="color:#00997d; margin-top: 30px;">Valor Cultural</h2>
-                <p>
-                    • Refleja el fuerte vínculo entre el Parque Nacional Cahuita y la comunidad local.
-                    • Fue un antiguo punto de reunión asociado al trabajo y la actividad maderera.
-                    • Conserva vestigios de infraestructura portuaria e indicios de culturas ancestrales, lo que lo
-                    convierte
-                    en un espacio de memoria histórica e identidad comunitaria.
-                </p>
+                <div class="info-grid">
 
-                <h2 style="color:#00997d; margin-top: 30px;">Accesibilidad y Rutas de Acceso</h2>
+                    <div class="info-card">
+                        <h3><i class="bi bi-signpost"></i> Nombre</h3>
+                        <p>Puerto Vargas.</p>
+                    </div>
 
-                <p><strong>San José – Siquirres</strong><br>
-                    Ruta 27 / Ruta 32 — Vía asfaltada — Vehículo / Bus — 95 km, aprox. 1 h 30 min
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-geo-alt"></i> Ubicación</h3>
+                        <p>
+                            Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita.
+                            Sector Puerto Vargas, dentro del Parque Nacional Cahuita.
+                        </p>
+                    </div>
 
-                <p><strong>Siquirres – Limón</strong><br>
-                    Ruta 32 — Vía asfaltada — Vehículo / Bus — 35 km, aprox. 30–45 min
-                </p>
+                    <div class="info-card full">
+                        <h3><i class="bi bi-tree"></i> Descripción</h3>
 
-                <p><strong>Limón – Cahuita</strong><br>
-                    Ruta 36 — Vía asfaltada — Vehículo / Bus — 18 km, aprox. 25–30 min
-                </p>
+                        <p>
+                            Puerto Vargas alberga las antiguas ruinas de lo que antes fue el Puerto Vargas
+                            original. Sus alrededores fueron un punto de encuentro para culturas ancestrales y,
+                            además, sirvieron como un espacio comunitario relacionado con el trabajo y las
+                            actividades madereras del pasado.
+                        </p>
+                        <p>
+                            En este sitio se han encontrado distintos artefactos históricos, como anclas y
+                            cañones de galeones antiguos, lo que hace que este atractivo posea un valor único
+                            dentro del Parque Nacional Cahuita.
+                        </p>
+                    </div>
 
-                <p><strong>Entrada Cahuita Pueblo / Sendero Costero</strong><br>
-                    Acceso por sendero dentro de área protegida — Caminata — 8,3 km, 2–3 horas
-                </p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-camera"></i> Valor turístico</h3>
 
-                <p><strong>Sendero Bosque / Puerto Vargas</strong><br>
-                    Acceso por sendero — Caminata — 1,5 a 2 horas hasta el Sector Puerto Vargas
-                </p>
+                        <ul>
+                            <li>Sitio histórico con ruinas portuarias y hallazgos arqueológicos como anclas y cañones.
+                            </li>
+                            <li>Parte de un área protegida con Bandera Azul y de interés público para la protección de
+                                corales.</li>
+                            <li>Alto valor escénico, ambiental y educativo.</li>
+                        </ul>
 
-                <h2 style="color:#00997d; margin-top: 30px;">Información de la Visita</h2>
+                    </div>
 
-                <p><strong>Época propicia:</strong> Todo el año, 7 días a la semana, con registro previo.</p>
-                <p><strong>Horario:</strong> 8:00 a.m. – 4:00 p.m.</p>
-                <p><strong>Ingreso:</strong> Libre, con contribución voluntaria.</p>
+                    <div class="info-card">
+                        <h3><i class="bi bi-bank"></i> Valor cultural</h3>
 
-                <h2 style="color:#00997d; margin-top: 30px;">Servicios Turísticos y Complementarios</h2>
+                        <ul>
+                            <li>Refleja el fuerte vínculo entre el Parque Nacional Cahuita y la comunidad local.</li>
+                            <li>Fue un antiguo punto de reunión asociado al trabajo y la actividad maderera.</li>
+                            <li>Conserva vestigios de infraestructura portuaria e indicios de culturas ancestrales.</li>
+                        </ul>
 
-                <p><strong>En el Sitio:</strong><br>
-                    • Servicios sanitarios
-                    • Rampas y accesibilidad para personas con discapacidad
-                </p>
+                    </div>
 
-                <p><strong>En Cahuita y alrededores:</strong><br>
-                    Hoteles, cabinas, hospedajes tipo Airbnb, restaurantes, sodas, cafeterías, quioscos de comida,
-                    bares, comida rápida.
-                </p>
+                    <div class="info-card full">
 
-                <h2 style="color:#00997d; margin-top: 30px;">Comercio y Servicios Adicionales</h2>
+                        <h3><i class="bi bi-car-front"></i> Cómo llegar</h3>
 
-                <p>
-                    Supermercados, minisúpers, ventas de artesanías.
-                </p>
+                        <ul>
 
-                <h2 style="color:#00997d; margin-top: 30px;">Servicios Básicos</h2>
+                            <li>San José → Siquirres.</li>
 
-                <p>
-                    Agua potable, electricidad, telefonía, centro de salud, comisaría, servicio de taxis, internet,
-                    estación de buses, cajero automático.
-                </p>
+                            <li>Siquirres → Limón.</li>
+
+                            <li>Limón → Cahuita.</li>
+
+                            <li>Acceso por sendero costero desde Cahuita pueblo (8,3 km, 2–3 horas caminando) o por el
+                                sendero de bosque hasta el sector Puerto Vargas (1,5 a 2 horas).</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-clock"></i> Horario</h3>
+
+                        <p>
+
+                            Abierto durante todo el año, los 7 días de la semana. Requiere registro previo.
+
+                            Horario: <strong>8:00 a.m. – 4:00 p.m.</strong>
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3><i class="bi bi-info-circle"></i> Información adicional</h3>
+
+                        <p>
+
+                            Ingreso libre, con contribución voluntaria. Cuenta con servicios sanitarios y rampas
+                            de accesibilidad para personas con discapacidad.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card full">
+
+                        <h3><i class="bi bi-shop"></i> Servicios cercanos</h3>
+
+                        <ul>
+
+                            <li>Hoteles, cabinas y hospedajes tipo Airbnb.</li>
+
+                            <li>Restaurantes, sodas y cafeterías.</li>
+
+                            <li>Quioscos de comida, bares y comida rápida.</li>
+
+                            <li>Supermercados, minisúpers y artesanías.</li>
+
+                            <li>Cajeros automáticos.</li>
+
+                            <li>Estación de buses.</li>
+
+                            <li>Taxis.</li>
+
+                            <li>Centro de salud.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </section>
-
-            <!-- Botón regresar -->
-            <a href="index.html">
-                <button class="btn">
-                    <i class="bi bi-arrow-left-circle"></i>
-                    Volver al inicio
-                </button>
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Regresar a la ruta
             </a>
-
         </div>
     </main>
 
-    <!-- Footer uniforme -->
-    <footer>
-        <img src="imgs/footer.png" alt="" class="footer-img">
-        <p>&copy; 2025 CATCCAS - UNIVERSIDAD DE COSTA RICA - TC-598</p>
-        <p>Todos los derechos reservados.</p>
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>Ruta Caribe Sur</h3>
+
+                <p>
+                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
+                    ruta diseñada para explorar sus destinos más emblemáticos.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Navegación</h4>
+
+                <a href="#">Inicio</a>
+                <a href="#destinos">Destinos</a>
+
+            </div>
+
+            <div class="footer-info">
+
+                <h4>Proyecto</h4>
+
+                <p>Universidad de Costa Rica</p>
+                <p>TC-598</p>
+                <p>CATCCAS</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
+
+        </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
     <script>
         const lightbox = GLightbox({
             touchNavigation: true,
