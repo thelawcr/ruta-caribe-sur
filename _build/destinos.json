@@ -1,0 +1,819 @@
+[
+  {
+    "n": 1,
+    "slug": "mirador-gandoca-manzanillo",
+    "corto": "Mirador de Gandoca-Manzanillo",
+    "zona": "manzanillo",
+    "tema": "naturaleza",
+    "portada": "d1/5",
+    "lat": 9.63976,
+    "lng": -82.65191,
+    "orden": 4,
+    "resumen": "Un mirador con vistas al Caribe Sur, rodeado de naturaleza y herencia cultural.",
+    "horarioCorto": "8:00 a.m. – 4:00 p.m. (recomendado)",
+    "ingreso": "Gratis, con contribución voluntaria",
+    "acceso": "sin-dato",
+    "titulo": "Mirador del Refugio Gandoca-Manzanillo",
+    "lema": "Naturaleza, historia y cultura en uno de los paisajes más impresionantes del Caribe Sur de Costa Rica.",
+    "nombre": "Mirador del Refugio Gandoca–Manzanillo (Refugio Nacional de Vida Silvestre Mixto Jairo Mora Sandoval).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita. Comunidad de Manzanillo, dentro del Refugio Nacional de Vida Silvestre Mixto Jairo Mora Sandoval Gandoca–Manzanillo.",
+    "intro": [
+      "El Mirador del Refugio Gandoca-Manzanillo ofrece impresionantes vistas de la costa caribeña, caracterizada por su mar celeste, sus tonos verdes intensos y la brisa tropical que envuelve todo el entorno. Este sitio también tiene un importante valor cultural: aquí se encuentra la tumba de Peter Ancel, uno de los primeros colonos de la zona y figura clave en la historia comunitaria.",
+      "Hoy en día, el mirador sigue siendo un punto de encuentro para visitantes, fotógrafos, caminantes y amantes de la naturaleza, combinando belleza escénica con valor histórico y espiritual."
+    ],
+    "historia": [
+      "El mirador ofrece una vista panorámica del mar Caribe, la playa y el bosque tropical. Además de su riqueza natural, posee un importante valor histórico por encontrarse junto al antiguo cementerio donde descansa Peter Ancel, reconocido como uno de los primeros colonos de Manzanillo."
+    ],
+    "turistico": [
+      "Vista panorámica del Caribe Sur.",
+      "Fotografía de paisaje.",
+      "Observación de fauna.",
+      "Senderismo y naturaleza.",
+      "Área protegida."
+    ],
+    "cultural": [
+      "Antiguo cementerio de la comunidad.",
+      "Tumba de Peter Ancel.",
+      "Patrimonio histórico local.",
+      "Relación entre comunidad y naturaleza."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Puerto Viejo → Manzanillo."
+    ],
+    "horario": "Abierto durante todo el año. Horario recomendado: 8:00 a.m. – 4:00 p.m.",
+    "adicional": "Ingreso gratuito. Se solicita una contribución voluntaria para el mantenimiento del sitio.",
+    "servicios": [
+      "Hoteles y cabinas.",
+      "Restaurantes y sodas.",
+      "Cafeterías.",
+      "Supermercados.",
+      "Artesanías.",
+      "Cajeros automáticos.",
+      "Paradas de autobús.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d1/5",
+      "d1/1",
+      "d1/2",
+      "d1/3",
+      "d1/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.04989873302!2d-82.651906525997!3d9.639762579131798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6451052fde367%3A0x5a78b2faf8ac7a36!2sMirador%20Manzanillo!5e1!3m2!1sen!2scr!4v1764044321631!5m2!1sen!2scr"
+  },
+  {
+    "n": 2,
+    "slug": "isla-pirripli",
+    "corto": "Isla Pirriplí",
+    "zona": "puerto-viejo",
+    "tema": "naturaleza",
+    "portada": "d2/1",
+    "lat": 9.64418,
+    "lng": -82.73143,
+    "orden": 4,
+    "resumen": "Icono costero rodeado de aguas claras y paisaje tropical.",
+    "horarioCorto": "Todos los días, a cualquier hora",
+    "ingreso": "Gratis",
+    "acceso": "sin-dato",
+    "titulo": "Isla Pirriplí",
+    "lema": "Un islote emblemático rodeado por aguas cristalinas, arrecifes coralinos y la esencia natural del Caribe Sur.",
+    "nombre": "Isla Pirriplí.",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Puerto Viejo. Islote ubicado frente a Playa Cocles.",
+    "intro": [
+      "Isla Pirriplí es un pequeño islote rocoso cubierto de vegetación tropical que se eleva frente a Playa Cocles, uno de los puntos más reconocidos del Caribe Sur de Costa Rica. Rodeada por aguas claras, oleaje vibrante y una extensa vida marina, la isla se ha convertido en un símbolo natural del litoral limonense.",
+      "Debido a los arrecifes que la rodean, el área es refugio de peces tropicales, corales y otras especies marinas. La vista hacia la isla desde la costa ofrece un paisaje único que combina naturaleza, cultura y belleza escénica."
+    ],
+    "historia": [
+      "Isla Pirriplí es un islote rocoso ubicado frente a Playa Cocles, en el sector de Puerto Viejo de Talamanca, provincia de Limón. Se sitúa muy cerca de la costa, rodeada de un entorno de mar abierto y oleaje fuerte, característico del Caribe Sur de Costa Rica.",
+      "A su alrededor se encuentra un pequeño arrecife de coral, lo que hace del sitio un punto ideal para la contemplación del paisaje marino y actividades como snorkel, siempre siguiendo medidas de seguridad. La playa cercana es reconocida por el surf y por la famosa ola \"Salsa Brava\", integrando así naturaleza, deporte y cultura local."
+    ],
+    "turistico": [
+      "Vista escénica frente a Playa Cocles.",
+      "Contemplación del islote y el oleaje del Caribe Sur.",
+      "Snorkel responsable en el arrecife cercano.",
+      "Observación de aves marinas y fauna costera.",
+      "Senderismo en Cocles y Puerto Viejo."
+    ],
+    "cultural": [
+      "Territorio con fuerte herencia afrocaribeña.",
+      "Referente visual de Playa Cocles y Puerto Viejo.",
+      "Vinculada a la cultura del surf y la ola \"Salsa Brava\".",
+      "Elemento frecuente en fotografías y recuerdos de turistas.",
+      "Aporta al paisaje cultural costero de la zona."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Puerto Viejo → Sendero de acceso peatonal en Cocles."
+    ],
+    "horario": "Abierto durante todo el año, los 7 días de la semana. Acceso libre en cualquier momento del día.",
+    "adicional": "Ingreso gratuito. No requiere pago ni registro previo.",
+    "servicios": [
+      "Hoteles y cabinas.",
+      "Hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Bares y comida rápida.",
+      "Supermercados y artesanías.",
+      "Cajeros automáticos.",
+      "Paradas de autobús.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d2/1",
+      "d2/2",
+      "d2/3",
+      "d2/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36203.79816378566!2d-82.75286487037208!3d9.638325094207449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa65aa348583b73%3A0xac72b75992578417!2sLim%C3%B3n%20Province%2C%20Cocles!5e1!3m2!1sen!2scr!4v1765338544077!5m2!1sen!2scr"
+  },
+  {
+    "n": 3,
+    "slug": "casa-cultura-marcus-garvey",
+    "corto": "Casa Marcus Garvey",
+    "zona": "puerto-viejo",
+    "tema": "cultura",
+    "portada": "d3/1",
+    "lat": 9.65691,
+    "lng": -82.75439,
+    "orden": 2,
+    "resumen": "Centro histórico y cultural afrocaribeño de Puerto Viejo.",
+    "horarioCorto": "Lunes a viernes, 3:00 – 9:00 p.m.",
+    "ingreso": "Gratis",
+    "acceso": "si",
+    "titulo": "Casa de la Cultura Marcus Garvey",
+    "lema": "Un símbolo vivo de la cultura afrocaribeña y un espacio para la memoria histórica del Caribe Sur.",
+    "nombre": "Casa de la Cultura Marcus Garvey (Liberty Hall).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita, en pleno centro de la comunidad de Puerto Viejo.",
+    "intro": [
+      "La Casa de la Cultura Marcus Garvey, también conocida como Liberty Hall, fue fundada en 1922 y funciona como un espacio de encuentro para actividades culturales, sociales y educativas. Actualmente es considerada el núcleo identitario de Puerto Viejo y un símbolo vivo de la herencia afrocaribeña del Caribe Sur.",
+      "El edificio toma su nombre del histórico Liberty Hall en Kingston, Jamaica, la primera propiedad adquirida por Marcus Garvey en ese país. Este espacio es fundamental para la comunidad, pues promueve la preservación cultural, la memoria colectiva y el fortalecimiento de prácticas artísticas tradicionales."
+    ],
+    "historia": [
+      "La Casa de la Cultura Marcus Garvey es un punto clave del núcleo cultural del Caribe Sur y un hito identitario de Puerto Viejo. Antiguamente conocida como el Liberty Hall, fue uno de los primeros espacios comunitarios construidos en la zona, vinculado directamente con las raíces afrodescendientes del litoral limonense.",
+      "Este edificio histórico ha servido como sede de reuniones comunitarias, actividades culturales, ensayos musicales y procesos organizativos de la población afrocostarricense. Su legado continúa vivo, ya que hoy funciona como un espacio para la expresión artística, la memoria colectiva y la enseñanza cultural."
+    ],
+    "turistico": [
+      "Centro activo de actividades culturales y comunitarias.",
+      "Sede de programas educativos como telesecundaria.",
+      "Espacio para festividades locales, actividades gastronómicas y talleres.",
+      "Galería que exhibe identidades y memorias de los fundadores de la comunidad."
+    ],
+    "cultural": [
+      "Punto central del Caribe Sur y referente identitario afrocaribeño.",
+      "Lugar simbólico para reuniones comunitarias y expresiones culturales.",
+      "Nombrado en honor a Marcus Garvey, ícono del panafricanismo.",
+      "Resguarda parte importante de la memoria histórica de Puerto Viejo."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Ubicada a pie de carretera en el centro de Puerto Viejo, de fácil acceso peatonal."
+    ],
+    "horario": "Abierto de lunes a viernes. Horario: 3:00 p.m. – 9:00 p.m.",
+    "adicional": "Ingreso gratuito, sin cuota de acceso. Se recomienda consultar disponibilidad para actividades específicas. El sitio cumple con la Ley 7600: cuenta con rampa de acceso para sillas de ruedas, sanitarios, agua potable y electricidad.",
+    "servicios": [
+      "Hoteles y cabinas.",
+      "Hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de bus.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d3/1",
+      "d3/2"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7610.491320362223!2d-82.76392042636873!3d9.656912165159323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6500d6da2fa25%3A0x74a1d1d68de97e59!2sCasa%20De%20La%20Cultura!5e1!3m2!1sen!2scr!4v1765338436429!5m2!1sen!2scr"
+  },
+  {
+    "n": 4,
+    "slug": "muelle-de-cahuita",
+    "corto": "Muelle de Cahuita",
+    "zona": "cahuita",
+    "tema": "cultura",
+    "portada": "d4/2",
+    "lat": 9.74083,
+    "lng": -82.84138,
+    "orden": 1,
+    "resumen": "Punto principal para tours, snorkel y conexión comunitaria.",
+    "horarioCorto": "Todos los días, 8:00 a.m. – 4:00 p.m., con registro previo",
+    "ingreso": "Libre, con cuota voluntaria",
+    "acceso": "si",
+    "titulo": "Muelle de Cahuita",
+    "lema": "Punto clave para actividades turísticas, pesca local y el acceso a las aguas del Parque Nacional Cahuita.",
+    "nombre": "Muelle de Cahuita (Atracadero de Cahuita / Facilidades Marinas – Malecón de Cahuita).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita. Facilidades marinas del Parque Nacional Cahuita, junto a Playa Blanca.",
+    "intro": [
+      "El Muelle de Cahuita, también llamado Atracadero de Cahuita, es el principal punto de partida para actividades de snorkel, recorridos guiados y navegación hacia los arrecifes del Parque Nacional Cahuita. Su cercanía con la icónica Playa Blanca lo convierte en un sitio frecuentado tanto por turistas como pescadores locales.",
+      "Este espacio tiene un profundo valor comunitario: los pescadores utilizan el muelle diariamente para traer pescado fresco, el cual forma parte esencial de la gastronomía y cultura del Caribe Sur. La mezcla entre naturaleza, vida marina y tradición costera hace del lugar un destino vibrante y auténtico."
+    ],
+    "historia": [
+      "El atracadero de Cahuita es el punto principal de salida y llegada de lanchas en Playa Blanca, dentro del Parque Nacional Cahuita. Es un espacio donde se encuentran turistas y miembros de la comunidad, especialmente pescadores artesanales que ofrecen tours de snorkel y pescado fresco.",
+      "Desde este muelle se organizan recorridos hacia el arrecife coralino y Punta Cahuita, en un entorno que combina el mar Caribe, naturaleza y vida comunitaria."
+    ],
+    "turistico": [
+      "Punto estratégico para la salida de lanchas hacia el arrecife coralino y Punta Cahuita.",
+      "Ideal para contratar tours de snorkel y disfrutar del paisaje marino-costero.",
+      "Playa de arena blanca con aguas caribeñas para el descanso y la fotografía.",
+      "Complemento de la experiencia del Parque Nacional Cahuita mediante actividades guiadas."
+    ],
+    "cultural": [
+      "Espacio de gran importancia para la comunidad afrocaribeña ligada a la pesca artesanal.",
+      "Punto de encuentro entre pescadores locales y visitantes, donde se comparten historias y saberes.",
+      "Reflejo de la identidad de Cahuita como pueblo pesquero con fuerte conexión al mar."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "horario": "Abierto durante todo el año, los 7 días de la semana, con registro previo. Horario: 8:00 a.m. – 4:00 p.m.",
+    "adicional": "Ingreso libre; se solicita una cuota voluntaria. Cuenta con sendero peatonal y acceso para personas discapacitadas por la entrada principal.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Bares y quioscos.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Paradas de autobús.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d4/2",
+      "d4/1",
+      "d4/3",
+      "d4/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15217.172726505034!2d-82.8548507628328!3d9.740833930155548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa655fb5d96636d%3A0x43d902216c98f69e!2sFacilidades%20marinas%20del%20Parque%20Nacional%20Cahuita!5e1!3m2!1sen!2scr!4v1765338634402!5m2!1sen!2scr"
+  },
+  {
+    "n": 5,
+    "slug": "parque-nacional-cahuita",
+    "corto": "Parque Nacional Cahuita",
+    "zona": "cahuita",
+    "tema": "naturaleza",
+    "portada": "d5/3",
+    "lat": 9.7146,
+    "lng": -82.82154,
+    "orden": 4,
+    "resumen": "Biodiversidad, senderos y cultura en un mismo lugar.",
+    "horarioCorto": "Todos los días, 8:00 a.m. – 4:00 p.m., con registro previo",
+    "ingreso": "Libre, con contribución voluntaria",
+    "acceso": "si",
+    "titulo": "Parque Nacional Cahuita",
+    "lema": "Un espacio donde la naturaleza y la cultura afrocaribeña conviven en armonía.",
+    "nombre": "Parque Nacional Cahuita.",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita. Entrada por Puerto Vargas.",
+    "intro": [
+      "El Parque Nacional Cahuita es un área protegida de gran belleza escénica, reconocida por su exuberante vegetación y su variada fauna caribeña. Combina bosque pantanoso, manglar y vegetación litoral con un arrecife coralino de aproximadamente 600 hectáreas, uno de los más emblemáticos del Caribe costarricense.",
+      "Además de su riqueza natural, el parque conserva restos de barcos esclavistas hundidos desde 1710, asociados a actos de resistencia de personas esclavizadas. Este legado histórico, unido al fuerte arraigo comunitario y a su condición de playa con Bandera Azul, convierten a Cahuita en un espacio donde se unen naturaleza, memoria y cultura afrocaribeña."
+    ],
+    "historia": [
+      "El Parque Nacional Cahuita es uno de los tesoros naturales más importantes del Caribe Sur. Sus senderos, playas de arena blanca y bosques costeros reflejan la relación histórica entre la comunidad afrocaribeña y el entorno natural que los rodea.",
+      "La pesca tradicional, la música calipso y las costumbres locales forman parte del paisaje cultural que envuelve el parque. Además, su rica biodiversidad lo convierte en un lugar ideal para el avistamiento de fauna, caminatas escénicas y actividades como el snorkel en sus arrecifes coralinos."
+    ],
+    "turistico": [
+      "Arrecife coralino, manglares, playas y senderos escénicos.",
+      "Alta biodiversidad marina y terrestre.",
+      "Ideal para caminatas, observación de fauna, snorkel y disfrute de playa.",
+      "Playa con Bandera Azul, símbolo de destino limpio y seguro."
+    ],
+    "cultural": [
+      "Presencia de barcos esclavistas hundidos como símbolo de resistencia.",
+      "Fuerte vínculo con la comunidad afrocaribeña de Cahuita.",
+      "Modelo de gobernanza compartida entre el Estado y la comunidad local."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "horario": "Abierto durante todo el año, los 7 días de la semana. Requiere registro previo. Horario: 8:00 a.m. – 4:00 p.m.",
+    "adicional": "La entrada es libre, pero se solicita una contribución voluntaria. Cuenta con accesos para personas con discapacidad, duchas y sanitarios.",
+    "servicios": [
+      "Hoteles, cabinas y Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Comida rápida, bares y quioscos.",
+      "Supermercados, minisúper y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d5/3",
+      "d5/1",
+      "d5/2",
+      "d5/4",
+      "d5/5"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10760.976375861894!2d-82.82821584601065!3d9.715666062671666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa656caa8cf30a1%3A0x29b9afd9fecc0757!2sParque%20Nacional%20Cahuita%20-%20Entrada%20Puerto%20Vargas!5e1!3m2!1sen!2scr!4v1765338749834!5m2!1sen!2scr"
+  },
+  {
+    "n": 6,
+    "slug": "puerto-vargas",
+    "corto": "Puerto Vargas",
+    "zona": "cahuita",
+    "tema": "naturaleza",
+    "portada": "d6/1",
+    "lat": 9.73129,
+    "lng": -82.81449,
+    "orden": 3,
+    "resumen": "Senderos elevados, bosque costero y naturaleza intacta.",
+    "horarioCorto": "Todos los días, 8:00 a.m. – 4:00 p.m., con registro previo",
+    "ingreso": "Libre, con contribución voluntaria",
+    "acceso": "si",
+    "titulo": "Puerto Vargas",
+    "lema": "Un espacio natural del Parque Nacional Cahuita donde se respira tranquilidad, cultura y conservación.",
+    "nombre": "Puerto Vargas.",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita. Sector Puerto Vargas, dentro del Parque Nacional Cahuita.",
+    "intro": [
+      "Puerto Vargas es uno de los sectores más apacibles del Parque Nacional Cahuita, reconocido por su bosque costero, sus senderos elevados y su ambiente rodeado de naturaleza tropical. El área invita al descanso, la observación de fauna y caminatas suaves entre árboles que bordean el litoral.",
+      "Su importancia cultural radica en la visión afrocaribeña de respeto hacia el entorno, transmitida por las generaciones que han habitado y cuidado este territorio. Entre sus atractivos se encuentran las ruinas de lo que alguna vez fue Puerto Vargas, vestigios históricos que forman parte de la memoria local."
+    ],
+    "historia": [
+      "Puerto Vargas alberga las antiguas ruinas de lo que antes fue el Puerto Vargas original. Sus alrededores fueron un punto de encuentro para culturas ancestrales y, además, sirvieron como un espacio comunitario relacionado con el trabajo y las actividades madereras del pasado.",
+      "En este sitio se han encontrado distintos artefactos históricos, como anclas y cañones de galeones antiguos, lo que hace que este atractivo posea un valor único dentro del Parque Nacional Cahuita."
+    ],
+    "turistico": [
+      "Sitio histórico con ruinas portuarias y hallazgos arqueológicos como anclas y cañones.",
+      "Parte de un área protegida con Bandera Azul y de interés público para la protección de corales.",
+      "Alto valor escénico, ambiental y educativo."
+    ],
+    "cultural": [
+      "Refleja el fuerte vínculo entre el Parque Nacional Cahuita y la comunidad local.",
+      "Fue un antiguo punto de reunión asociado al trabajo y la actividad maderera.",
+      "Conserva vestigios de infraestructura portuaria e indicios de culturas ancestrales."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita.",
+      "Acceso por sendero costero desde Cahuita pueblo (8,3 km, 2–3 horas caminando) o por el sendero de bosque hasta el sector Puerto Vargas (1,5 a 2 horas)."
+    ],
+    "horario": "Abierto durante todo el año, los 7 días de la semana. Requiere registro previo. Horario: 8:00 a.m. – 4:00 p.m.",
+    "adicional": "Ingreso libre, con contribución voluntaria. Cuenta con servicios sanitarios y rampas de accesibilidad para personas con discapacidad.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d6/1",
+      "d6/2",
+      "d6/3",
+      "d6/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21522.099893352526!2d-82.83006693564805!3d9.713377902169654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6515137e09213%3A0xb9ad3900c06a072!2sPuerto%20Vargas!5e1!3m2!1sen!2scr!4v1765339066211!5m2!1sen!2scr"
+  },
+  {
+    "n": 7,
+    "slug": "barco-hundido-manzanillo",
+    "corto": "Barco Hundido",
+    "zona": "manzanillo",
+    "tema": "historia",
+    "portada": "d7/2",
+    "lat": 9.63208,
+    "lng": -82.66336,
+    "orden": 2,
+    "resumen": "Naufragio icónico envuelto por arena dorada y mar azul.",
+    "horarioCorto": "Todos los días, sin horario específico",
+    "ingreso": "Gratis",
+    "acceso": "no",
+    "titulo": "Barco Hundido de Manzanillo",
+    "lema": "Un emblemático naufragio que hoy forma parte del paisaje costero de Manzanillo.",
+    "nombre": "Barco Hundido de Manzanillo (Naufragio del Yicel).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita. Playa Grande, comunidad de Manzanillo.",
+    "intro": [
+      "El Barco Hundido de Manzanillo es uno de los naufragios más conocidos de la zona. El navío, llamado Yicel y construido en 1961, se convirtió con el paso del tiempo en parte del paisaje costero. Se hundió en el año 2017 en Playa Grande debido a desperfectos mecánicos y, en ese momento, representó un riesgo ecológico por el petróleo que llevaba. Gracias a la rápida acción de las autoridades, el incidente no pasó a más.",
+      "Hoy en día el barco funciona como refugio para diversas especies marinas, y su casco oxidado cubierto de sal, arena y vida marina se ha convertido en un atractivo icónico del Caribe Sur. El sitio se integra armoniosamente con el paisaje de arena dorada, mar azul intenso y el característico ambiente tranquilo de Manzanillo."
+    ],
+    "historia": [
+      "El Barco Hundido de Manzanillo corresponde al naufragio del carguero Yicel, construido en 1961 y encallado en Playa Grande en el año 2017 tras sufrir desperfectos mecánicos. Con el paso del tiempo, su casco oxidado se ha cubierto de sal, arena y vida marina, transformándose en un atractivo icónico del Caribe Sur.",
+      "Hoy, el barco hundido se integra armoniosamente con el paisaje: arena dorada, mar azul intenso y el característico ambiente tranquilo de Manzanillo. Es un sitio frecuentado por curiosos, fotógrafos y turistas interesados en explorar uno de los escenarios más peculiares de la costa."
+    ],
+    "turistico": [
+      "Naufragio costero muy famoso en la zona.",
+      "Vestigio visible que forma parte del paisaje local.",
+      "Punto clave para disfrutar de la naturaleza y el entorno marino."
+    ],
+    "cultural": [
+      "Símbolo paisajístico de la comunidad de Manzanillo.",
+      "Representación de la vida marítima tradicional de la zona."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Puerto Viejo → Manzanillo."
+    ],
+    "horario": "Puede visitarse todos los días de la semana. No tiene un horario específico.",
+    "adicional": "Acceso completamente libre, sin cuota de ingreso. No cuenta con condiciones para personas con discapacidad debido a la naturaleza del atractivo.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Paradas de autobús.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d7/2",
+      "d7/1"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43055.261206718!2d-82.72265111378323!3d9.626980680969522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa645b67e5872b5%3A0x211a3b50658d29dd!2sNaufragio%20del%20Yicel!5e1!3m2!1sen!2scr!4v1765339719035!5m2!1sen!2scr"
+  },
+  {
+    "n": 8,
+    "slug": "laguna-de-gandoca",
+    "corto": "Laguna de Gandoca",
+    "zona": "manzanillo",
+    "tema": "naturaleza",
+    "portada": "d8/2",
+    "lat": 9.5895,
+    "lng": -82.59667,
+    "orden": 5,
+    "resumen": "Ecosistema cultural y natural protegido del Caribe Sur.",
+    "horarioCorto": "Todos los días, mejor de 8:00 a.m. a 4:00 p.m.",
+    "ingreso": "Recorridos con guías locales autorizados",
+    "acceso": "no",
+    "titulo": "Laguna de Gandoca",
+    "lema": "Un espacio natural rodeado de historia ancestral, biodiversidad y cultura viva del Caribe Sur.",
+    "nombre": "Laguna de Gandoca (Estero de Gandoca).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Sixaola, cerca de la frontera con Panamá. Dentro del Refugio Nacional de Vida Silvestre Mixto Jairo Mora Sandoval Gandoca–Manzanillo.",
+    "intro": [
+      "La Laguna de Gandoca, también llamada Estero de Gandoca, es la única laguna costera del Caribe Sur de Costa Rica. Se encuentra dentro del Refugio Nacional de Vida Silvestre Mixto Jairo Mora Sandoval Gandoca–Manzanillo, en el distrito de Sixaola, cerca de la frontera con Panamá.",
+      "El entorno conserva vestigios del antiguo desarrollo maderero, infraestructura histórica como una pista de aterrizaje abandonada y una profunda riqueza cultural. Gandoca es un territorio multicultural poblado originalmente por comunidades afrocaribeñas, migrantes nicaragüenses y pueblos indígenas. Muchas familias actuales descienden de antiguos líderes indígenas de Talamanca, otorgando un fuerte valor ancestral y simbólico al lugar."
+    ],
+    "historia": [
+      "La Laguna de Gandoca se encuentra rodeada por una comunidad multicultural con raíces jamaicanas, nicaragüenses e indígenas, cuyos linajes se remontan al último rey de Talamanca. Este territorio es un símbolo de resistencia indígena y afrodescendiente frente a intentos de exploración petrolera que amenazaron su equilibrio ambiental.",
+      "Actualmente, el paisaje de la laguna está formado por bosques jóvenes, áreas de manglar, selva tropical caribeña y una extraordinaria diversidad de fauna. La tranquilidad del entorno, combinada con su valor histórico y cultural, hacen de Gandoca un destino ideal para el ecoturismo responsable y la conexión con la naturaleza."
+    ],
+    "turistico": [
+      "Única laguna costera del Caribe Sur con alto atractivo escénico.",
+      "Parte del humedal marino-costero declarado Sitio Ramsar desde 1995.",
+      "Gran potencial para turismo de naturaleza y turismo comunitario."
+    ],
+    "cultural": [
+      "Ligada a uno de los primeros espacios colonizados del Caribe Sur.",
+      "Fuerte memoria histórica de origen afrocaribeño, indígena y migraciones de Jamaica y Nicaragua.",
+      "Presencia de linajes ancestrales vinculados a la historia indígena de Talamanca."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Puerto Viejo → Laguna de Gandoca (camino costero interno, mayormente asfaltado con tramos en lastre; 16–20 km, 35 a 45 min)."
+    ],
+    "horario": "Puede visitarse todos los días. Se recomienda ir entre las 8:00 a.m. y 4:00 p.m., especialmente para recorridos en bote. No es aconsejable visitar la laguna de noche.",
+    "adicional": "Para realizar un recorrido dentro de la laguna es necesario contactar a guías locales autorizados para evitar riesgos y garantizar una experiencia segura. No cuenta con condiciones de accesibilidad para personas con discapacidad; estas facilidades se encuentran en comunidades cercanas.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Centro de salud.",
+      "Comisaría.",
+      "Taxis."
+    ],
+    "fotos": [
+      "d8/2",
+      "d8/1",
+      "d8/3",
+      "d8/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18105.11595779773!2d-82.6151738205084!3d9.578183583123538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64704a8965953%3A0xad29d08ceff50502!2sLaguna%20Gandoca!5e1!3m2!1sen!2scr!4v1765340058298!5m2!1sen!2scr"
+  },
+  {
+    "n": 9,
+    "slug": "iglesia-bautista-manzanillo",
+    "corto": "Iglesia Bautista",
+    "zona": "manzanillo",
+    "tema": "cultura",
+    "portada": "d9/2",
+    "lat": 9.63319,
+    "lng": -82.65734,
+    "orden": 3,
+    "resumen": "Patrimonio vivo para la identidad y cultura de la comunidad.",
+    "horarioCorto": "Consultar con la comunidad",
+    "ingreso": "Consultar con la comunidad",
+    "acceso": "no",
+    "titulo": "Iglesia Bautista de Manzanillo",
+    "lema": "Un espacio de identidad, espiritualidad y preservación cultural del Caribe Sur.",
+    "nombre": "Iglesia Bautista de Manzanillo.",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita, comunidad de Manzanillo.",
+    "intro": [
+      "La Iglesia Bautista de Manzanillo es un templo protestante que funciona como un lugar de culto activo y un espacio de reunión para la comunidad local. Fue fundada alrededor del año 2002 por el pastor Spencer y es considerada una de las primeras iglesias de la comunidad, construida gracias a las donaciones y el esfuerzo colectivo de los habitantes de Manzanillo.",
+      "Su arquitectura mantiene elementos característicos del diseño caribeño, lo que refuerza su vínculo con la identidad afrodescendiente del lugar. Muchos de sus sermones se imparten en creole limonense, contribuyendo a la preservación del idioma y a la transmisión de la memoria lingüística y cultural del Caribe costarricense."
+    ],
+    "historia": [
+      "La Iglesia Bautista de Manzanillo es un importante lugar de culto y encuentro comunitario, considerado un patrimonio vivo para la recuperación de la identidad cultural del Caribe Sur. Su historia está ligada a la comunidad afrocaribeña y a los procesos de fortalecimiento espiritual, lingüístico y social de la zona.",
+      "Además de cumplir funciones religiosas, la iglesia es un espacio comunitario dinámico donde se realizan actividades educativas, reuniones y encuentros que fortalecen la cohesión social. Actualmente permanece en muy buen estado y continúa siendo un pilar espiritual y cultural para los vecinos de Manzanillo."
+    ],
+    "turistico": [
+      "Permite conocer de cerca un templo caribeño en funcionamiento.",
+      "Está inserto en una comunidad costera con fuerte identidad afrodescendiente.",
+      "Facilita la apreciación de la arquitectura religiosa local.",
+      "Constituye un atractivo cultural sencillo, auténtico y representativo del Caribe Sur."
+    ],
+    "cultural": [
+      "Es un pilar cultural para la comunidad de Manzanillo.",
+      "Funciona como punto de reunión para vecinos y visitantes.",
+      "Es clave para la conservación del creole limonense.",
+      "Se considera un patrimonio cultural vivo del territorio."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Puerto Viejo → Manzanillo (carretera secundaria, 13 km, 20–30 min)."
+    ],
+    "horario": "Consultar horarios de servicios y actividades directamente con la comunidad.",
+    "adicional": "Debido a la naturaleza del lugar, la iglesia no cuenta con condiciones especiales de accesibilidad para personas con discapacidad.",
+    "servicios": [
+      "Hoteles y cabinas.",
+      "Hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Paradas de autobús.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d9/2",
+      "d9/1"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102423.19346473512!2d-82.72798878652927!3d9.560957815746345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64533b2183f6b%3A0x9245aaf874c0034b!2sFirst%20Baptist%20Church!5e1!3m2!1sen!2scr!4v1765340412261!5m2!1sen!2scr"
+  },
+  {
+    "n": 10,
+    "slug": "sendero-de-cocles",
+    "corto": "Sendero de Cocles",
+    "zona": "puerto-viejo",
+    "tema": "historia",
+    "portada": "d10/2",
+    "lat": 9.64766,
+    "lng": -82.73235,
+    "orden": 3,
+    "resumen": "Histórico camino utilizado por los primeros pobladores.",
+    "horarioCorto": "Todos los días, a cualquier hora",
+    "ingreso": "Gratis",
+    "acceso": "no",
+    "titulo": "Sendero de Cocles",
+    "lema": "Un sendero histórico que conecta tradición, naturaleza y la memoria ancestral del Caribe Sur.",
+    "nombre": "Sendero de Cocles (Sendero Cocles–Puerto Viejo).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Puerto Viejo. Sector Playa Cocles.",
+    "intro": [
+      "El Sendero Cocles–Puerto Viejo es un antiguo camino costero profundamente ligado a la historia de la comunidad de Puerto Viejo. Este sendero servía como vía principal de comunicación entre Cocles, Puerto Viejo y la Isla Pirriplí, la cual era utilizada como lugar de culto, descanso y encuentro por los primeros habitantes de la región.",
+      "En el pasado, formó parte de la ruta principal entre Manzanillo y Puerto Viejo, convirtiéndose en un espacio de trueque e intercambio para comunidades antiguas. Su importancia histórica y cultural sigue vigente en la memoria de los habitantes del Caribe Sur."
+    ],
+    "historia": [
+      "El Sendero de Cocles es un punto histórico profundamente vinculado a la comunidad de Puerto Viejo. En tiempos pasados formó parte de la vía principal entre Manzanillo y Puerto Viejo, funcionando como ruta esencial para los desplazamientos de los primeros habitantes de la zona.",
+      "Este antiguo camino también conectaba con la Isla Pirriplí, lugar utilizado por las comunidades ancestrales como espacio de culto, descanso y trueque. Hoy, el sendero conserva su valor cultural y natural, ofreciendo una caminata tranquila rodeada de vegetación tropical."
+    ],
+    "turistico": [
+      "Sendero natural costero ideal para caminatas al aire libre.",
+      "Ofrece vistas escénicas del paisaje caribeño entre Cocles y Puerto Viejo.",
+      "Recurso activo, en buen estado y abierto al público en general."
+    ],
+    "cultural": [
+      "Ruta histórica utilizada por los primeros pobladores como vía de comunicación.",
+      "Vinculada a la Isla Pirriplí como lugar de culto y descanso.",
+      "Espacio de trueque y encuentro entre comunidades antiguas.",
+      "Altamente arraigado a la identidad y memoria de Puerto Viejo."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Acceso peatonal desde el sector Cocles/Puerto Viejo. Se recomienda considerar condiciones climáticas y de marea."
+    ],
+    "horario": "Se puede visitar todo el año, cualquier día y en cualquier horario.",
+    "adicional": "No requiere pago ni registro previo para su ingreso. Su acceso es únicamente a pie y no posee infraestructura para personas con discapacidad.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas, cafeterías y bares.",
+      "Quioscos de comida y bebidas.",
+      "Supermercados, minisúpers y artesanías.",
+      "Centro de salud.",
+      "Comisaría.",
+      "Taxis."
+    ],
+    "fotos": [
+      "d10/2",
+      "d10/1",
+      "d10/3",
+      "d10/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60885.60031961136!2d-82.77769157058286!3d9.647673197218952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64fff0b5cc74b%3A0x26df4d58901ec9b0!2sPlaya%20Cocles!5e1!3m2!1sen!2scr!4v1765341578045!5m2!1sen!2scr"
+  },
+  {
+    "n": 11,
+    "slug": "cueva-de-punta-uva",
+    "corto": "Cueva de Punta Uva",
+    "zona": "manzanillo",
+    "tema": "naturaleza",
+    "portada": "d11/1",
+    "lat": 9.64102,
+    "lng": -82.69345,
+    "orden": 1,
+    "resumen": "Formación natural ligada a historia ancestral de la zona.",
+    "horarioCorto": "Todos los días; no se recomienda de noche",
+    "ingreso": "Gratis",
+    "acceso": "no",
+    "titulo": "Cueva de Punta Uva",
+    "lema": "Un sitio histórico y natural que forma parte de la identidad del Caribe Sur.",
+    "nombre": "Cueva de Punta Uva (Tumba de José Hansel).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón de Talamanca, distrito de Cahuita. Dentro del Refugio Nacional de Vida Silvestre Gandoca–Manzanillo.",
+    "intro": [
+      "La Cueva de Punta Uva, ubicada dentro del Refugio Nacional de Vida Silvestre Gandoca–Manzanillo, es una formación geológica en forma de cueva que conecta con el mar, muy visitada por lugareños y turistas. Su entorno natural, compuesto por arboledas, acantilados costeros y un mirador natural, la convierten en un punto escénico de gran belleza.",
+      "Esta zona fue uno de los primeros lugares en ser nombrados y colonizados en el Caribe Sur. Fue nombrada Punta Uva por José Hansel, originario de Bocas del Toro, Panamá, quien eligió este nombre por la abundancia de árboles de uva costera en el sector. Su tumba aún permanece en la zona, y gran parte de la comunidad de Puerto Viejo desciende de él, lo que convierte este sitio en un punto histórico de referencia."
+    ],
+    "historia": [
+      "El nombre de Cueva de Punta Uva hace referencia a la formación geológica en forma de cueva que conecta con el mar. Es un punto escénico muy visitado por lugareños y turistas.",
+      "Este lugar es también uno de los primeros puntos nombrados y poblados del Caribe Sur. Su nombre proviene de don José Hansel, originario de Bocas del Toro, cuya tumba aún permanece en la zona. Una parte importante de la comunidad local de Puerto Viejo desciende de él, lo que convierte este sitio en un punto de referencia histórica y cultural."
+    ],
+    "turistico": [
+      "Hogar de un importante arrecife coralino.",
+      "Ofrece vistas panorámicas al mar y a la costa caribeña.",
+      "Punta Uva es considerada una de las 50 playas más bellas del mundo."
+    ],
+    "cultural": [
+      "Una de las primeras zonas colonizadas del área de Puerto Viejo.",
+      "Representa un legado cultural para las comunidades indígenas y afrodescendientes debido al linaje que habitó la zona.",
+      "Sus árboles ancestrales simbolizan conservación y resistencia comunitaria."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo.",
+      "Puerto Viejo → Punta Uva (8 km, 10–15 min)."
+    ],
+    "horario": "Puede visitarse todos los días de la semana, a cualquier hora. Por seguridad, no se recomienda visitarlo de noche.",
+    "adicional": "El ingreso es totalmente libre. No se requiere pago ni cuota voluntaria. No cuenta con infraestructura para personas con discapacidad, aunque sí posee señalización e información básica.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas, cafeterías y quioscos.",
+      "Bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Paradas de autobús.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d11/1",
+      "d11/2",
+      "d11/3",
+      "d11/4",
+      "d11/5",
+      "d11/7"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10763.367514336103!2d-82.70622086682039!3d9.641022812430194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa64580a4b85f5b%3A0x3748a90aebfcc72c!2sCueva%20Punta%20Uva!5e1!3m2!1sen!2scr!4v1765341946563!5m2!1sen!2scr"
+  },
+  {
+    "n": 12,
+    "slug": "casa-cultura-walter-ferguson",
+    "corto": "Casa Walter Ferguson",
+    "zona": "cahuita",
+    "tema": "cultura",
+    "portada": "d12/1",
+    "lat": 9.73623,
+    "lng": -82.84291,
+    "orden": 2,
+    "resumen": "Museo y espacio dedicado al calipso y patrimonio cultural.",
+    "horarioCorto": "Consultar antes de ir; mejor de lunes a viernes",
+    "ingreso": "Gratis",
+    "acceso": "si",
+    "titulo": "Casa de la Cultura Walter Ferguson",
+    "lema": "Un espacio cultural que preserva historia, música y patrimonio del Caribe Sur.",
+    "nombre": "Casa de la Cultura y el Calipso Walter Ferguson.",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito de Cahuita, frente al Super Negro.",
+    "intro": [
+      "La Casa de la Cultura y el Calipso Walter Ferguson es un espacio cultural comunitario ubicado en Cahuita, frente al Super Negro. En este inmueble se encuentra un pequeño museo de arqueología subacuática con exhibiciones que narran la historia de diversas expediciones en las que se identificaron los galeones daneses Federicus IV y Christianus V, hundidos en Punta Cahuita mientras transportaban a más de 560 personas esclavizadas. Su procedencia fue confirmada por arqueólogos daneses y costarricenses.",
+      "Además de su valor histórico, este sitio es un punto emblemático para la comunidad, ya que alberga una academia destinada a la formación de nuevos talentos del calipso, preservando el legado musical de Walter Ferguson."
+    ],
+    "historia": [
+      "La Casa de la Cultura Walter Ferguson alberga un pequeño museo de arqueología subacuática donde se exhiben hallazgos de los galeones daneses Federicus IV y Christianus V. Estos navíos naufragaron frente a Punta Cahuita mientras transportaban a más de 560 personas esclavizadas, y su procedencia fue confirmada por arqueólogos de Costa Rica y Dinamarca.",
+      "Además de su valor histórico, el inmueble es un símbolo identitario de Cahuita y funciona como espacio para la formación de nuevos talentos del calipso, género musical representativo de la tradición afrocaribeña del país. Es un punto de encuentro para la educación cultural, la memoria colectiva y la expresión artística local."
+    ],
+    "turistico": [
+      "Centro cultural del distrito de Cahuita.",
+      "Sede de la academia de calipso Youth.",
+      "Punto clave para la preservación del calipso limonense.",
+      "Exhibiciones que resaltan la historia marítima de la zona."
+    ],
+    "cultural": [
+      "Espacio de reunión para las nuevas generaciones de músicos de calipso.",
+      "Exhibición de la cultura de resistencia de los primeros pobladores afrocaribeños.",
+      "Centro comunitario para mantener viva la memoria y el legado de Don Walter Ferguson."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "horario": "Puede visitarse durante todo el año, preferiblemente de lunes a viernes. No existe un horario predeterminado; se debe consultar previamente para su ingreso.",
+    "adicional": "El ingreso es libre; no se requiere pago de cuota. Cuenta con infraestructura accesible según la Ley 7600, electricidad, sanitarios y agua potable.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas.",
+      "Bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d12/1",
+      "d12/2",
+      "d12/3"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121739.0668734994!2d-82.95071024694907!3d9.736212990288308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa6576861eb2937%3A0x1dc172a680115bc1!2sCasa%20de%20la%20Cultura%20Walter%20Ferguson%20Cahuita!5e1!3m2!1sen!2scr!4v1765342257976!5m2!1sen!2scr"
+  },
+  {
+    "n": 13,
+    "slug": "lanchon-de-puerto-viejo",
+    "corto": "Lanchón de Puerto Viejo",
+    "zona": "puerto-viejo",
+    "tema": "historia",
+    "portada": "d13/2",
+    "lat": 9.65567,
+    "lng": -82.75631,
+    "orden": 1,
+    "resumen": "Antiguo muelle flotante convertido en símbolo comunitario.",
+    "horarioCorto": "Todos los días, a cualquier hora",
+    "ingreso": "Gratis",
+    "acceso": "sin-dato",
+    "titulo": "Lanchón de Puerto Viejo",
+    "lema": "Una reliquia flotante del pasado petrolero y un espacio de encuentro comunitario.",
+    "nombre": "Lanchón de Puerto Viejo (\"Yankee Clipper\").",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Puerto Viejo. Frente a la playa principal, cerca del sector de Kaya's Place.",
+    "intro": [
+      "El Lanchón de Puerto Viejo es una estructura flotante histórica ubicada frente a la playa principal del pueblo. Su origen está vinculado a la llegada de compañías petroleras al Caribe Sur, cuando era conocido como el \"Yankee Clipper\", un muelle flotante utilizado para recibir maquinaria destinada a intentos fallidos de extracción de petróleo.",
+      "Con el paso del tiempo, el lanchón se hundió cerca de Kaya's Place debido a fuertes vientos y condiciones adversas del mar. Actualmente permanece parcialmente sumergido, convirtiéndose en un icono visual de Puerto Viejo y parte del paisaje marino característico de la comunidad."
+    ],
+    "historia": [
+      "El origen de este antiguo navío, conocido por los pobladores como el \"Yankee Clipper\", se remonta a la época de las compañías petroleras que operaron en la zona de Puerto Viejo. El muelle flotante recibía equipo destinado a proyectos de extracción de petróleo que finalmente nunca se llevaron a cabo.",
+      "El barco terminó hundiéndose frente al sector de Kaya's Place debido al mal tiempo y a los fuertes vientos. Sin embargo, lejos de desaparecer, se convirtió en un símbolo urbano y en un punto de reunión para generaciones de jóvenes y vecinos, quienes lo adoptaron como parte de su paisaje cotidiano e histórico."
+    ],
+    "turistico": [
+      "Elemento distintivo del paisaje costero de Puerto Viejo.",
+      "Punto fotográfico muy reconocido por visitantes y locales.",
+      "Funciona como un \"portal visual\" al llegar a la playa principal.",
+      "Introduce al visitante en la historia económica y marítima de la comunidad."
+    ],
+    "cultural": [
+      "Representa la historia marina y portuaria de Puerto Viejo, ligada a intentos de explotación petrolera.",
+      "Ha sido un punto tradicional de reunión para las juventudes locales.",
+      "Lugar donde generaciones aprendieron a nadar, tirarse al mar y compartir historias.",
+      "Parte de la identidad visual y emocional de los habitantes del Caribe Sur."
+    ],
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Puerto Viejo."
+    ],
+    "horario": "Se puede visitar durante todo el año, los 7 días de la semana, a cualquier hora del día.",
+    "adicional": "El acceso es libre y no se requiere pago ni registro previo.",
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "fotos": [
+      "d13/2",
+      "d13/1",
+      "d13/3",
+      "d13/4"
+    ],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36199.75792921614!2d-82.80845489509814!3d9.675903168525588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa651b47e974849%3A0xb8d5d8516b2dad4d!2sOld%20shipwreck!5e1!3m2!1sen!2scr!4v1765342491715!5m2!1sen!2scr"
+  }
+]
