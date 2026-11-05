@@ -1,368 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de la Ruta</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <style>
-        /* ===== Estilos específicos del mapa interactivo ===== */
-        .map-hero-text {
-            margin-top: 40px;
-        }
-
-        .leaflet-container {
-            width: 100%;
-            height: 75vh;
-            min-height: 650px;
-            border-radius: 30px;
-            box-shadow: 0 25px 80px rgba(0, 0, 0, .20);
-            font-family: "Manrope", sans-serif;
-        }
-
-        .map-marker {
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: #fff;
-            border: 3px solid var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: "Cormorant Garamond", serif;
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: var(--primary);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
-        }
-
-        .map-popup {
-            width: 220px;
-            font-family: "Manrope", sans-serif;
-        }
-
-        .map-popup img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 10px;
-        }
-
-        .map-popup h3 {
-            font-family: "Cormorant Garamond", serif;
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin-bottom: 6px;
-        }
-
-        .map-popup p {
-            font-size: .85rem;
-            margin-bottom: 12px;
-            color: var(--text-light);
-            line-height: 1.5;
-        }
-
-        .map-popup a {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--primary);
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: .8rem;
-            font-weight: 600;
-            transition: .3s;
-        }
-
-        .map-popup a:hover {
-            background: var(--primary-dark);
-        }
-
-        .leaflet-popup-content-wrapper {
-            border-radius: 18px;
-            padding: 4px;
-        }
-
-        .route-index {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 18px;
-        }
-
-        .route-index a {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            background: #fff;
-            padding: 18px 22px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
-            transition: .3s;
-        }
-
-        .route-index a:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
-        }
-
-        .route-index .num {
-            flex-shrink: 0;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: var(--primary);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-family: "Cormorant Garamond", serif;
-            font-size: 1.05rem;
-        }
-
-        .route-index span.name {
-            font-weight: 600;
-            color: var(--text);
-            font-size: .95rem;
-        }
-
-        /* ===== Responsive: mapa interactivo ===== */
-        @media (max-width: 768px) {
-
-            .leaflet-container {
-                height: 55vh;
-                min-height: 380px;
-                border-radius: 18px;
-            }
-
-            .map-popup {
-                width: 180px;
-            }
-
-            .map-popup img {
-                height: 100px;
-            }
-
-            .map-popup h3 {
-                font-size: 1.1rem;
-            }
-
-            .route-index {
-                grid-template-columns: 1fr;
-                gap: 12px;
-                margin-top: 35px;
-            }
-
-            .route-index a {
-                padding: 14px 18px;
-            }
-
-        }
-
-        @media (max-width: 480px) {
-
-            .leaflet-container {
-                height: 42vh;
-                min-height: 300px;
-            }
-
-            .map-popup {
-                width: 155px;
-            }
-
-            .map-popup img {
-                height: 85px;
-            }
-
-            .map-popup p {
-                font-size: .78rem;
-            }
-
-            .map-marker {
-                width: 32px;
-                height: 32px;
-                font-size: .95rem;
-            }
-
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa · Ruta Caribe Sur</title>
+  <meta name="description" content="Mapa interactivo con los 13 destinos de la Ruta Caribe Sur.">
+  <meta property="og:title" content="Mapa · Ruta Caribe Sur">
+  <meta property="og:description" content="Mapa interactivo con los 13 destinos de la Ruta Caribe Sur.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a4c50">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Ruta Caribe Sur</a>
-
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
-            <ul class="nav-menu">
-                <li><a href="index.html">Destinos</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="#footer">Contacto</a></li>
-            </ul>
-        </div>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="barra">
+  <div class="wrap barra__fila">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>Ruta Caribe Sur</a>
+    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list" aria-hidden="true"></i></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="destinos.html">Destinos</a>
+      <a href="mapa.html" aria-current="page">Mapa</a>
+      <a href="galeria.html">Galería</a>
+      <a href="planifica.html" class="menu__cta">Planifica tu visita</a>
     </nav>
-    <header class="hero">
-
-        <div class="hero-content">
-
-            <span class="hero-subtitle">
-                RUTA CARIBE SUR
-            </span>
-
-            <h1>Mapa de la Ruta</h1>
-
-            <p>
-                Explora los 13 destinos de la Ruta Caribe Sur en un solo mapa interactivo y planifica tu recorrido.
-            </p>
-
-        </div>
-
-    </header>
-
-    <main>
-        <div class="container" id="contenido">
-
-            <h2 class="section-heading map-hero-text">Ubicación de los destinos</h2>
-            <p style="margin-bottom: 30px;">
-                Haz clic en cada marcador numerado para ver una vista previa del destino y acceder a su página completa.
-            </p>
-
-            <div id="map"></div>
-
-            <h2 class="section-heading">Índice de destinos</h2>
-            <div class="route-index" id="route-index"></div>
-
-        </div>
-    </main>
-
-
-    <footer id="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-brand">
-
-                <h3>Ruta Caribe Sur</h3>
-
-                <p>
-                    Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una
-                    ruta diseñada para explorar sus destinos más emblemáticos.
-                </p>
-
-            </div>
-
-            <div class="footer-links">
-
-                <h4>Navegación</h4>
-
-                <a href="index.html">Inicio</a>
-                <a href="index.html#destinos">Destinos</a>
-
-            </div>
-
-            <div class="footer-info">
-
-                <h4>Proyecto</h4>
-
-                <p>Universidad de Costa Rica</p>
-                <p>TC-598</p>
-                <p>CATCCAS</p>
-
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-            © 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez
-
-        </div>
-
-    </footer>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <script>
-        const destinos = [
-            { id: 1, name: "Mirador de Gandoca-Manzanillo", desc: "Vista panorámica del Caribe y tumba de Peter Ancel.", lat: 9.639762579131798, lng: -82.651906525997, img: "imgs/D1/4.JPEG", link: "destino1.html" },
-            { id: 2, name: "Isla Pirriplí", desc: "Islote rocoso frente a Playa Cocles rodeado de arrecifes.", lat: 9.638325094207449, lng: -82.75286487037208, img: "imgs/D2/1.JPEG", link: "destino2.html" },
-            { id: 3, name: "Casa de la Cultura Marcus Garvey", desc: "Antiguo Liberty Hall, núcleo identitario de Puerto Viejo.", lat: 9.656912165159323, lng: -82.76392042636873, img: "imgs/D3/1.jpg", link: "destino3.html" },
-            { id: 4, name: "Muelle de Cahuita", desc: "Punto de salida de lanchas hacia el arrecife coralino.", lat: 9.740833930155548, lng: -82.8548507628328, img: "imgs/D4/1.jpg", link: "destino4.html" },
-            { id: 5, name: "Parque Nacional Cahuita", desc: "Bosque, arrecife y memoria histórica afrocaribeña.", lat: 9.715666062671666, lng: -82.82821584601065, img: "imgs/D5/1.jpg", link: "destino5.html" },
-            { id: 6, name: "Puerto Vargas", desc: "Sector tranquilo del parque con ruinas históricas.", lat: 9.713377902169654, lng: -82.83006693564805, img: "imgs/D6/1.jpg", link: "destino6.html" },
-            { id: 7, name: "Barco Hundido de Manzanillo", desc: "Naufragio del carguero Yicel en Playa Grande.", lat: 9.626980680969522, lng: -82.72265111378323, img: "imgs/D7/2.JPEG", link: "destino7.html" },
-            { id: 8, name: "Laguna de Gandoca", desc: "Única laguna costera del Caribe Sur, Sitio Ramsar.", lat: 9.578183583123538, lng: -82.6151738205084, img: "imgs/D8/1.jpg", link: "destino8.html" },
-            { id: 9, name: "Iglesia Bautista de Manzanillo", desc: "Templo comunitario y cuna del creole limonense.", lat: 9.560957815746345, lng: -82.72798878652927, img: "imgs/D9/1.JPEG", link: "destino9.html" },
-            { id: 10, name: "Sendero de Cocles", desc: "Antiguo camino entre Manzanillo y Puerto Viejo.", lat: 9.647673197218952, lng: -82.77769157058286, img: "imgs/D10/1.jpg", link: "destino10.html" },
-            { id: 11, name: "Cueva de Punta Uva", desc: "Formación geológica y tumba de José Hansel.", lat: 9.641022812430194, lng: -82.70622086682039, img: "imgs/D11/1.jpg", link: "destino11.html" },
-            { id: 12, name: "Casa de la Cultura Walter Ferguson", desc: "Museo subacuático y academia de calipso en Cahuita.", lat: 9.736212990288308, lng: -82.95071024694907, img: "imgs/D12/1.jpeg", link: "destino12.html" },
-            { id: 13, name: "Lanchón de Puerto Viejo", desc: "Antiguo muelle petrolero hundido, hoy símbolo local.", lat: 9.675903168525588, lng: -82.80845489509814, img: "imgs/D13/1.png", link: "destino13.html" }
-        ];
-
-        // Inicializar mapa
-        const map = L.map('map').setView([9.66, -82.76], 11);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors',
-            maxZoom: 18
-        }).addTo(map);
-
-        const bounds = [];
-
-        destinos.forEach(d => {
-
-            const icon = L.divIcon({
-                className: 'map-marker-wrapper',
-                html: `<div class="map-marker">${d.id}</div>`,
-                iconSize: [38, 38],
-                iconAnchor: [19, 19],
-                popupAnchor: [0, -15]
-            });
-
-            const marker = L.marker([d.lat, d.lng], { icon }).addTo(map);
-
-            const popupHtml = `
-                <div class="map-popup">
-                    <img src="${d.img}" alt="${d.name}">
-                    <h3>${d.name}</h3>
-                    <p>${d.desc}</p>
-                    <a href="${d.link}">Ver destino <i class="bi bi-arrow-up-right"></i></a>
-                </div>
-            `;
-
-            marker.bindPopup(popupHtml);
-            bounds.push([d.lat, d.lng]);
-        });
-
-        map.fitBounds(bounds, { padding: [40, 40] });
-
-        
-        const indexContainer = document.getElementById('route-index');
-        destinos.forEach(d => {
-            const a = document.createElement('a');
-            a.href = d.link;
-            a.innerHTML = `<span class="num">${d.id}</span><span class="name">${d.name}</span>`;
-            indexContainer.appendChild(a);
-        });
-    </script>
-
+  </div>
+</header>
+<main id="contenido">
+<div class="cabecera wrap">
+  <h1>Mapa de la ruta</h1>
+  <p>Toca un número para ver una vista previa del destino y entrar a su página.</p>
+</div>
+<section class="seccion seccion--junta">
+  <div class="wrap">
+    <ul class="leyenda" aria-label="Colores del mapa">
+      <li><span class="pin pin--naturaleza"></span>Naturaleza</li>
+      <li><span class="pin pin--cultura"></span>Cultura viva</li>
+      <li><span class="pin pin--historia"></span>Historia</li>
+    </ul>
+    <div class="mapa-fila">
+      <div class="mapa-lista">
+        <h2>Cahuita</h2>
+        <ul>
+          <li><button type="button" data-n="4"><span class="pin pin--cultura">4</span>Muelle de Cahuita</button></li>
+          <li><button type="button" data-n="12"><span class="pin pin--cultura">12</span>Casa de la Cultura Walter Ferguson</button></li>
+          <li><button type="button" data-n="6"><span class="pin pin--naturaleza">6</span>Puerto Vargas</button></li>
+          <li><button type="button" data-n="5"><span class="pin pin--naturaleza">5</span>Parque Nacional Cahuita</button></li>
+        </ul>
+        <h2>Puerto Viejo y Cocles</h2>
+        <ul>
+          <li><button type="button" data-n="13"><span class="pin pin--historia">13</span>Lanchón de Puerto Viejo</button></li>
+          <li><button type="button" data-n="3"><span class="pin pin--cultura">3</span>Casa de la Cultura Marcus Garvey</button></li>
+          <li><button type="button" data-n="10"><span class="pin pin--historia">10</span>Sendero de Cocles</button></li>
+          <li><button type="button" data-n="2"><span class="pin pin--naturaleza">2</span>Isla Pirriplí</button></li>
+        </ul>
+        <h2>Punta Uva, Manzanillo y Gandoca</h2>
+        <ul>
+          <li><button type="button" data-n="11"><span class="pin pin--naturaleza">11</span>Cueva de Punta Uva</button></li>
+          <li><button type="button" data-n="7"><span class="pin pin--historia">7</span>Barco Hundido de Manzanillo</button></li>
+          <li><button type="button" data-n="9"><span class="pin pin--cultura">9</span>Iglesia Bautista de Manzanillo</button></li>
+          <li><button type="button" data-n="1"><span class="pin pin--naturaleza">1</span>Mirador del Refugio Gandoca-Manzanillo</button></li>
+          <li><button type="button" data-n="8"><span class="pin pin--naturaleza">8</span>Laguna de Gandoca</button></li>
+        </ul>
+      </div>
+      <div id="mapa" role="region" aria-label="Mapa interactivo de los destinos"></div>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="datos-mapa">[{"n":1,"titulo":"Mirador del Refugio Gandoca-Manzanillo","resumen":"Un mirador con vistas al Caribe Sur, rodeado de naturaleza y herencia cultural.","tema":"naturaleza","lat":9.63976,"lng":-82.65191,"foto":"assets/img/d1/5-sm.webp","url":"destinos/mirador-gandoca-manzanillo.html"},{"n":2,"titulo":"Isla Pirriplí","resumen":"Icono costero rodeado de aguas claras y paisaje tropical.","tema":"naturaleza","lat":9.64418,"lng":-82.73143,"foto":"assets/img/d2/1-sm.webp","url":"destinos/isla-pirripli.html"},{"n":3,"titulo":"Casa de la Cultura Marcus Garvey","resumen":"Centro histórico y cultural afrocaribeño de Puerto Viejo.","tema":"cultura","lat":9.65691,"lng":-82.75439,"foto":"assets/img/d3/1-sm.webp","url":"destinos/casa-cultura-marcus-garvey.html"},{"n":4,"titulo":"Muelle de Cahuita","resumen":"Punto principal para tours, snorkel y conexión comunitaria.","tema":"cultura","lat":9.74083,"lng":-82.84138,"foto":"assets/img/d4/2-sm.webp","url":"destinos/muelle-de-cahuita.html"},{"n":5,"titulo":"Parque Nacional Cahuita","resumen":"Biodiversidad, senderos y cultura en un mismo lugar.","tema":"naturaleza","lat":9.7146,"lng":-82.82154,"foto":"assets/img/d5/3-sm.webp","url":"destinos/parque-nacional-cahuita.html"},{"n":6,"titulo":"Puerto Vargas","resumen":"Senderos elevados, bosque costero y naturaleza intacta.","tema":"naturaleza","lat":9.73129,"lng":-82.81449,"foto":"assets/img/d6/1-sm.webp","url":"destinos/puerto-vargas.html"},{"n":7,"titulo":"Barco Hundido de Manzanillo","resumen":"Naufragio icónico envuelto por arena dorada y mar azul.","tema":"historia","lat":9.63208,"lng":-82.66336,"foto":"assets/img/d7/2-sm.webp","url":"destinos/barco-hundido-manzanillo.html"},{"n":8,"titulo":"Laguna de Gandoca","resumen":"Ecosistema cultural y natural protegido del Caribe Sur.","tema":"naturaleza","lat":9.5895,"lng":-82.59667,"foto":"assets/img/d8/2-sm.webp","url":"destinos/laguna-de-gandoca.html"},{"n":9,"titulo":"Iglesia Bautista de Manzanillo","resumen":"Patrimonio vivo para la identidad y cultura de la comunidad.","tema":"cultura","lat":9.63319,"lng":-82.65734,"foto":"assets/img/d9/2-sm.webp","url":"destinos/iglesia-bautista-manzanillo.html"},{"n":10,"titulo":"Sendero de Cocles","resumen":"Histórico camino utilizado por los primeros pobladores.","tema":"historia","lat":9.64766,"lng":-82.73235,"foto":"assets/img/d10/2-sm.webp","url":"destinos/sendero-de-cocles.html"},{"n":11,"titulo":"Cueva de Punta Uva","resumen":"Formación natural ligada a historia ancestral de la zona.","tema":"naturaleza","lat":9.64102,"lng":-82.69345,"foto":"assets/img/d11/1-sm.webp","url":"destinos/cueva-de-punta-uva.html"},{"n":12,"titulo":"Casa de la Cultura Walter Ferguson","resumen":"Museo y espacio dedicado al calipso y patrimonio cultural.","tema":"cultura","lat":9.73623,"lng":-82.84291,"foto":"assets/img/d12/1-sm.webp","url":"destinos/casa-cultura-walter-ferguson.html"},{"n":13,"titulo":"Lanchón de Puerto Viejo","resumen":"Antiguo muelle flotante convertido en símbolo comunitario.","tema":"historia","lat":9.65567,"lng":-82.75631,"foto":"assets/img/d13/2-sm.webp","url":"destinos/lanchon-de-puerto-viejo.html"}]</script>
+</main>
+<footer class="pie">
+  <div class="wrap pie__fila">
+    <div class="pie__marca">
+      <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>Ruta Caribe Sur</a>
+      <p>Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una ruta diseñada para explorar sus destinos más emblemáticos.</p>
+    </div>
+    <div>
+      <h2>Explora</h2>
+      <ul>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="planifica.html">Planifica tu visita</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Zonas</h2>
+      <ul>
+        <li><a href="destinos.html?zona=cahuita">Cahuita</a></li>
+        <li><a href="destinos.html?zona=puerto-viejo">Puerto Viejo y Cocles</a></li>
+        <li><a href="destinos.html?zona=manzanillo">Punta Uva, Manzanillo y Gandoca</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Proyecto</h2>
+      <ul>
+        <li>Universidad de Costa Rica</li>
+        <li>TC-598</li>
+        <li>CATCCAS</li>
+      </ul>
+      <h2 class="pie__contacto">Contacto</h2>
+      <a class="pie__correo" href="mailto:jorge_zamora28@outlook.com">jorge_zamora28@outlook.com</a>
+    </div>
+  </div>
+  <div class="pie__final">
+    <div class="wrap">© 2026 Ruta Caribe Sur · Universidad de Costa Rica · Desarrollado por Jorge Zamora Lopez</div>
+  </div>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/js/mapa.js"></script>
+<script src="assets/js/sitio.js"></script>
 </body>
-
 </html>
