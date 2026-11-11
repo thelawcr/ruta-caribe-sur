@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com; font-src https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://*.tile.openstreetmap.org; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ruta Caribe Sur · Destinos del Caribe Sur de Costa Rica</title>
   <meta name="description" content="Guía de 13 destinos naturales, culturales e históricos del Caribe Sur de Costa Rica: Cahuita, Puerto Viejo, Manzanillo y Gandoca.">
@@ -13,20 +15,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="barra">
   <div class="wrap barra__fila">
-    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>Ruta Caribe Sur</a>
+    <a class="logo" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>Ruta Caribe Sur</a>
     <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list" aria-hidden="true"></i></button>
     <nav class="menu" id="menu" aria-label="Principal">
-      <a href="destinos.html">Destinos</a>
-      <a href="mapa.html">Mapa</a>
-      <a href="galeria.html">Galería</a>
-      <a href="planifica.html" class="menu__cta">Planifica tu visita</a>
+      <a href="destinos">Destinos</a>
+      <a href="mapa">Mapa</a>
+      <a href="galeria">Galería</a>
+      <a href="planifica" class="menu__cta">Planifica tu visita</a>
     </nav>
   </div>
 </header>
@@ -39,14 +41,14 @@
         <h1>Un recorrido por la naturaleza, la historia y la cultura del Caribe Sur</h1>
         <p class="portada__texto">Descubre 13 destinos donde la naturaleza, la historia y la cultura se unen en una experiencia única.</p>
         <div class="portada__acciones">
-          <a class="boton" href="destinos.html">Ver los destinos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-          <a class="boton boton--borde" href="mapa.html"><i class="bi bi-map" aria-hidden="true"></i> Abrir el mapa</a>
+          <a class="boton" href="destinos">Ver los destinos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a class="boton boton--borde" href="mapa"><i class="bi bi-map" aria-hidden="true"></i> Abrir el mapa</a>
         </div>
       </div>
       <div class="collage">
-        <a href="destinos/parque-nacional-cahuita.html"><img src="assets/img/d5/3-lg.webp" width="1024" height="683" alt="Persona caminando por un sendero de madera en medio del bosque" fetchpriority="high"><span>Parque Nacional Cahuita</span></a>
-        <a href="destinos/casa-cultura-walter-ferguson.html"><img src="assets/img/d12/1-sm.webp" width="640" height="480" alt="Mural colorido de la Casa de la Cultura y el Calipso de Cahuita" ><span>Casa Walter Ferguson</span></a>
-        <a href="destinos/lanchon-de-puerto-viejo.html"><img src="assets/img/d13/2-sm.webp" width="640" height="426" alt="Lanchón oxidado con un árbol creciendo encima, frente a la playa" ><span>Lanchón de Puerto Viejo</span></a>
+        <a href="destinos/parque-nacional-cahuita"><img src="assets/img/d5/3-lg.webp" width="1024" height="683" alt="Persona caminando por un sendero de madera en medio del bosque" fetchpriority="high"><span>Parque Nacional Cahuita</span></a>
+        <a href="destinos/casa-cultura-walter-ferguson"><img src="assets/img/d12/1-sm.webp" width="640" height="480" alt="Mural colorido de la Casa de la Cultura y el Calipso de Cahuita" ><span>Casa Walter Ferguson</span></a>
+        <a href="destinos/lanchon-de-puerto-viejo"><img src="assets/img/d13/2-sm.webp" width="640" height="426" alt="Lanchón oxidado con un árbol creciendo encima, frente a la playa" ><span>Lanchón de Puerto Viejo</span></a>
       </div>
     </div>
     <div class="datos">
@@ -65,15 +67,15 @@
       <p>Empieza por lo que más te llama la atención.</p>
     </div>
     <div class="temas">
-      <a class="tema" href="destinos.html?tema=naturaleza">
+      <a class="tema" href="destinos?tema=naturaleza">
         <img src="assets/img/d5/3-lg.webp" width="1024" height="683" alt="" loading="lazy">
         <div><h3>Naturaleza</h3><p>Arrecifes, bosque costero y laguna · 6 destinos</p></div>
       </a>
-      <a class="tema" href="destinos.html?tema=cultura">
+      <a class="tema" href="destinos?tema=cultura">
         <img src="assets/img/d12/1-lg.webp" width="1280" height="960" alt="" loading="lazy">
         <div><h3>Cultura viva</h3><p>Calipso, memoria y comunidad · 4 destinos</p></div>
       </a>
-      <a class="tema" href="destinos.html?tema=historia">
+      <a class="tema" href="destinos?tema=historia">
         <img src="assets/img/d7/2-lg.webp" width="1600" height="1200" alt="" loading="lazy">
         <div><h3>Historia</h3><p>Naufragios y caminos antiguos · 3 destinos</p></div>
       </a>
@@ -93,10 +95,10 @@
         <h3>Cahuita</h3>
         <p class="zona__texto">Pueblo pesquero con arrecife de coral, parque nacional y la música del calipso.</p>
         <ul class="paradas">
-          <li><a href="destinos/muelle-de-cahuita.html"><span class="pin pin--cultura">4</span><span>Muelle de Cahuita</span></a></li>
-          <li><a href="destinos/casa-cultura-walter-ferguson.html"><span class="pin pin--cultura">12</span><span>Casa de la Cultura Walter Ferguson</span></a></li>
-          <li><a href="destinos/puerto-vargas.html"><span class="pin pin--naturaleza">6</span><span>Puerto Vargas</span></a></li>
-          <li><a href="destinos/parque-nacional-cahuita.html"><span class="pin pin--naturaleza">5</span><span>Parque Nacional Cahuita</span></a></li>
+          <li><a href="destinos/muelle-de-cahuita"><span class="pin pin--cultura">4</span><span>Muelle de Cahuita</span></a></li>
+          <li><a href="destinos/casa-cultura-walter-ferguson"><span class="pin pin--cultura">12</span><span>Casa de la Cultura Walter Ferguson</span></a></li>
+          <li><a href="destinos/puerto-vargas"><span class="pin pin--naturaleza">6</span><span>Puerto Vargas</span></a></li>
+          <li><a href="destinos/parque-nacional-cahuita"><span class="pin pin--naturaleza">5</span><span>Parque Nacional Cahuita</span></a></li>
         </ul>
       </div>
       <div class="zona">
@@ -104,10 +106,10 @@
         <h3>Puerto Viejo y Cocles</h3>
         <p class="zona__texto">El corazón afrocaribeño de la ruta, con sus playas y sus primeros caminos.</p>
         <ul class="paradas">
-          <li><a href="destinos/lanchon-de-puerto-viejo.html"><span class="pin pin--historia">13</span><span>Lanchón de Puerto Viejo</span></a></li>
-          <li><a href="destinos/casa-cultura-marcus-garvey.html"><span class="pin pin--cultura">3</span><span>Casa de la Cultura Marcus Garvey</span></a></li>
-          <li><a href="destinos/sendero-de-cocles.html"><span class="pin pin--historia">10</span><span>Sendero de Cocles</span></a></li>
-          <li><a href="destinos/isla-pirripli.html"><span class="pin pin--naturaleza">2</span><span>Isla Pirriplí</span></a></li>
+          <li><a href="destinos/lanchon-de-puerto-viejo"><span class="pin pin--historia">13</span><span>Lanchón de Puerto Viejo</span></a></li>
+          <li><a href="destinos/casa-cultura-marcus-garvey"><span class="pin pin--cultura">3</span><span>Casa de la Cultura Marcus Garvey</span></a></li>
+          <li><a href="destinos/sendero-de-cocles"><span class="pin pin--historia">10</span><span>Sendero de Cocles</span></a></li>
+          <li><a href="destinos/isla-pirripli"><span class="pin pin--naturaleza">2</span><span>Isla Pirriplí</span></a></li>
         </ul>
       </div>
       <div class="zona">
@@ -115,11 +117,11 @@
         <h3>Punta Uva, Manzanillo y Gandoca</h3>
         <p class="zona__texto">Refugio de vida silvestre, comunidades costeras y la laguna cerca de la frontera con Panamá.</p>
         <ul class="paradas">
-          <li><a href="destinos/cueva-de-punta-uva.html"><span class="pin pin--naturaleza">11</span><span>Cueva de Punta Uva</span></a></li>
-          <li><a href="destinos/barco-hundido-manzanillo.html"><span class="pin pin--historia">7</span><span>Barco Hundido de Manzanillo</span></a></li>
-          <li><a href="destinos/iglesia-bautista-manzanillo.html"><span class="pin pin--cultura">9</span><span>Iglesia Bautista de Manzanillo</span></a></li>
-          <li><a href="destinos/mirador-gandoca-manzanillo.html"><span class="pin pin--naturaleza">1</span><span>Mirador del Refugio Gandoca-Manzanillo</span></a></li>
-          <li><a href="destinos/laguna-de-gandoca.html"><span class="pin pin--naturaleza">8</span><span>Laguna de Gandoca</span></a></li>
+          <li><a href="destinos/cueva-de-punta-uva"><span class="pin pin--naturaleza">11</span><span>Cueva de Punta Uva</span></a></li>
+          <li><a href="destinos/barco-hundido-manzanillo"><span class="pin pin--historia">7</span><span>Barco Hundido de Manzanillo</span></a></li>
+          <li><a href="destinos/iglesia-bautista-manzanillo"><span class="pin pin--cultura">9</span><span>Iglesia Bautista de Manzanillo</span></a></li>
+          <li><a href="destinos/mirador-gandoca-manzanillo"><span class="pin pin--naturaleza">1</span><span>Mirador del Refugio Gandoca-Manzanillo</span></a></li>
+          <li><a href="destinos/laguna-de-gandoca"><span class="pin pin--naturaleza">8</span><span>Laguna de Gandoca</span></a></li>
         </ul>
       </div>
     </div>
@@ -132,7 +134,7 @@
       <div class="banda__texto">
         <h2>Prepara tu visita</h2>
         <p>Consulta cómo llegar, compara horarios y revisa qué lugares necesitan registro previo o guía local.</p>
-        <a class="boton" href="planifica.html">Planifica tu visita <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        <a class="boton" href="planifica">Planifica tu visita <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
       </div>
       <img src="assets/img/d1/5-lg.webp" width="1536" height="2048" alt="Visitantes en el mirador de Manzanillo, junto a una baranda pintada de verde, amarillo y rojo" loading="lazy">
     </div>
@@ -151,31 +153,31 @@
       <img src="assets/img/d9/2-sm.webp" width="640" height="853" alt="" loading="lazy">
       <img src="assets/img/d13/4-sm.webp" width="640" height="480" alt="" loading="lazy">
     </div>
-    <p><a class="enlace-flecha" href="galeria.html">Ver toda la galería <i class="bi bi-arrow-right" aria-hidden="true"></i></a></p>
+    <p><a class="enlace-flecha" href="galeria">Ver toda la galería <i class="bi bi-arrow-right" aria-hidden="true"></i></a></p>
   </div>
 </section>
 </main>
 <footer class="pie">
   <div class="wrap pie__fila">
     <div class="pie__marca">
-      <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>Ruta Caribe Sur</a>
+      <a class="logo" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>Ruta Caribe Sur</a>
       <p>Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una ruta diseñada para explorar sus destinos más emblemáticos.</p>
     </div>
     <div>
       <h2>Explora</h2>
       <ul>
-        <li><a href="destinos.html">Destinos</a></li>
-        <li><a href="mapa.html">Mapa</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="planifica.html">Planifica tu visita</a></li>
+        <li><a href="destinos">Destinos</a></li>
+        <li><a href="mapa">Mapa</a></li>
+        <li><a href="galeria">Galería</a></li>
+        <li><a href="planifica">Planifica tu visita</a></li>
       </ul>
     </div>
     <div>
       <h2>Zonas</h2>
       <ul>
-        <li><a href="destinos.html?zona=cahuita">Cahuita</a></li>
-        <li><a href="destinos.html?zona=puerto-viejo">Puerto Viejo y Cocles</a></li>
-        <li><a href="destinos.html?zona=manzanillo">Punta Uva, Manzanillo y Gandoca</a></li>
+        <li><a href="destinos?zona=cahuita">Cahuita</a></li>
+        <li><a href="destinos?zona=puerto-viejo">Puerto Viejo y Cocles</a></li>
+        <li><a href="destinos?zona=manzanillo">Punta Uva, Manzanillo y Gandoca</a></li>
       </ul>
     </div>
     <div>

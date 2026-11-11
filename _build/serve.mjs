@@ -25,6 +25,7 @@ http.createServer((req, res) => {
     return;
   }
   if (ruta.endsWith('/')) archivo = path.join(archivo, 'index.html');
+  if (!path.extname(archivo) && fs.existsSync(archivo + ".html")) archivo += ".html";
   fs.readFile(archivo, (err, datos) => {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });

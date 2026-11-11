@@ -43,13 +43,13 @@ function encabezado(base, actual) {
   return `<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="barra">
   <div class="wrap barra__fila">
-    <a class="logo" href="${base}index.html">${LOGO}Ruta Caribe Sur</a>
+    <a class="logo" href="${base || './'}">${LOGO}Ruta Caribe Sur</a>
     <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list" aria-hidden="true"></i></button>
     <nav class="menu" id="menu" aria-label="Principal">
-      ${enlace('destinos.html', 'Destinos', 'destinos')}
-      ${enlace('mapa.html', 'Mapa', 'mapa')}
-      ${enlace('galeria.html', 'Galería', 'galeria')}
-      ${enlace('planifica.html', 'Planifica tu visita', 'planifica', 'menu__cta')}
+      ${enlace('destinos', 'Destinos', 'destinos')}
+      ${enlace('mapa', 'Mapa', 'mapa')}
+      ${enlace('galeria', 'Galería', 'galeria')}
+      ${enlace('planifica', 'Planifica tu visita', 'planifica', 'menu__cta')}
     </nav>
   </div>
 </header>`;
@@ -59,22 +59,22 @@ function pie(base) {
   return `<footer class="pie">
   <div class="wrap pie__fila">
     <div class="pie__marca">
-      <a class="logo" href="${base}index.html">${LOGO}Ruta Caribe Sur</a>
+      <a class="logo" href="${base || './'}">${LOGO}Ruta Caribe Sur</a>
       <p>Descubre el patrimonio natural, cultural e histórico del Caribe Sur de Costa Rica a través de una ruta diseñada para explorar sus destinos más emblemáticos.</p>
     </div>
     <div>
       <h2>Explora</h2>
       <ul>
-        <li><a href="${base}destinos.html">Destinos</a></li>
-        <li><a href="${base}mapa.html">Mapa</a></li>
-        <li><a href="${base}galeria.html">Galería</a></li>
-        <li><a href="${base}planifica.html">Planifica tu visita</a></li>
+        <li><a href="${base}destinos">Destinos</a></li>
+        <li><a href="${base}mapa">Mapa</a></li>
+        <li><a href="${base}galeria">Galería</a></li>
+        <li><a href="${base}planifica">Planifica tu visita</a></li>
       </ul>
     </div>
     <div>
       <h2>Zonas</h2>
       <ul>
-        ${ZONAS.map((z) => `<li><a href="${base}destinos.html?zona=${z.id}">${z.nombre}</a></li>`).join('\n        ')}
+        ${ZONAS.map((z) => `<li><a href="${base}destinos?zona=${z.id}">${z.nombre}</a></li>`).join('\n        ')}
       </ul>
     </div>
     <div>
@@ -94,11 +94,36 @@ function pie(base) {
 </footer>`;
 }
 
+// Seguridad: huellas (SRI) de las librerías externas y política CSP.
+const SRI = {
+  'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css': 'sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H',
+  'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js': 'sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH',
+  'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css': 'sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+',
+  'https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css': 'sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd',
+  'https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js': 'sha384-/+Fc1LD6ksHYZ+2MChiSfjEXBcl4q2axUWhs6/CdnfqY5aLmrPwtysVzyeP0s60b',
+};
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' https://unpkg.com https://cdn.jsdelivr.net",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com",
+  "font-src https://fonts.gstatic.com https://cdn.jsdelivr.net",
+  "img-src 'self' data: https://*.tile.openstreetmap.org",
+  "frame-src https://www.google.com",
+  "connect-src 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+].join('; ');
+const conSRI = (html) => html.replace(/<(link rel="stylesheet"|script) (href|src)="(https:[^"]+)"/g,
+  (m, t, a, u) => (SRI[u] ? `<${t} ${a}="${u}" integrity="${SRI[u]}" crossorigin="anonymous" referrerpolicy="no-referrer"` : m));
+
 function pagina({ base = '', actual = '', titulo, descripcion, cabezaExtra = '', cuerpo, scripts = [] }) {
-  return `<!DOCTYPE html>
+  return conSRI(`<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="${CSP}">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(titulo)}</title>
   <meta name="description" content="${esc(descripcion)}">
@@ -122,10 +147,10 @@ ${pie(base)}
 ${[...scripts, `${base}assets/js/sitio.js`].map((s) => `<script src="${s}"></script>`).join('\n')}
 </body>
 </html>
-`;
+`);
 }
 
-const urlDestino = (d, base = '') => `${base}destinos/${d.slug}.html`;
+const urlDestino = (d, base = '') => `${base}destinos/${d.slug}`;
 const etiquetaTema = (d) => `<span class="etiqueta etiqueta--${d.tema}">${TEMAS[d.tema].nombre}</span>`;
 
 function tarjeta(d, base, nivel = 'h3') {
@@ -167,12 +192,12 @@ function inicio() {
         <h1>Un recorrido por la naturaleza, la historia y la cultura del Caribe Sur</h1>
         <p class="portada__texto">Descubre 13 destinos donde la naturaleza, la historia y la cultura se unen en una experiencia única.</p>
         <div class="portada__acciones">
-          <a class="boton" href="destinos.html">Ver los destinos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-          <a class="boton boton--borde" href="mapa.html"><i class="bi bi-map" aria-hidden="true"></i> Abrir el mapa</a>
+          <a class="boton" href="destinos">Ver los destinos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a class="boton boton--borde" href="mapa"><i class="bi bi-map" aria-hidden="true"></i> Abrir el mapa</a>
         </div>
       </div>
       <div class="collage">
-        ${collage.map(([c, alt, slug, nombre], i) => `<a href="destinos/${slug}.html">${foto(c, i === 0 ? 'lg' : 'sm', alt, '', i === 0 ? 'fetchpriority="high"' : '')}<span>${nombre}</span></a>`).join('\n        ')}
+        ${collage.map(([c, alt, slug, nombre], i) => `<a href="destinos/${slug}">${foto(c, i === 0 ? 'lg' : 'sm', alt, '', i === 0 ? 'fetchpriority="high"' : '')}<span>${nombre}</span></a>`).join('\n        ')}
       </div>
     </div>
     <div class="datos">
@@ -193,7 +218,7 @@ function inicio() {
     <div class="temas">
       ${Object.entries(TEMAS).map(([id, t]) => {
         const n = destinos.filter((d) => d.tema === id).length;
-        return `<a class="tema" href="destinos.html?tema=${id}">
+        return `<a class="tema" href="destinos?tema=${id}">
         ${foto(t.foto, 'lg', '', '', 'loading="lazy"')}
         <div><h3>${t.nombre}</h3><p>${t.texto} · ${n} destinos</p></div>
       </a>`;
@@ -227,7 +252,7 @@ function inicio() {
       <div class="banda__texto">
         <h2>Prepara tu visita</h2>
         <p>Consulta cómo llegar, compara horarios y revisa qué lugares necesitan registro previo o guía local.</p>
-        <a class="boton" href="planifica.html">Planifica tu visita <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        <a class="boton" href="planifica">Planifica tu visita <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
       </div>
       ${foto('d1/5', 'lg', 'Visitantes en el mirador de Manzanillo, junto a una baranda pintada de verde, amarillo y rojo', '', 'loading="lazy"')}
     </div>
@@ -242,7 +267,7 @@ function inicio() {
     <div class="tira">
       ${['d2/4', 'd3/1', 'd8/2', 'd9/2', 'd13/4'].map((c) => foto(c, 'sm', '', '', 'loading="lazy"')).join('\n      ')}
     </div>
-    <p><a class="enlace-flecha" href="galeria.html">Ver toda la galería <i class="bi bi-arrow-right" aria-hidden="true"></i></a></p>
+    <p><a class="enlace-flecha" href="galeria">Ver toda la galería <i class="bi bi-arrow-right" aria-hidden="true"></i></a></p>
   </div>
 </section>`;
 
@@ -317,8 +342,8 @@ function paginaDestino(d) {
   const cuerpo = `<div class="wrap">
   <nav class="migas" aria-label="Ruta de navegación">
     <ol>
-      <li><a href="${base}index.html">Inicio</a></li>
-      <li><a href="${base}destinos.html">Destinos</a></li>
+      <li><a href="${base || './'}">Inicio</a></li>
+      <li><a href="${base}destinos">Destinos</a></li>
       <li aria-current="page">${esc(d.titulo)}</li>
     </ol>
   </nav>
@@ -385,14 +410,14 @@ function paginaDestino(d) {
           <dt><i class="bi bi-signpost" aria-hidden="true"></i>Nombre completo</dt>
           <dd>${esc(d.nombre)}</dd>` : ''}
         </dl>
-        <a class="boton boton--ancho" href="https://www.google.com/maps/dir/?api=1&amp;destination=${d.lat},${d.lng}" target="_blank" rel="noopener"><i class="bi bi-sign-turn-right" aria-hidden="true"></i>Abrir indicaciones</a>
+        <a class="boton boton--ancho" href="https://www.google.com/maps/dir/?api=1&amp;destination=${d.lat},${d.lng}" target="_blank" rel="noopener noreferrer"><i class="bi bi-sign-turn-right" aria-hidden="true"></i>Abrir indicaciones</a>
       </div>
     </aside>
   </div>
 
   <nav class="paginacion" aria-label="Otros destinos de la ruta">
-    ${anterior ? `<a href="${anterior.slug}.html"><small>← Destino ${anterior.n}</small>${esc(anterior.titulo)}</a>` : ''}
-    ${siguiente ? `<a class="paginacion__siguiente" href="${siguiente.slug}.html"><small>Destino ${siguiente.n} →</small>${esc(siguiente.titulo)}</a>` : ''}
+    ${anterior ? `<a href="${anterior.slug}"><small>← Destino ${anterior.n}</small>${esc(anterior.titulo)}</a>` : ''}
+    ${siguiente ? `<a class="paginacion__siguiente" href="${siguiente.slug}"><small>Destino ${siguiente.n} →</small>${esc(siguiente.titulo)}</a>` : ''}
   </nav>
 </div>
 
