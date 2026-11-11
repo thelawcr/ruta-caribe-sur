@@ -17,3 +17,12 @@
     if (!menu.contains(e.target) && !boton.contains(e.target)) alternar(false);
   });
 })();
+
+// Correo de contacto: no aparece completo en el HTML para evitar que lo recojan bots de spam.
+(function () {
+  document.querySelectorAll('a[data-u][data-d]').forEach((a) => {
+    const correo = a.dataset.u + '@' + a.dataset.d;
+    a.href = 'mailto:' + correo;
+    if ('mostrar' in a.dataset) a.textContent = correo;
+  });
+})();

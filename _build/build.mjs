@@ -36,6 +36,10 @@ function foto(clave, tam, alt, base, extra = '') {
 const LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#c8431f" d="M16 1C9.4 1 4 6.3 4 12.9 4 21.6 16 31 16 31s12-9.4 12-18.1C28 6.3 22.6 1 16 1Z"/><circle cx="16" cy="13" r="7" fill="#fbf6ec"/><path fill="#0e7c7b" d="M9.3 14.6c2.2-1.7 4.4-1.7 6.7 0s4.5 1.7 6.7 0c-.7 3.3-3.4 5.4-6.7 5.4s-6-2.1-6.7-5.4Z"/></svg>';
 
 const CORREO = 'jorge_zamora28@outlook.com';
+const [CORREO_U, CORREO_D] = CORREO.split('@');
+// El correo no aparece en el HTML: sitio.js lo arma al cargar la página.
+const correoEnlace = (clase, etiqueta = `${CORREO_U} [arroba] ${CORREO_D}`, mostrar = true) =>
+  `<a class="${clase}" href="#" data-u="${CORREO_U}" data-d="${CORREO_D}"${mostrar ? " data-mostrar" : ""}>${etiqueta}</a>`;
 
 function encabezado(base, actual) {
   const enlace = (href, texto, id, clase = '') =>
@@ -85,7 +89,7 @@ function pie(base) {
         <li>CATCCAS</li>
       </ul>
       <h2 class="pie__contacto">Contacto</h2>
-      <a class="pie__correo" href="mailto:${CORREO}">${CORREO}</a>
+      ${correoEnlace('pie__correo')}
     </div>
   </div>
   <div class="pie__final">
@@ -105,8 +109,8 @@ const SRI = {
 const CSP = [
   "default-src 'self'",
   "script-src 'self' https://unpkg.com https://cdn.jsdelivr.net",
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com",
-  "font-src https://fonts.gstatic.com https://cdn.jsdelivr.net",
+  "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com",
+  "font-src 'self' https://cdn.jsdelivr.net",
   "img-src 'self' data: https://*.tile.openstreetmap.org",
   "frame-src https://www.google.com",
   "connect-src 'self'",
@@ -132,9 +136,7 @@ function pagina({ base = '', actual = '', titulo, descripcion, cabezaExtra = '',
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a4c50">
   <link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="${base}assets/css/fuentes.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">${cabezaExtra}
   <link rel="stylesheet" href="${base}assets/css/estilos.css">
 </head>
@@ -591,7 +593,7 @@ function planifica() {
       <h2>¿Tienes alguna pregunta?</h2>
       <p>Escríbenos si tienes dudas sobre la ruta o encontraste un dato que debamos corregir.</p>
     </div>
-    <a class="boton" href="mailto:${CORREO}"><i class="bi bi-envelope" aria-hidden="true"></i>Escribir un correo</a>
+    ${correoEnlace('boton', '<i class="bi bi-envelope" aria-hidden="true"></i>Escribir un correo', false)}
   </div>
 </section>`;
   return pagina({
