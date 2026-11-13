@@ -815,5 +815,360 @@
       "d13/4"
     ],
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36199.75792921614!2d-82.80845489509814!3d9.675903168525588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa651b47e974849%3A0xb8d5d8516b2dad4d!2sOld%20shipwreck!5e1!3m2!1sen!2scr!4v1765342491715!5m2!1sen!2scr"
+  },
+  {
+    "n": 14,
+    "slug": "parque-alfredo-gonzalez-flores",
+    "corto": "Parque Alfredo González Flores",
+    "zona": "cahuita",
+    "acceso": "sin-dato",
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "tema": "cultura",
+    "portada": "d14/1",
+    "lat": 9.73808,
+    "lng": -82.84063,
+    "orden": 2,
+    "resumen": "El corazón cívico de Cahuita, escenario del calipso y de las fiestas comunitarias.",
+    "horarioCorto": "Acceso libre · recomendado de día",
+    "ingreso": "Gratis",
+    "titulo": "Parque Alfredo González Flores",
+    "lema": "El punto de encuentro de Cahuita y escenario de sus celebraciones culturales.",
+    "nombre": "Parque Alfredo González Flores (Alfredo González Flores Park).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita. En el centro del pueblo de Cahuita.",
+    "intro": [
+      "El Parque Alfredo González Flores es el espacio público central de Cahuita. Su historia se remonta a 1915, cuando el expresidente Alfredo González Flores fue rescatado de un naufragio por William Smith, uno de los fundadores de la comunidad.",
+      "Como símbolo de gratitud, el parque se convirtió en un punto de encuentro y en el corazón cívico del pueblo."
+    ],
+    "historia": [
+      "El parque nació de un gesto de agradecimiento: el rescate del expresidente González Flores en 1915 por parte de William Smith, uno de los fundadores de Cahuita, quedó ligado para siempre a este lugar.",
+      "Hoy es escenario de importantes celebraciones culturales, como el Festival Internacional del Calypso, el Día Nacional del Calypso y diversas actividades comunitarias."
+    ],
+    "turistico": [
+      "Espacio central para caminar, descansar y conocer el ambiente del pueblo.",
+      "Murales y áreas de juego para niñas y niños.",
+      "Escultura de Walter \"Gavitt\" Ferguson con su guitarra.",
+      "Punto de partida para recorrer otros sitios de la ruta en Cahuita."
+    ],
+    "cultural": [
+      "Sede del Festival Internacional del Calypso.",
+      "Lugar donde se celebra el Día Nacional del Calypso.",
+      "Símbolo de gratitud y de la historia de los fundadores de Cahuita.",
+      "Punto de reunión de la comunidad."
+    ],
+    "horario": "Es un espacio público y se puede llegar a cualquier hora, todo el año. Se recomienda visitarlo de día, entre las 6:00 a.m. y las 6:00 p.m. Durante las fiestas culturales hay actividades programadas por la comunidad.",
+    "adicional": "El acceso es libre y no se requiere pago ni registro previo.",
+    "fotos": [
+      "d14/1",
+      "d14/2",
+      "d14/3",
+      "d14/4",
+      "d14/5"
+    ],
+    "mapa": "https://www.google.com/maps?q=9.73808,-82.84063&z=17&output=embed"
+  },
+  {
+    "n": 15,
+    "slug": "baptism-hole",
+    "corto": "Baptism Hole",
+    "zona": "cahuita",
+    "acceso": "sin-dato",
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "tema": "historia",
+    "portada": "d19/1",
+    "lat": 9.7407,
+    "lng": -82.8412,
+    "orden": 1,
+    "resumen": "Antiguo punto de entrada de mercancías y lugar de los primeros bautizos en el mar.",
+    "horarioCorto": "Acceso libre · recomendado de día",
+    "ingreso": "Gratis",
+    "titulo": "Baptism Hole",
+    "lema": "Memoria espiritual, marítima y comunitaria de las primeras generaciones cahuiteñas.",
+    "nombre": "Baptism Hole (Baptist Hall Cahuita).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita.",
+    "intro": [
+      "Baptism Hole es un sitio emblemático de Cahuita, reconocido por su valor histórico, espiritual y cultural.",
+      "Sus vestigios históricos conservan la memoria de las primeras generaciones cahuiteñas."
+    ],
+    "historia": [
+      "Fue un antiguo punto de entrada de mercancías y de transporte marítimo, y también el escenario de los bautizos en el mar que celebraron las primeras congregaciones cristianas de la comunidad."
+    ],
+    "turistico": [
+      "Sitio histórico frente al mar.",
+      "Vestigios que conservan la memoria de Cahuita.",
+      "Punto de interés para conocer la historia marítima de la comunidad."
+    ],
+    "cultural": [
+      "Lugar de los bautizos en el mar de las primeras congregaciones cristianas.",
+      "Antiguo punto de entrada de mercancías.",
+      "Memoria de las primeras generaciones cahuiteñas."
+    ],
+    "horario": "Es un sitio público al aire libre: se puede llegar a cualquier hora, todo el año. Se recomienda visitarlo de día, entre las 6:00 a.m. y las 6:00 p.m., para disfrutar mejor del lugar y por seguridad.",
+    "adicional": "El acceso es libre y no se requiere pago ni registro previo.",
+    "fotos": [
+      "d19/1"
+    ],
+    "mapa": "https://www.google.com/maps?q=9.7407,-82.8412&z=17&output=embed"
+  },
+  {
+    "n": 16,
+    "slug": "antiguo-muelle-de-cahuita",
+    "corto": "Antiguo muelle de Cahuita",
+    "zona": "cahuita",
+    "acceso": "sin-dato",
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "tema": "historia",
+    "portada": "d15/1",
+    "lat": 9.741,
+    "lng": -82.8417,
+    "orden": 1,
+    "resumen": "El antiguo muelle donde los pescadores guardaban sus botes, junto a la costa de la memoria.",
+    "horarioCorto": "Acceso libre · recomendado de día",
+    "ingreso": "Gratis",
+    "titulo": "Antiguo muelle de Cahuita",
+    "lema": "Una puerta al mar y a la historia marítima de Cahuita.",
+    "nombre": "Antiguo muelle de Cahuita (Old Cahuita Pier).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita. Frente a la costa de Cahuita.",
+    "intro": [
+      "El antiguo muelle de Cahuita forma parte de la historia marítima del pueblo. Hasta la década de 1970 algunos pescadores guardaban allí sus botes.",
+      "Cerca de este sector, en las aguas frente a Cahuita, se encuentran los restos de dos barcos esclavistas daneses naufragados en 1710, un sitio reconocido hoy como de memoria histórica."
+    ],
+    "historia": [
+      "La costa de Cahuita fue puerto y refugio de pescadores, y el mar marcó la vida de sus primeras familias.",
+      "El antiguo muelle conserva esa memoria: un lugar de trabajo, de llegadas y de partidas que acompañó el crecimiento de la comunidad."
+    ],
+    "turistico": [
+      "Vistas de la costa y del mar Caribe.",
+      "Paisaje de costa rocosa y árboles centenarios.",
+      "Lugar para fotografía y para entender la historia marítima."
+    ],
+    "cultural": [
+      "Memoria de la pesca artesanal de Cahuita.",
+      "Cercanía con el sitio de memoria histórica de los naufragios de 1710.",
+      "Parte del patrimonio afrocaribeño de la comunidad."
+    ],
+    "horario": "Es un sitio público al aire libre: se puede llegar a cualquier hora, todo el año. Se recomienda visitarlo de día, entre las 6:00 a.m. y las 6:00 p.m., para disfrutar mejor del lugar y por seguridad.",
+    "adicional": "El acceso es libre y no se requiere pago ni registro previo.",
+    "fotos": [
+      "d15/1"
+    ],
+    "mapa": "https://www.google.com/maps?q=9.741,-82.8417&z=17&output=embed"
+  },
+  {
+    "n": 17,
+    "slug": "puerta-del-retorno",
+    "corto": "La Puerta del Retorno",
+    "zona": "cahuita",
+    "acceso": "sin-dato",
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "tema": "historia",
+    "portada": "d16/1",
+    "lat": 9.737,
+    "lng": -82.8395,
+    "orden": 1,
+    "resumen": "Un monumento en memoria de las personas africanas esclavizadas que llegaron a estas costas.",
+    "horarioCorto": "Acceso libre · recomendado de día",
+    "ingreso": "Gratis",
+    "titulo": "La Puerta del Retorno",
+    "lema": "Un tributo a quienes llegaron esperando volver a sus tierras natales.",
+    "nombre": "La Puerta del Retorno (Puerta de la Reunificación entre África y el Pueblo Afrodescendiente).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita.",
+    "intro": [
+      "Su nombre surge en memoria de las personas africanas esclavizadas y los trabajadores caribeños que arribaron a estas costas con la esperanza de volver a sus tierras natales y nunca pudieron hacerlo.",
+      "Rinde tributo a sus raíces ancestrales y sirve de contraparte simbólica a la histórica \"Puerta de No Retorno\" de los puertos de embarque africanos."
+    ],
+    "historia": [
+      "Una placa en el sitio recuerda a las personas africanas que ingresaron a Cahuita producto del naufragio de los barcos esclavistas daneses el 2 de marzo de 1710, y declara el lugar un sitio de memoria histórica y camino de reunificación y redención.",
+      "Otra placa señala que en este lugar se construye el Parque y Monumento \"Puerta de la Reunificación entre África y el Pueblo Afrodescendiente\", con fecha del 24 de enero de 2026, Día de la Cultura Africana y Afrodescendiente."
+    ],
+    "turistico": [
+      "Portal pintado con motivos africanos, de gran valor fotográfico.",
+      "Placas informativas en español e inglés.",
+      "Vista al mar Caribe desde el parque."
+    ],
+    "cultural": [
+      "Tributo a las personas africanas esclavizadas y a los trabajadores caribeños.",
+      "Sitio de memoria histórica del Pueblo Tribal Afrodescendiente de Cahuita.",
+      "Iniciativa impulsada por el Centro de Mujeres Afro."
+    ],
+    "horario": "Es un sitio público al aire libre: se puede llegar a cualquier hora, todo el año. Se recomienda visitarlo de día, entre las 6:00 a.m. y las 6:00 p.m., para disfrutar mejor del lugar y por seguridad.",
+    "adicional": "El acceso es libre. El monumento está en construcción, por lo que el sitio puede cambiar.",
+    "fotos": [
+      "d16/1",
+      "d16/2",
+      "d16/3"
+    ],
+    "mapa": "https://www.google.com/maps?q=9.737,-82.8395&z=17&output=embed"
+  },
+  {
+    "n": 18,
+    "slug": "casa-de-don-walter-ferguson",
+    "corto": "Casa de don Walter Ferguson",
+    "zona": "cahuita",
+    "acceso": "sin-dato",
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "tema": "cultura",
+    "portada": "d17/1",
+    "lat": 9.7376,
+    "lng": -82.84105,
+    "orden": 2,
+    "resumen": "El hogar de la familia Ferguson y raíz viva del calipso de Cahuita.",
+    "horarioCorto": "Consultar antes de ir",
+    "ingreso": "Gratis",
+    "titulo": "Casa de don Walter Ferguson",
+    "lema": "Patrimonio afrocaribeño, familia y calipso en el corazón de Cahuita.",
+    "nombre": "Casa de don Walter Ferguson (Mr. Walter Ferguson's Home).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita. Centro de población de Cahuita.",
+    "intro": [
+      "Don Walter Ferguson representa una parte importante del patrimonio afrocaribeño y de la memoria cultural de Cahuita. Su vivienda, originalmente ubicada en el territorio que hoy ocupa el Parque Nacional Cahuita, forma parte de la historia de su familia y de las transformaciones de la comunidad.",
+      "Su casa y la permanencia de sus descendientes representan un vínculo vivo con las raíces, las tradiciones y el patrimonio cultural del Caribe Sur."
+    ],
+    "historia": [
+      "Hace más de 80 años, junto con su hermano Clarence Corioso, don Walter adquirió terrenos en el actual centro de población, donde construyeron sus respectivas casas.",
+      "Como padre de 15 hijos e hijas, dejó un importante legado familiar en la comunidad. Su historia se vincula también con el calipso, una expresión fundamental de la identidad afrocaribeña, la memoria colectiva y la tradición oral."
+    ],
+    "turistico": [
+      "Arquitectura tradicional de madera del Caribe.",
+      "Punto para conocer la historia del calipso.",
+      "Cercanía con el parque y la escultura de Walter Ferguson."
+    ],
+    "cultural": [
+      "Legado del calipso y de la tradición oral afrocaribeña.",
+      "Historia de familia y de fundación del centro de Cahuita.",
+      "Descendientes que mantienen viva la memoria."
+    ],
+    "horario": "Es una casa familiar. No existe un horario predeterminado y se debe consultar antes de visitarla.",
+    "adicional": "Se recomienda respetar la privacidad de la familia y coordinar la visita previamente.",
+    "fotos": [
+      "d17/1",
+      "d17/2"
+    ],
+    "mapa": "https://www.google.com/maps?q=9.7376,-82.84105&z=17&output=embed"
+  },
+  {
+    "n": 19,
+    "slug": "playa-blanca",
+    "corto": "Playa Blanca",
+    "zona": "cahuita",
+    "acceso": "sin-dato",
+    "llegar": [
+      "San José → Siquirres.",
+      "Siquirres → Limón.",
+      "Limón → Cahuita."
+    ],
+    "servicios": [
+      "Hoteles, cabinas y hospedajes tipo Airbnb.",
+      "Restaurantes, sodas y cafeterías.",
+      "Quioscos de comida y bebidas, bares y comida rápida.",
+      "Supermercados, minisúpers y artesanías.",
+      "Cajeros automáticos.",
+      "Estación de buses.",
+      "Taxis.",
+      "Centro de salud."
+    ],
+    "tema": "naturaleza",
+    "portada": "d18/1",
+    "lat": 9.7345,
+    "lng": -82.8255,
+    "orden": 4,
+    "resumen": "Arena clara, aguas cristalinas y arrecifes de coral dentro del Parque Nacional Cahuita.",
+    "horarioCorto": "8:00 a.m. – 4:00 p.m.",
+    "ingreso": "Contribución voluntaria",
+    "titulo": "Playa Blanca",
+    "lema": "Mar cristalino, arrecifes y fauna silvestre en el Parque Nacional Cahuita.",
+    "nombre": "Playa Blanca (Parque Nacional Cahuita).",
+    "ubicacion": "Región Huetar Caribe, provincia de Limón, cantón Talamanca, distrito Cahuita. Dentro del Parque Nacional Cahuita.",
+    "intro": [
+      "Playa Blanca, ubicada dentro del Parque Nacional Cahuita, destaca por su arena clara, sus aguas cristalinas y sus arrecifes de coral.",
+      "Es un lugar ideal para disfrutar del mar, practicar snorkel y observar la biodiversidad marina, incluyendo peces tropicales y tortugas carey."
+    ],
+    "historia": [
+      "Este sector representa un importante ejemplo del modelo de gestión compartida entre la comunidad de Cahuita y el SINAC para la conservación del parque."
+    ],
+    "turistico": [
+      "Playa de arena clara y aguas cristalinas.",
+      "Snorkel y observación de peces tropicales y tortugas carey.",
+      "Sendero costero de 1,5 km.",
+      "Posibilidad de observar monos, perezosos y otras especies silvestres."
+    ],
+    "cultural": [
+      "Gestión compartida entre la comunidad y el SINAC.",
+      "Parte del área protegida más visitada del Caribe Sur."
+    ],
+    "horario": "Horario del Parque Nacional Cahuita: todos los días, de 8:00 a.m. a 4:00 p.m. Conviene confirmar antes de ir.",
+    "adicional": "El ingreso por este sector es con contribución voluntaria. Se recomienda llevar agua, protector solar biodegradable y calzado cómodo.",
+    "fotos": [
+      "d18/1"
+    ],
+    "mapa": "https://www.google.com/maps?q=9.7345,-82.8255&z=17&output=embed"
   }
 ]

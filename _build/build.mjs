@@ -192,7 +192,7 @@ function inicio() {
       <div>
         <span class="antetitulo">Caribe Sur · Costa Rica</span>
         <h1>Un recorrido por la naturaleza, la historia y la cultura del Caribe Sur</h1>
-        <p class="portada__texto">Descubre 13 destinos donde la naturaleza, la historia y la cultura se unen en una experiencia única.</p>
+        <p class="portada__texto">Descubre ${destinos.length} destinos donde la naturaleza, la historia y la cultura se unen en una experiencia única.</p>
         <div class="portada__acciones">
           <a class="boton" href="destinos">Ver los destinos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
           <a class="boton boton--borde" href="mapa"><i class="bi bi-map" aria-hidden="true"></i> Abrir el mapa</a>
@@ -275,7 +275,7 @@ function inicio() {
 
   return pagina({
     titulo: 'Ruta Caribe Sur · Destinos del Caribe Sur de Costa Rica',
-    descripcion: 'Guía de 13 destinos naturales, culturales e históricos del Caribe Sur de Costa Rica: Cahuita, Puerto Viejo, Manzanillo y Gandoca.',
+    descripcion: `Guía de ${destinos.length} destinos naturales, culturales e históricos del Caribe Sur de Costa Rica: Cahuita, Puerto Viejo, Manzanillo y Gandoca.`,
     cuerpo,
   });
 }
@@ -314,7 +314,7 @@ function listado() {
   return pagina({
     actual: 'destinos',
     titulo: 'Destinos · Ruta Caribe Sur',
-    descripcion: 'Los 13 destinos de la Ruta Caribe Sur, con filtros por tema, zona y accesibilidad.',
+    descripcion: `Los ${destinos.length} destinos de la Ruta Caribe Sur, con filtros por tema, zona y accesibilidad.`,
     cuerpo,
     scripts: ['assets/js/destinos.js'],
   });
@@ -476,7 +476,7 @@ function mapa() {
   return pagina({
     actual: 'mapa',
     titulo: 'Mapa · Ruta Caribe Sur',
-    descripcion: 'Mapa interactivo con los 13 destinos de la Ruta Caribe Sur.',
+    descripcion: `Mapa interactivo con los ${destinos.length} destinos de la Ruta Caribe Sur.`,
     cabezaExtra: '\n  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">',
     cuerpo,
     scripts: ['https://unpkg.com/leaflet@1.9.4/dist/leaflet.js', 'assets/js/mapa.js'],
@@ -514,7 +514,7 @@ function galeria() {
   return pagina({
     actual: 'galeria',
     titulo: 'Galería · Ruta Caribe Sur',
-    descripcion: 'Fotografías de los 13 destinos de la Ruta Caribe Sur.',
+    descripcion: `Fotografías de los ${destinos.length} destinos de la Ruta Caribe Sur.`,
     cabezaExtra: GLIGHTBOX_CSS,
     cuerpo,
     scripts: [GLIGHTBOX_JS, 'assets/js/galeria.js'],
@@ -599,7 +599,7 @@ function planifica() {
   return pagina({
     actual: 'planifica',
     titulo: 'Planifica tu visita · Ruta Caribe Sur',
-    descripcion: 'Cómo llegar al Caribe Sur, recomendaciones y comparación de horarios, ingreso y accesibilidad de los 13 destinos.',
+    descripcion: `Cómo llegar al Caribe Sur, recomendaciones y comparación de horarios, ingreso y accesibilidad de los ${destinos.length} destinos.`,
     cuerpo,
   });
 }
